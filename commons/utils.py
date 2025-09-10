@@ -17,11 +17,10 @@ def install_dependencies():
     except subprocess.CalledProcessError as e:
         print(f"🛑 Error during installation: {e}")
 
-from openai import OpenAI
-from pinecone import Pinecone, ServerlessSpec
-from google.colab import userdata
-
 def initialize_clients():
+    from openai import OpenAI
+    from pinecone import Pinecone, ServerlessSpec
+    from google.colab import userdata
     """
     Loads API keys from Colab Secrets and initializes OpenAI and Pinecone clients.
     Returns the initialized clients.
