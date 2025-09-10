@@ -3,9 +3,6 @@
 import os
 import subprocess
 import sys
-from openai import OpenAI
-from pinecone import Pinecone, ServerlessSpec
-from google.colab import userdata
 
 def install_dependencies():
     """
@@ -19,6 +16,10 @@ def install_dependencies():
         print("✅ All packages installed successfully.")
     except subprocess.CalledProcessError as e:
         print(f"🛑 Error during installation: {e}")
+
+from openai import OpenAI
+from pinecone import Pinecone, ServerlessSpec
+from google.colab import userdata
 
 def initialize_clients():
     """
