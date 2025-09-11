@@ -4,6 +4,7 @@
 # We must ensure all dependencies, including namespaces, are passed through.
 # -------------------------------------------------------------------------
 import logging 
+import agents 
 class AgentRegistry:
     def __init__(self):
         self.registry = {
