@@ -4,7 +4,7 @@
 # This includes the Planner's JSON output structure and passing
 # all configuration variables (model names, namespaces) down the execution chain.
 # -------------------------------------------------------------------------
-
+import logging 
 # === 6.1. The Tracer (Upgraded with Logging) ===
 class ExecutionTrace:
     """Logs the entire execution flow for debugging and analysis."""
