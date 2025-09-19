@@ -129,3 +129,43 @@ Generate the content now, following the blueprint precisely."""
 
 logging.info("✅ Specialist Agents defined and fully upgraded.")
 
+# FILE: Chapter 6
+# === 4.4. Summarizer Agent (New for Context Reduction) ===
+def agent_summarizer(mcp_message, client, generation_model):
+    """
+    Reduces a large text to a concise summary based on an objective.
+    Acts as a gatekeeper to manage token counts and costs.
+    """
+    logging.info("[Summarizer] Activated. Reducing context...")
+    try:
+        # Unpack the inputs from the MCP message
+        text_to_summarize = mcp_message['content'].get('text_to_summarize')
+        summary_objective = mcp_message['content'].get('summary_objective')
+
+        if not text_to_summarize or not summary_objective:
+            raise ValueError("Summarizer requires 'text_to_summarize' and 'summary_objective' in the input content.")
+
+        # Define the prompts for the LLM
+        system_prompt = """You are an expert summarization AI. Your task is to reduce the provided text to its essential points, guided by the user's specific objective. The summary must be concise, accurate, and directly address the stated goal."""
+        user_prompt = f"""--- OBJECTIVE ---
+{summary_objective}
+
+--- TEXT TO SUMMARIZE ---
+{text_to_summarize}
+--- END TEXT ---
+
+Generate the summary now."""
+
+        # Call the hardened LLM helper to perform the summarization
+        summary = call_llm_robust(
+            system_prompt,
+            user_prompt,
+            client=client,
+            generation_model=generation_model
+        )
+
+        # Return the summary in the standard MCP format
+        return create_mcp_message("Summarizer", {"summary": summary})
+    except Exception as e:
+        logging.error(f"[Summarizer] An error occurred: {e}")
+        raise e
