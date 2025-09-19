@@ -35,15 +35,21 @@ def agent_context_librarian(mcp_message, client, index, embedding_model, namespa
         logging.error(f"[Librarian] An error occurred: {e}")
         raise e
 
-# === 4.2. Researcher Agent (Upgraded) ===
+# === 4.2. Researcher Agent (UPGRADED for High-Fidelity RAG) ===
+from helpers import helper_sanitize_input # Add this new import at the top of the file
+
 def agent_researcher(mcp_message, client, index, generation_model, embedding_model, namespace_knowledge):
-    """Retrieves and synthesizes factual information from the Knowledge Base."""
-    logging.info("[Researcher] Activated. Investigating topic...")
+    """
+    Retrieves and synthesizes factual information, providing source citations.
+    UPGRADE: Implements High-Fidelity RAG and input sanitization.
+    """
+    logging.info("[Researcher] Activated. Investigating topic with high fidelity...")
     try:
         topic = mcp_message['content'].get('topic_query')
         if not topic:
             raise ValueError("Researcher requires 'topic_query' in the input content.")
 
+        # 1. Retrieve Chunks from Vector DB
         results = query_pinecone(
             query_text=topic,
             namespace=namespace_knowledge,
@@ -55,13 +61,34 @@ def agent_researcher(mcp_message, client, index, generation_model, embedding_mod
 
         if not results:
             logging.warning("[Researcher] No relevant information found.")
-            return create_mcp_message("Researcher", {"facts": "No data found on the topic."})
+            return create_mcp_message("Researcher", {"answer": "No data found on the topic.", "sources": []})
 
-        logging.info(f"[Researcher] Found {len(results)} relevant chunks. Synthesizing...")
-        source_texts = [match['metadata']['text'] for match in results]
-        system_prompt = """You are an expert research synthesis AI.
-Synthesize the provided source texts into a concise, bullet-pointed summary answering the user's topic."""
-        user_prompt = f"Topic: {topic}\n\nSources:\n" + "\n\n---\n\n".join(source_texts)
+        # 2. Sanitize and Prepare Source Texts
+        sanitized_texts = []
+        sources = set() # Use a set to store unique source documents
+        for match in results:
+            try:
+                # Sanitize text before use
+                clean_text = helper_sanitize_input(match['metadata']['text'])
+                sanitized_texts.append(clean_text)
+                # Collect the source document name
+                if 'source' in match['metadata']:
+                    sources.add(match['metadata']['source'])
+            except ValueError as e:
+                logging.warning(f"[Researcher] A retrieved chunk failed sanitization and was skipped. Reason: {e}")
+                continue # Skip this tainted chunk
+        
+        if not sanitized_texts:
+            logging.error("[Researcher] All retrieved chunks failed sanitization. Aborting.")
+            return create_mcp_message("Researcher", {"answer": "Could not generate a reliable answer as retrieved data was suspect.", "sources": []})
+
+        # 3. Synthesize with a Citation-Aware Prompt
+        logging.info(f"[Researcher] Found {len(sanitized_texts)} relevant chunks. Synthesizing answer with citations...")
+        
+        system_prompt = """You are an expert research synthesis AI. Your task is to provide a clear, factual answer to the user's topic based *only* on the provided source texts. After the answer, you MUST provide a "Sources" section listing the unique source document names you used."""
+        
+        source_material = "\n\n---\n\n".join(sanitized_texts)
+        user_prompt = f"Topic: {topic}\n\nSources:\n{source_material}\n\n--- \nSynthesize your answer and list the source documents now."
 
         findings = call_llm_robust(
             system_prompt,
@@ -69,7 +96,12 @@ Synthesize the provided source texts into a concise, bullet-pointed summary answ
             client=client,
             generation_model=generation_model
         )
-        return create_mcp_message("Researcher", {"facts": findings})
+        
+        # We can also append the sources we found programmatically for robustness
+        final_output = f"{findings}\n\n**Sources:**\n" + "\n".join([f"- {s}" for s in sorted(list(sources))])
+
+        return create_mcp_message("Researcher", {"answer_with_sources": final_output})
+
     except Exception as e:
         logging.error(f"[Researcher] An error occurred: {e}")
         raise e
