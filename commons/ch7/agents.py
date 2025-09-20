@@ -112,62 +112,49 @@ def agent_writer(mcp_message, client, generation_model):
     """Combines research with a blueprint to generate the final output."""
     logging.info("[Writer] Activated. Applying blueprint to source material...")
     try:
-        # --- UPGRADE: Unpack structured inputs with added flexibility ---
+        # --- FINAL UPGRADE: Unpack structured inputs from any source agent ---
         blueprint_data = mcp_message['content'].get('blueprint')
         facts_data = mcp_message['content'].get('facts')
         previous_content = mcp_message['content'].get('previous_content')
 
-        # Extract the blueprint string, same as before
         blueprint_json_string = blueprint_data.get('blueprint_json') if isinstance(blueprint_data, dict) else blueprint_data
 
-        # NEW ROBUST LOGIC for handling 'facts' or 'summary'
+        # FINAL ROBUST LOGIC for handling multiple data contracts
         facts = None
         if isinstance(facts_data, dict):
-            # First, try to get 'facts' (from Researcher)
+            # Check for 'facts' (from original Researcher)
             facts = facts_data.get('facts')
-            # If that fails, try to get 'summary' (from Summarizer)
+            # Check for 'summary' (from Summarizer)
             if facts is None:
                 facts = facts_data.get('summary')
+            # Check for 'answer_with_sources' (from Hi-Fi Researcher)
+            if facts is None:
+                facts = facts_data.get('answer_with_sources')
         elif isinstance(facts_data, str):
             facts = facts_data
 
         if not blueprint_json_string or (not facts and not previous_content):
             raise ValueError("Writer requires a blueprint and either 'facts' or 'previous_content'.")
 
-        # Determine the source material and label for the prompt
+        # ... (The rest of the agent function remains the same) ...
+        
         if facts:
             source_material = facts
-            source_label = "SOURCE FACTS"
-        else: # The validation above ensures that if 'facts' is None, 'previous_content' must exist
+            source_label = "SOURCE MATERIAL"
+        else:
             source_material = previous_content
             source_label = "PREVIOUS CONTENT (For Rewriting)"
 
-        # Construct the prompts for the LLM
-        system_prompt = f"""You are an expert content generation AI.
-Your task is to generate content based on the provided SOURCE MATERIAL.
-Crucially, you MUST structure, style, and constrain your output according to the following SEMANTIC BLUEPRINT.
+        system_prompt = f"""You are an expert content generation AI. Your task is to generate or rewrite content based on the provided SOURCE MATERIAL, strictly following the rules in the SEMANTIC BLUEPRINT. The SOURCE MATERIAL may contain both a synthesized answer and a list of sources; ensure the final output is a single, cohesive piece of content."""
+        
+        user_prompt = f"""--- SEMANTIC BLUEPRINT (JSON) ---\n{blueprint_json_string}\n\n--- SOURCE MATERIAL ({source_label}) ---\n{source_material}\n\nGenerate the final content now."""
 
---- SEMANTIC BLUEPRINT (JSON) ---
-{blueprint_json_string}
---- END SEMANTIC BLUEPRINT ---
-
-Adhere strictly to the blueprint's instructions, style guides, and goals."""
-
-        user_prompt = f"""--- SOURCE MATERIAL ({source_label}) ---
-{source_material}
---- END SOURCE MATERIAL ---
-
-Generate the content now, following the blueprint precisely."""
-
-        # Call the hardened LLM helper to generate the final output
         final_output = call_llm_robust(
             system_prompt,
             user_prompt,
             client=client,
             generation_model=generation_model
         )
-        
-        # Return the final content in a standard MCP message
         return create_mcp_message("Writer", final_output)
         
     except Exception as e:
