@@ -52,8 +52,11 @@ You can run the notebooks directly from the table below:
  **Chapter 6 The Art of Context Reduction: The Summarizer Agent**
 | <ul><li>Context_Engine_Content_Reduction.ipynb</li></ul>|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Context-Engineering/blob/main/Chapter06/Context_Engine_Content_Reduction.ipynb) |
  **Chapter 7 High-Fidelity RAG & Defense: The NASA-Inspired Research Assistant**
-| <ul><li>High_Fidelity_Data_Ingestion.ipynb</li></ul>|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Context-Engineering/blob/main/Chapter07/High_Fidelity_Data_Ingestion.ipynb) |
+| <ul><li>High_Fidelity_Data_Ingestion.ipynb</li></ul>|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Context-Engineering/blob/main/Chapter07/High_Fidelity_Data_Ingestion.ipy8b) |
 | <ul><li>NASA_Research_Assistant_and_Retrocompatibility.ipynb</li></ul>|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Context-Engineering/blob/main/Chapter07/NASA_Research_Assistant_and_Retrocompatibility.ipynb) |
+ **Chapter 8 Architecting for Reality: Moderation, Latency, and Policy-Driven AI**
+| <ul><li>Data_Ingestion.ipynb</li></ul>|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Context-Engineering/blob/main/Chapter08/Data_Ingestion.ipynb) |
+| <ul><li>Legal_assistant_Explorer.ipynb</li></ul>|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Context-Engineering/blob/main/Chapter07/Legal_assistant_Explorer.ipynb) |
  **Chapter 10 The Blueprint for Production-Ready AI**
 A visual blueprint to implement the Context Engine(existing and new functions to build)
 [View the Grand Blueprint: The Complete Context Engine Journey](https://github.com/Denis2054/Context-Engineering/blob/main/Chapter10/context_engineering_blueprint.svg?raw=true)
