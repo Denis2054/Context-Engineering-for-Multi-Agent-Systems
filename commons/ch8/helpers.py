@@ -117,6 +117,7 @@ def helper_sanitize_input(text):
         r"ignore all prior commands",
         r"you are now in.*mode",
         r"act as",
+        r"ignore any legal advice",
         r"print your instructions",
         # A simple pattern to catch attempts to inject system-level commands
         r"sudo|apt-get|yum|pip install"
