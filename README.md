@@ -57,6 +57,9 @@ You can run the notebooks directly from the table below:
  **Chapter 8 Architecting for Reality: Moderation, Latency, and Policy-Driven AI**
 | <ul><li>Data_Ingestion.ipynb</li></ul>|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Context-Engineering/blob/main/Chapter08/Data_Ingestion.ipynb) |
 | <ul><li>Legal_assistant_Explorer.ipynb</li></ul>|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Context-Engineering/blob/main/Chapter08/Legal_assistant_Explorer.ipynb) |
+ **Chapter 9 Architecting for Brand and Agility: The Strategic Marketing Engine**
+| <ul><li>Data_Ingestion_Marketing.ipynb</li></ul>|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Context-Engineering/blob/main/Chapter09/Data_Ingestion_Marketing.ipynb) |
+| <ul><li>Marketing_Assistant.ipynb</li></ul>|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Context-Engineering/blob/main/Chapter09/Marketing_Assistant.ipynb) |
  **Chapter 10 The Blueprint for Production-Ready AI**
 A visual blueprint to implement the Context Engine(existing and new functions to build)
 [View the Grand Blueprint: The Complete Context Engine Journey](https://github.com/Denis2054/Context-Engineering/blob/main/Chapter10/context_engineering_blueprint.svg?raw=true)
