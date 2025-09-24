@@ -46,6 +46,7 @@ You can run the notebooks directly from the table below:
 | <ul><li>Context_Aware_MAS.ipynb</li></ul>|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Context-Engineering/blob/main/Chapter03/Context_Aware_MAS.ipynb) |
  **Chapter 4 Building and Debugging the Context Engine**
 | <ul><li>Context_Engine.ipynb</li></ul>|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Context-Engineering/blob/main/Chapter04/Context_Engine.ipynb) |
+Note for Author: Expand on dependencies
  **Chapter 5: From Prototype to Production: Hardening the Context Engine**
 | <ul><li>Context_Engine_MAS_MCP.ipynb</li></ul>|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Context-Engineering/blob/main/Chapter05/Context_Engine_MAS_MCP.ipynb) |
 | <ul><li>Context_Engine_Pre_Production.ipynb/li></ul>|[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Denis2054/Context-Engineering/blob/main/Chapter05/Context_Engine_Pre_Production.ipynb) |
