@@ -102,6 +102,9 @@ By the end of this book, you’ll be equipped with the skills needed to engineer
 
 Before running the code, ensure your development environment is properly set up. All hands-on chapters use reproducible Python-based environments, tested in **Google Colab** and **VS Code**.
 
+> **A Note on Latency:** The Context Engine built in this book and repository performs complex, multi-step reasoning, not simple, single-shot answers. The delay you observe in Colab is the "thinking" time, as the engine dynamically plans and executes a sequence of API calls (e.g., planning, then RAG, then generation). This is the same reason advanced platforms like Gemini or ChatGPT require a moment to "think" for complex requests, even though they benefit from significantly more powerful environments.
+
+
 ### ✅ Prerequisites
 - **Python**: Version **3.10+**
 - **Environment Options:**
