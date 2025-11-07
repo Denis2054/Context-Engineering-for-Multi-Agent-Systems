@@ -158,7 +158,7 @@ _Denis Rothman_ graduated from Sorbonne University and Paris-Diderot University,
 
   <li><a href="https://www.packtpub.com/en-us/product/building-business-ready-generative-ai-systems-first-edition/9781837020690">Building Business-Ready Generative AI Systems, First Edition</a></li>
 
-  <li><a href="https://www.packtpub.com/en-us/product/ai-agents-in-practice-first-edition/9781805801351">AI Agents in Practice, First Edition</a></li>
+  <li><a href='https://www.packtpub.com/en-us/product/rag-driven-generative-ai-9781836200901' >RAG-Drive Generative AI, First Edition</a></li>
  
 </ul>
 
