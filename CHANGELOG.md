@@ -7,9 +7,9 @@ This changelog contains the notable updates to the **Context Enginnering for Mul
 ## [November 18, 2025]
 
 ### List of notebooks upgraded and/or fixed:
-`Chapter07/NASA_Research_Assistant_and_Retrocompatibility.ipynb` (upgraded)
-`Chapter08/Legal_assistant_Explorer.ipynb` (upgraded and fixed)
-`Chapter09/Marketing_Assistant.ipynb` (upgraded and fixed)
+`Chapter07/NASA_Research_Assistant_and_Retrocompatibility.ipynb` (upgraded)         
+`Chapter08/Legal_assistant_Explorer.ipynb` (upgraded and fixed)    
+`Chapter09/Marketing_Assistant.ipynb` (upgraded and fixed)     
 
 
 ### Upgraded
