@@ -3,9 +3,11 @@ Context Engineering  for Multi-Agent Systems, First Edition</h1>
 <p align="center">This is the code repository for <a href ="https://www.packtpub.com/en-us/product/context-engineering-for-multi-agent-systems-9781806690046"> Context Engineering  for Multi-Agent Systems, First Edition</a>, published by Packt.</p>
 <p align="center">Last updated: November 18, 2025.</p>
 
-"**November 18, 2025 Update:** Specific notebooks have been upgraded to leverage **GPT-5.1** and the latest OpenAI library standards for *improved performance and reasoning latency* when necessary. This update also includes fixes for the Moderation API to robustly handle structured agent outputs. For specific details on the affected notebooks and a full list of changes, please consult the Changelog."
+<p align="center">See the <a href="./CHANGELOG.md">Changelog</a> for updates, fixes, and upgrades.</p>
 
-<p align="center">See the <a href="./CHANGELOG.md">Changelog</a> for details.</p>
+"**November 18, 2025 Update:** Specific notebooks have been upgraded to leverage **GPT-5.1** and the latest OpenAI library standards for *improved performance and reasoning latency* when necessary. This update also includes fixes for the Moderation API to robustly handle structured agent outputs. For specific details on the affected notebooks and a full list of changes, please consult the <a href="./CHANGELOG.md">Changelog</a>."
+
+
 
 
 </p>
