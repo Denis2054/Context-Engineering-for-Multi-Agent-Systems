@@ -21,7 +21,7 @@ This changelog contains the notable updates to the **Context Enginnering for Mul
 `Chapter09/Marketing_Assistant.ipynb`  (fixed 2
 
 ### Upgraded
-**GPT 5:** 
+**OpenAI API GPT-5.1:** 
 
 GPT-5 has been upgraded to GPT-5.1, which improves API response time.
 OpenAI API library has been upgraded to 2.8.1 in `commons/utils.py,` which is now the reference installation file for all notebooks in the repository.
