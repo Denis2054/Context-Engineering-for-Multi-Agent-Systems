@@ -1,11 +1,7 @@
 <p align="center">
   <a href="https://www.eventbrite.com/e/context-engineering-for-agentic-ai-workshop-tickets-1975400249322">
-    <img 
-      src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1172823907%2F2755987128261%2F1%2Foriginal.20251212-091402?crop=focalpoint&fit=crop&w=940&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=ca8ff5f95b2db6f2737c544da6ab8c84" 
-      alt="Context Engineering for Agentic AI Workshop" 
-      width="1500"
-    />
-  </a>
+    <img width="2160" height="1080" alt="Github Image" src="https://github.com/user-attachments/assets/6a281137-8c87-4feb-ab30-5979fbba5738" />
+   </a>
 </p>
 
 
