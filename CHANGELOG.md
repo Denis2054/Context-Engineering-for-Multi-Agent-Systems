@@ -1,8 +1,12 @@
 # Changelog
 
-This changelog contains the notable updates to the **Context Enginnering for Multi-Agent Systems** repository.   
+This changelog contains the notable updates to the **Context Engineering for Multi-Agent Systems** repository.   
 🐬 Indicates *new bonus notebooks* to explore.
 
+## [January 10, 2026]
+### Scheduled Upgrade from **OpenAI API GPT-5.1 to GPT-5.2 after evaluation
+The repository has already been upgraded to GPT-5.1, which has improved speed and quality (see November 18, 2025, upgrades).
+We are currently evaluating GPT-5.2 and will upgrade in early 2026 once testing is complete.
 
 ## [November 18, 2025]
 
