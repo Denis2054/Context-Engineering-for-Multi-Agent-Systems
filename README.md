@@ -1,3 +1,14 @@
+<p align="center">
+  <a href="https://www.eventbrite.com/e/context-engineering-for-agentic-ai-workshop-tickets-1975400249322">
+    <img 
+      src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F1172823907%2F2755987128261%2F1%2Foriginal.20251212-091402?crop=focalpoint&fit=crop&w=940&auto=format%2Ccompress&q=75&sharp=10&fp-x=0.5&fp-y=0.5&s=ca8ff5f95b2db6f2737c544da6ab8c84" 
+      alt="Context Engineering for Agentic AI Workshop" 
+      width="1500"
+    />
+  </a>
+</p>
+
+
 <h1 align="center">
 Context Engineering  for Multi-Agent Systems, First Edition</h1>
 <p align="center">This is the code repository for <a href ="https://www.packtpub.com/en-us/product/context-engineering-for-multi-agent-systems-9781806690046"> Context Engineering  for Multi-Agent Systems, First Edition</a>, published by Packt.</p>
