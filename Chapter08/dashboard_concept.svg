@@ -1,0 +1,63 @@
+<svg width="800" height="350" viewBox="0 0 800 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .font-mono { font-family: 'Courier New', monospace; }
+      .font-sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    </style>
+    <linearGradient id="arrowGradient" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="350" fill="#f8fafc" rx="12"/>
+
+  <g transform="translate(40, 50)">
+    <text x="0" y="-20" class="font-sans" fill="#64748b" font-weight="bold">BEFORE: Raw Text Logs</text>
+    <rect width="300" height="250" fill="#1e293b" rx="8"/>
+    <g class="font-mono" fill="#475569" font-size="12">
+      <text x="20" y="40" fill="#e2e8f0">{ "goal": "research...",</text>
+      <text x="30" y="60" fill="#94a3b8">"steps": [ { "agent": "...",</text>
+      <text x="40" y="80" fill="#64748b">"output": "{\n  \"raw output\": true\n...}"</text>
+      <text x="30" y="100" fill="#94a3b8">}, { "agent": "..." </text>
+      <text x="20" y="120" fill="#e2e8f0">... lots more text ...</text>
+      <path d="M20 150 H280" stroke="#334155" stroke-width="2" stroke-dasharray="5,5"/>
+      <path d="M20 170 H260" stroke="#334155" stroke-width="2" stroke-dasharray="5,5"/>
+      <path d="M20 190 H290" stroke="#334155" stroke-width="2" stroke-dasharray="5,5"/>
+      <path d="M20 220 H100" stroke="#334155" stroke-width="2"/>
+    </g>
+  </g>
+
+  <g transform="translate(370, 160)">
+    <path d="M0 15 H40 L30 0 M40 15 L30 30" stroke="url(#arrowGradient)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="20" y="-20" text-anchor="middle" class="font-sans" fill="#2563eb" font-size="12" font-weight="bold">NEW RENDERER</text>
+  </g>
+
+  <g transform="translate(460, 50)">
+    <text x="0" y="-20" class="font-sans" fill="#2563eb" font-weight="bold">AFTER: Interactive Dashboard</text>
+    <rect width="300" height="250" fill="#ffffff" rx="8" stroke="#e2e8f0" stroke-width="2"/>
+
+    <g transform="translate(0, 0)">
+       <path d="M1 9 C1 4.58 4.58 1 9 1 H291 C295.42 1 299 4.58 299 9 V40 H1 V9Z" fill="#f1f5f9"/>
+       <text x="20" y="26" class="font-sans" fill="#1e293b" font-weight="bold">Execution Trace</text>
+       <rect x="220" y="10" width="70" height="22" rx="11" fill="#22c55e"/>
+       <text x="255" y="25" text-anchor="middle" class="font-sans" fill="white" font-size="12" font-weight="600">Success</text>
+    </g>
+
+    <g transform="translate(10, 50)">
+      <rect width="280" height="40" rx="6" fill="#f8fafc" stroke="#e2e8f0"/>
+      <text x="15" y="25" class="font-sans" fill="#334155" font-weight="600">▶ Step 1: Researcher</text>
+    </g>
+
+    <g transform="translate(10, 100)">
+      <rect width="280" height="130" rx="6" fill="#ffffff" stroke="#2563eb" stroke-width="2"/>
+      <rect width="280" height="40" rx="6" fill="#eff6ff"/>
+      <text x="15" y="25" class="font-sans" fill="#1e293b" font-weight="600">▼ Step 2: Writer</text>
+      <g transform="translate(15, 50)">
+         <text x="0" y="15" class="font-sans" fill="#64748b" font-size="10" font-weight="bold">OUTPUT (RENDERED MARKDOWN)</text>
+         <rect x="0" y="25" width="150" height="12" rx="2" fill="#e2e8f0"/> <rect x="0" y="45" width="240" height="8" rx="2" fill="#f1f5f9"/> <rect x="0" y="60" width="220" height="8" rx="2" fill="#f1f5f9"/> <circle cx="5" cy="85" r="3" fill="#2563eb"/> <rect x="15" y="81" width="180" height="8" rx="2" fill="#f1f5f9"/>
+         <circle cx="5" cy="105" r="3" fill="#2563eb"/> <rect x="15" y="101" width="200" height="8" rx="2" fill="#f1f5f9"/>
+      </g>
+    </g>
+  </g>
+</svg>
