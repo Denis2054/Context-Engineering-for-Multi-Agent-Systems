@@ -8,7 +8,7 @@
 <h1 align="center">
 Context Engineering  for Multi-Agent Systems, First Edition</h1>
 <p align="center">This is the code repository for <a href ="https://www.packtpub.com/en-us/product/context-engineering-for-multi-agent-systems-9781806690046"> Context Engineering  for Multi-Agent Systems, First Edition</a>, published by Packt.</p>
-<p align="center">Last updated for January 3,2026 Release.</p>
+<p align="center">Last updated for January 3, 2026 Release.</p>
 
 <p align="center">See the <a href="./CHANGELOG.md">Changelog</a> for updates, fixes, and upgrades.</p>
 
@@ -23,7 +23,7 @@ Move beyond prompting to build a Context Engine, a transparent architecture of c
 <p align="center">
   <strong>🚀 NEW: Interactive Trace Dashboard</strong><br>
   <em>Available in the Context Engine Room of Chapters 8 & 9: Visualize agent reasoning with our new HTML-based trace renderer.</em><br>
-  <img src="https://github.com/Denis2054/Context-Engineering-for-Multi-Agent-Systems/raw/main/Chapter08/dashboard_concept.svg" alt="New Interactive Dashboard" width="80%">
+  <img src="./Chapter08/dashboard_concept.svg" alt="New Interactive Dashboard" width="80%">
 </p>
 
 <p align="center">
