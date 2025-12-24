@@ -3,10 +3,16 @@
 This changelog contains the notable updates to the **Context Engineering for Multi-Agent Systems** repository.   
 🐬 Indicates *new bonus notebooks* to explore.
 
-## [January 10, 2026]
+## [January 3, 2026]
 ### Scheduled Upgrade from OpenAI API GPT-5.1 to GPT-5.2 after evaluation  
 The repository has already been upgraded to GPT-5.1, which has improved speed and quality (see November 18, 2025, upgrades).
 We are currently evaluating GPT-5.2 and will upgrade in early 2026 once testing is complete.
+
+### Upgrade
+- **Interactive Trace Dashboard:** Introduced `render_trace_dashboard` to visually render the Context Engine's execution trace.
+    - Replaces raw text logs with a clean, CSS-styled HTML dashboard.
+    - Features collapsible steps, syntax-highlighted JSON, and status badges.
+    - Implemented in `Chapter08/Legal_assistant_Explorer.ipynb` and `Chapter09/Marketing_Assistant.ipynb`.
 
 ## [November 18, 2025]
 
