@@ -18,6 +18,10 @@ Context Engineering  for Multi-Agent Systems, First Edition</h1>
 <h2 align="center">
 Move beyond prompting to build a Context Engine, a transparent architecture of context and reasoning
 </h2>
+
+**🎨 Interactive Trace Dashboard:** Advanced agentic notebooks feature a **Visual Execution Dashboard**.  The Context Engine's reasoning steps, JSON outputs, and final answers are rendered for enhanced tracability in a collapsible HTML interface directly within the notebook.    
+*Available in:* `Legal_assistant_Explorer.ipynb` and `Marketing_Assistant.ipynb`.
+
 <p align="center">
 Denis Rothman</p>
 
