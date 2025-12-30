@@ -1,0 +1,24 @@
+# Cell 3: The Full Workshop Transcript
+meeting_transcript = """
+        Alex: Alright, let’s get started! I hope everyone grabbed some of those mini-donuts in the breakroom. I think I’ve had three already, so I’m officially on a sugar high.
+        Jamie: They’re dangerous, Alex. Anyway, I’m ready when you are.
+        Sam: Same here. My calendar is clear for the next two hours.
+        Alex: Great. So, the goal of this workshop is to finalize our "Lumina Design System" core components. First up: the Primary Button component. Jamie, I saw your note about the hover states?
+        Jamie: Yeah, the current spec uses a 15% lighten filter for the hover state. It looks fine on Chrome, but it’s rendering inconsistently on some legacy mobile browsers. It’s a mess to maintain.
+        Sam: Legacy browsers? I thought we were phasing those out?
+        Jamie: We are, but we still have that one government contract that requires IE11 support for another six months.
+        Sam: Right, the "Directorate" account. Okay, we can't break that. What’s the fix?
+        Jamie: I suggest we move away from filters and just define a specific HEX code for the hover state. It’s more manual work for me to set up, but it’s bulletproof across all browsers.
+        Alex: That makes sense. Let’s do it. Jamie, can you map those HEX codes by Friday?
+        Jamie: I can try. I’m a bit swamped with the login page bug, but if I can get some help with the documentation, I can get it done.
+        Sam: I can actually have our intern, Leo, help with the documentation part. He’s looking for a project.
+        Alex: Perfect. Let’s tentatively assign the documentation to Leo, overseen by Jamie. Now, second topic: The Icon Library. We’re currently using "FontAwesome," but the licensing cost is going up next month.
+        Sam: I saw that invoice. It’s a 40% jump! I’m not sure the budget can handle that right now.
+        Jamie: We could switch to an open-source library like "Lucide" or "Phosphor." They’re free, but it would mean a full audit of every icon in the current app to make sure they match. 
+        Alex: (Sighs) That’s a massive undertaking. We have over 200 icons.
+        Sam: What if we do a hybrid? We keep FontAwesome for the complex dashboard icons for now, but use Phosphor for all new features. 
+        Alex: I think that's a recipe for a visual disaster, Sam. The styles won't match. I’d actually propose we dedicate a "Sprint Zero" next month just to migrate everything to Lucide. It’s a one-time pain for long-term savings.
+        Sam: I like the sound of "long-term savings." If Alex says the design will be cleaner, I’m on board. Let’s plan for that migration in the Q3 kickoff.
+        Alex: Excellent. I’ll draft the migration roadmap. Okay, that’s the big stuff. Who wants the last donut?
+        Jamie: I think I’m good. I need to go look at those HEX codes before my next meeting.
+        """
