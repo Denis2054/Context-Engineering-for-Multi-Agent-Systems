@@ -1,1 +1,16 @@
 
+  Token optimization displayed with two upgrades:
+  1.The Execution Engine (to calculate and store the counts)
+  1.1. In `engine.py`
+  # UPGRADE: Now accepts token metrics
+    def log_step(self, step_num, agent, planned_input, mcp_output, resolved_input, tokens_in=0, tokens_out=0):
+        self.steps.append({
+            "step": step_num,
+            "agent": agent,
+            "planned_input": planned_input,
+            "resolved_context": resolved_input,
+            "output": mcp_output['content'],
+            "tokens_in": tokens_in,
+            "tokens_out": tokens_out,
+            "tokens_saved": max(0, tokens_in - tokens_out) if agent == "Summarizer" else 0
+        })
