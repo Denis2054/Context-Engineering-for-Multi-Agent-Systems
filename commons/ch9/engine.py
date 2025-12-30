@@ -3,7 +3,7 @@ import logging
 import time
 import json
 import copy
-from helpers import call_llm_robust, create_mcp_message
+from helpers import call_llm_robust, create_mcp_message, count_tokens # Added count_tokens import
 from registry import AGENT_TOOLKIT
 
 # === 6.1. The Tracer ===
@@ -22,16 +22,21 @@ class ExecutionTrace:
         self.plan = plan
         logging.info("Plan has been logged to the trace.")
 
-    def log_step(self, step_num, agent, planned_input, mcp_output, resolved_input):
-        """Logs the details of a single execution step."""
+    # UPGRADE: Added tokens_in and tokens_out parameters
+    def log_step(self, step_num, agent, planned_input, mcp_output, resolved_input, tokens_in=0, tokens_out=0):
+        """Logs the details of a single execution step, including token metrics."""
         self.steps.append({
             "step": step_num,
             "agent": agent,
             "planned_input": planned_input,
             "resolved_context": resolved_input,
-            "output": mcp_output['content']
+            "output": mcp_output['content'],
+            "tokens_in": tokens_in,
+            "tokens_out": tokens_out,
+            # Calculate savings specifically for the summarizer
+            "tokens_saved": max(0, tokens_in - tokens_out) if agent == "Summarizer" else 0
         })
-        logging.info(f"Step {step_num} ({agent}) logged to the trace.")
+        logging.info(f"Step {step_num} ({agent}) logged to the trace. [In: {tokens_in}, Out: {tokens_out}]")
 
     def finalize(self, status, final_output=None):
         self.status = status
@@ -53,27 +58,8 @@ AVAILABLE CAPABILITIES
 END CAPABILITIES
 
 INSTRUCTIONS:
-1. The output MUST be a single JSON object.
-2. This JSON object must contain a key named "plan".
-3. The value of the "plan" key MUST be a list of objects, where each object represents a step.
-4. Be strategic. Break down complex goals into distinct steps.
-5. You MUST use Context Chaining. If a step requires input from a previous step, use the format "$$STEP_N_OUTPUT$$" as the value.
-
-EXAMPLE OUTPUT FORMAT:
-{{
-  "plan": [
-    {{
-      "step": 1,
-      "agent": "AgentName1",
-      "input": {{"param1": "value1"}}
-    }},
-    {{
-      "step": 2,
-      "agent": "AgentName2",
-      "input": {{"param2": "$$STEP_1_OUTPUT$$"}}
-    }}
-  ]
-}}
+1. The output MUST be a single JSON object with a "plan" key containing a list of step objects.
+2. Use Context Chaining: format "$$STEP_N_OUTPUT$$" for values requiring previous outputs.
 """
     try:
         plan_json_string = call_llm_robust(
@@ -83,23 +69,8 @@ EXAMPLE OUTPUT FORMAT:
             generation_model=generation_model,
             json_mode=True
         )
-        try:
-            plan_data = json.loads(plan_json_string)
-        except json.JSONDecodeError as e:
-            logging.error(f"Planner failed to parse JSON despite json_mode. Raw String: {plan_json_string}")
-            raise ValueError(f"Invalid JSON returned by Planner: {e}")
-
-        if isinstance(plan_data, dict) and "plan" in plan_data and isinstance(plan_data["plan"], list):
-            plan = plan_data["plan"]
-        else:
-            logging.error(f"Planner returned an unexpected JSON structure. Response: {plan_data}")
-            raise ValueError("The extracted JSON does not conform to the expected {{'plan': [...]}} structure.")
-
-        if not plan:
-            raise ValueError("The generated plan is empty.")
-
-        logging.info("Planner generated plan successfully.")
-        return plan
+        plan_data = json.loads(plan_json_string)
+        return plan_data["plan"]
     except Exception as e:
         logging.error(f"Planner failed to generate a valid plan. Error: {e}")
         raise e
@@ -111,11 +82,7 @@ def resolve_dependencies(input_params, state):
     def resolve(value):
         if isinstance(value, str) and value.startswith("$$") and value.endswith("$$"):
             ref_key = value[2:-2]
-            if ref_key in state:
-                logging.info(f"Executor resolved dependency '{ref_key}'.")
-                return state[ref_key]
-            else:
-                raise ValueError(f"Dependency Error: Reference {ref_key} not found in state.")
+            return state.get(ref_key, value)
         elif isinstance(value, dict):
             return {k: resolve(v) for k, v in value.items()}
         elif isinstance(value, list):
@@ -131,18 +98,11 @@ def context_engine(goal, client, pc, index_name, generation_model, embedding_mod
 
     try:
         index = pc.Index(index_name)
-    except Exception as e:
-        logging.error(f"Failed to connect to Pinecone index '{index_name}': {e}")
-        trace.finalize("Failed during Initialization (Pinecone Connection)")
-        return None, trace
-
-    try:
-        # Phase 1: Plan
         capabilities = registry.get_capabilities_description()
         plan = planner(goal, capabilities, client=client, generation_model=generation_model)
         trace.log_plan(plan)
     except Exception as e:
-        trace.finalize("Failed during Planning")
+        trace.finalize(f"Failed during Planning/Init: {e}")
         return None, trace
 
     # --- Phase 2: Execute ---
@@ -151,12 +111,6 @@ def context_engine(goal, client, pc, index_name, generation_model, embedding_mod
         step_num = step.get("step")
         agent_name = step.get("agent")
         planned_input = step.get("input")
-
-        if not all([step_num, agent_name, planned_input is not None]):
-            error_message = f"Invalid step structure in plan: {step}"
-            logging.error(f"--- Executor: FATAL ERROR --- {error_message}")
-            trace.finalize("Failed during Execution (Invalid Plan Structure)")
-            return None, trace
 
         logging.info(f"--- Executor: Starting Step {step_num}: {agent_name} ---")
         try:
@@ -169,13 +123,37 @@ def context_engine(goal, client, pc, index_name, generation_model, embedding_mod
                 namespace_context=namespace_context,
                 namespace_knowledge=namespace_knowledge
             )
+            
+            # 1. Resolve inputs
             resolved_input = resolve_dependencies(planned_input, state)
+            
+            # UPGRADE: Count Input Tokens (The context being sent to the agent)
+            t_in = count_tokens(str(resolved_input))
+            
+            # 2. Call the agent
             mcp_resolved_input = create_mcp_message("Engine", resolved_input)
             mcp_output = handler(mcp_resolved_input)
             output_data = mcp_output["content"]
+            
+            # UPGRADE: Count Output Tokens (The response generated by the agent)
+            t_out = count_tokens(str(output_data))
+            
+            # 3. Update state and log results
             state[f"STEP_{step_num}_OUTPUT"] = output_data
-            trace.log_step(step_num, agent_name, planned_input, mcp_output, resolved_input)
+            
+            # UPGRADE: Pass token counts into the log_step call
+            trace.log_step(
+                step_num, 
+                agent_name, 
+                planned_input, 
+                mcp_output, 
+                resolved_input, 
+                tokens_in=t_in, 
+                tokens_out=t_out
+            )
+            
             logging.info(f"--- Executor: Step {step_num} completed. ---")
+            
         except Exception as e:
             error_message = f"Execution failed at step {step_num} ({agent_name}): {e}"
             logging.error(f"--- Executor: FATAL ERROR --- {error_message}")
@@ -187,4 +165,3 @@ def context_engine(goal, client, pc, index_name, generation_model, embedding_mod
     trace.finalize("Success", final_output)
     logging.info("--- [Context Engine] Task Complete ---")
     return final_output, trace
-
