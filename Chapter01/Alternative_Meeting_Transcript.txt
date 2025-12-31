@@ -21,4 +21,5 @@ meeting_transcript = """
         Sam: I like the sound of "long-term savings." If Alex says the design will be cleaner, I’m on board. Let’s plan for that migration in the Q3 kickoff.
         Alex: Excellent. I’ll draft the migration roadmap. Okay, that’s the big stuff. Who wants the last donut?
         Jamie: I think I’m good. I need to go look at those HEX codes before my next meeting.
+
         """
