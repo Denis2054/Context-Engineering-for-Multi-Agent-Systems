@@ -14,7 +14,7 @@ Context Engineering  for Multi-Agent Systems, First Edition</h1>
 
 🐬 January 25, 2026 Release:
 **Sovereign Universal Context Engine**: A new **Glass Box Context Engine** implementation (Chapter10/Universal_Context_Engine.ipynb) demonstrating **domain-agnostic architecture** by running *cross-domain* use cases on the same core.
-*Token Analytics*: engine.py and the Dashboard now provide rigorous transparency into token usage (Input, Output, Difference) for cost and verbosity analysis.
+**Token Analytics**: engine.py and the Dashboard provide rigorous transparency into token usage (Input, Output, Difference) for cost and verbosity analysis.
 
 **LLM API update:** Specific notebooks have been upgraded to leverage **GPT-5.1** and the latest OpenAI library standards for *improved performance and reasoning latency* when necessary. This update also includes fixes for the Moderation API to handle structured agent outputs robustly. For specific details on the affected notebooks and a full list of changes, please consult the <a href="./CHANGELOG.md">Changelog</a>.
 </p>
