@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notebook Workflow Analysis: Use_Case.ipynb</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        
+        /* SVG Animation & Interaction */
+        .node-group { cursor: pointer; transition: all 0.3s ease; }
+        .node-rect { fill: #ffffff; stroke-width: 2px; transition: all 0.3s ease; }
+        .node-text { font-family: 'Inter', sans-serif; pointer-events: none; }
+        .node-desc { font-size: 11px; fill: #64748b; opacity: 1; transition: opacity 0.3s ease; }
+        
+        /* Hover Effects */
+        .node-group:hover .node-rect { transform: translateY(-2px); filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1)); }
+        
+        /* Layer Colors */
+        .layer-1-stroke { stroke: #3b82f6; } /* Blue - Scope */
+        .layer-1-fill { fill: #eff6ff; }
+        
+        .layer-2-stroke { stroke: #8b5cf6; } /* Purple - Investigation */
+        .layer-2-fill { fill: #f5f3ff; }
+        
+        .layer-3-stroke { stroke: #10b981; } /* Emerald - Action */
+        .layer-3-fill { fill: #ecfdf5; }
+        
+        .setup-stroke { stroke: #64748b; }
+        .setup-fill { fill: #f1f5f9; }
+
+        /* Path Animation */
+        .flow-path {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            animation: dash 3s ease-out forwards;
+        }
+        
+        @keyframes dash {
+            to { stroke-dashoffset: 0; }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <div class="max-w-6xl mx-auto px-4 py-8">
+        <!-- Header -->
+        <div class="text-center mb-10">
+            <h1 class="text-3xl font-bold text-slate-900 mb-2">AI Workflow Analysis</h1>
+            <p class="text-slate-600">Visualizing the logic chain of <code class="bg-slate-200 px-1 rounded">Use_Case.ipynb</code></p>
+        </div>
+
+        <!-- Flowchart Container -->
+        <div class="bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-200 p-2">
+            
+            <!-- Legend -->
+            <div class="flex flex-wrap justify-center gap-6 p-4 border-b border-slate-100 bg-slate-50/50 text-sm">
+                <div class="flex items-center"><span class="w-3 h-3 rounded-full bg-slate-400 mr-2"></span>Setup / Input</div>
+                <div class="flex items-center"><span class="w-3 h-3 rounded-full bg-blue-500 mr-2"></span>Layer 1: Scope</div>
+                <div class="flex items-center"><span class="w-3 h-3 rounded-full bg-purple-500 mr-2"></span>Layer 2: Investigation</div>
+                <div class="flex items-center"><span class="w-3 h-3 rounded-full bg-emerald-500 mr-2"></span>Layer 3: Action</div>
+            </div>
+
+            <!-- SVG Diagram -->
+            <div class="overflow-x-auto">
+                <svg viewBox="0 0 1000 950" class="w-full min-w-[800px] h-auto mx-auto block">
+                    <defs>
+                        <!-- Arrowhead Marker -->
+                        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+                            <path d="M0,0 L0,6 L9,3 z" fill="#94a3b8" />
+                        </marker>
+                        
+                        <!-- Drop Shadow Filter -->
+                        <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+                            <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000000" flood-opacity="0.08"/>
+                        </filter>
+                    </defs>
+
+                    <!-- === GROUPS / LAYERS === -->
+                    
+                    <!-- Input Zone -->
+                    <rect x="50" y="20" width="900" height="120" rx="12" fill="white" stroke="#e2e8f0" stroke-dasharray="4 4" />
+                    <text x="70" y="50" class="text-xs font-bold fill-slate-400 uppercase tracking-wider">Preliminaries</text>
+
+                    <!-- Layer 1 Zone (Scope) -->
+                    <rect x="50" y="180" width="900" height="200" rx="12" fill="#eff6ff" fill-opacity="0.3" stroke="#bfdbfe" />
+                    <text x="70" y="210" class="text-xs font-bold fill-blue-400 uppercase tracking-wider">Layer 1: Scope (The 'What')</text>
+
+                    <!-- Layer 2 Zone (Investigation) -->
+                    <rect x="50" y="420" width="900" height="200" rx="12" fill="#f5f3ff" fill-opacity="0.3" stroke="#ddd6fe" />
+                    <text x="70" y="450" class="text-xs font-bold fill-purple-400 uppercase tracking-wider">Layer 2: Investigation (The 'How')</text>
+
+                    <!-- Layer 3 Zone (Action) -->
+                    <rect x="50" y="660" width="900" height="200" rx="12" fill="#ecfdf5" fill-opacity="0.3" stroke="#a7f3d0" />
+                    <text x="70" y="690" class="text-xs font-bold fill-emerald-400 uppercase tracking-wider">Layer 3: Action (The 'What Next')</text>
+
+
+                    <!-- === PATHS / CONNECTORS === -->
+                    <!-- Transcript to g2 -->
+                    <path d="M500,100 L500,220" stroke="#cbd5e1" stroke-width="2" fill="none" marker-end="url(#arrow)" class="flow-path" style="animation-delay: 0s"/>
+                    
+                    <!-- g2 to g3 -->
+                    <path d="M500,280 L700,280" stroke="#cbd5e1" stroke-width="2" fill="none" marker-end="url(#arrow)" class="flow-path" style="animation-delay: 0.5s"/>
+                    
+                    <!-- g2 to g4 (Implicit) -->
+                    <path d="M500,320 L500,370 L300,370 L300,460" stroke="#cbd5e1" stroke-width="2" fill="none" marker-end="url(#arrow)" class="flow-path" style="animation-delay: 0.8s"/>
+                    
+                    <!-- g2 to g5 (Problem Solving - implied context) -->
+                    <path d="M500,320 L500,370 L700,370 L700,460" stroke="#cbd5e1" stroke-width="2" fill="none" marker-end="url(#arrow)" class="flow-path" style="animation-delay: 0.8s"/>
+                    
+                    <!-- g3 to g6 -->
+                    <path d="M700,340 L700,400 L930,400 L930,620 L500,620 L500,700" stroke="#cbd5e1" stroke-width="2" fill="none" marker-end="url(#arrow)" stroke-dasharray="4 2" class="flow-path" style="animation-delay: 1.2s"/>
+
+                    <!-- g6 to g7 -->
+                    <path d="M500,760 L500,790" stroke="#cbd5e1" stroke-width="2" fill="none" marker-end="url(#arrow)" class="flow-path" style="animation-delay: 1.5s"/>
+
+
+                    <!-- === NODES === -->
+
+                    <!-- CELL 3: RAW DATA -->
+                    <g class="node-group" transform="translate(350, 40)">
+                        <rect width="300" height="80" rx="8" class="node-rect setup-stroke setup-fill" filter="url(#shadow)"/>
+                        <text x="150" y="30" text-anchor="middle" class="font-bold fill-slate-700 text-sm">Cell 3: The Raw Transcript</text>
+                        <text x="150" y="50" text-anchor="middle" class="node-desc">Input: "The Crime Scene"</text>
+                        <text x="150" y="65" text-anchor="middle" class="node-desc italic">Unstructured text data</text>
+                    </g>
+
+                    <!-- CELL 4: G2 (FILTER) -->
+                    <g class="node-group" transform="translate(350, 240)">
+                        <rect width="300" height="80" rx="8" class="node-rect layer-1-stroke layer-1-fill" filter="url(#shadow)"/>
+                        <text x="150" y="30" text-anchor="middle" class="font-bold fill-blue-800 text-sm">Cell 4 (g2): Signal-to-Noise</text>
+                        <text x="150" y="50" text-anchor="middle" class="node-desc">Removes chit-chat, keeps facts</text>
+                        <text x="150" y="65" text-anchor="middle" class="node-desc text-[10px] text-blue-600">Output: Substantive Content</text>
+                    </g>
+
+                    <!-- CELL 5: G3 (RAG/CONTEXT) -->
+                    <g class="node-group" transform="translate(700, 240)">
+                        <rect width="250" height="100" rx="8" class="node-rect layer-1-stroke layer-1-fill" filter="url(#shadow)"/>
+                        <text x="125" y="30" text-anchor="middle" class="font-bold fill-blue-800 text-sm">Cell 5 (g3): Context/RAG</text>
+                        <text x="125" y="50" text-anchor="middle" class="node-desc">Compares new vs. old info</text>
+                        <foreignObject x="10" y="60" width="230" height="40">
+                            <div xmlns="http://www.w3.org/1999/xhtml" class="text-center text-[10px] text-slate-500 leading-tight">
+                                Identifying <em>new</em> developments from history.
+                            </div>
+                        </foreignObject>
+                    </g>
+
+                    <!-- CELL 6: G4 (SENTIMENT) -->
+                    <g class="node-group" transform="translate(150, 460)">
+                        <rect width="300" height="100" rx="8" class="node-rect layer-2-stroke layer-2-fill" filter="url(#shadow)"/>
+                        <text x="150" y="30" text-anchor="middle" class="font-bold fill-purple-800 text-sm">Cell 6 (g4): Implicit Threads</text>
+                        <text x="150" y="50" text-anchor="middle" class="node-desc">Sentiment & Psychological Analysis</text>
+                        <foreignObject x="10" y="60" width="280" height="40">
+                            <div xmlns="http://www.w3.org/1999/xhtml" class="text-center text-[10px] text-slate-500 leading-tight">
+                                "Did anyone seem hesitant?"<br/>Detects tension & risk.
+                            </div>
+                        </foreignObject>
+                    </g>
+
+                    <!-- CELL 7: G5 (SYNTHESIS) -->
+                    <g class="node-group" transform="translate(550, 460)">
+                        <rect width="300" height="100" rx="8" class="node-rect layer-2-stroke layer-2-fill" filter="url(#shadow)"/>
+                        <text x="150" y="30" text-anchor="middle" class="font-bold fill-purple-800 text-sm">Cell 7 (g5): Problem Solving</text>
+                        <text x="150" y="50" text-anchor="middle" class="node-desc">"Intellectual Combinations"</text>
+                        <foreignObject x="10" y="60" width="280" height="40">
+                            <div xmlns="http://www.w3.org/1999/xhtml" class="text-center text-[10px] text-slate-500 leading-tight">
+                                Combines "Maria's Bandwidth" + "Tom's Delay" to create a novel solution.
+                            </div>
+                        </foreignObject>
+                    </g>
+
+                    <!-- CELL 8: G6 (STRUCTURE) -->
+                    <g class="node-group" transform="translate(350, 700)">
+                        <rect width="300" height="60" rx="8" class="node-rect layer-3-stroke layer-3-fill" filter="url(#shadow)"/>
+                        <text x="150" y="25" text-anchor="middle" class="font-bold fill-emerald-800 text-sm">Cell 8 (g6): Formatting</text>
+                        <text x="150" y="45" text-anchor="middle" class="node-desc">Converts insights into a Markdown Table</text>
+                    </g>
+
+                    <!-- CELL 9: G7 (ACTION) -->
+                    <g class="node-group" transform="translate(350, 790)">
+                        <rect width="300" height="100" rx="8" class="node-rect layer-3-stroke layer-3-fill" filter="url(#shadow)"/>
+                        <text x="150" y="30" text-anchor="middle" class="font-bold fill-emerald-800 text-sm">Cell 9 (g7): The Output</text>
+                        <text x="150" y="50" text-anchor="middle" class="node-desc">Drafts Professional Email</text>
+                        <foreignObject x="20" y="60" width="260" height="40">
+                            <div xmlns="http://www.w3.org/1999/xhtml" class="bg-white border border-emerald-100 rounded p-1 text-[10px] text-slate-600 shadow-sm">
+                                <strong>To:</strong> Team<br/><strong>Subject:</strong> Follow-up...
+                            </div>
+                        </foreignObject>
+                    </g>
+
+                </svg>
+            </div>
+            
+            <!-- Footer Explanation -->
+            <div class="bg-slate-50 p-6 border-t border-slate-200">
+                <h3 class="font-semibold text-slate-800 mb-3">Workflow Summary</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm text-slate-600">
+                    <div>
+                        <strong class="text-blue-600 block mb-1">1. Scope</strong>
+                        The process begins by cleaning the raw transcript. It isolates facts from noise (g2) and identifies what is strictly "new" information compared to previous history (g3).
+                    </div>
+                    <div>
+                        <strong class="text-purple-600 block mb-1">2. Investigation</strong>
+                        Instead of just summarizing, the AI acts as an analyst. It looks for emotional subtext (g4) and actively proposes solutions to problems found in the text (g5).
+                    </div>
+                    <div>
+                        <strong class="text-emerald-600 block mb-1">3. Action</strong>
+                        Insights are useless without action. The final layer structures the data into a table (g6) and drafts a ready-to-send email (g7), completing the work.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
