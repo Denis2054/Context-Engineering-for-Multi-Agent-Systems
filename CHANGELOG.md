@@ -1,6 +1,6 @@
 # Changelog
 
-This changelog contains the notable updates (past, present, coming) to the **Context Engineering for Multi-Agent Systems** repository.   
+This changelog contains notable updates (past, present, and upcoming) to the **Context Engineering for Multi-Agent Systems** repository.   
 🐬 Indicates *new bonus notebooks* to explore. 
 
 ## [January 25, 2026 release]
@@ -37,6 +37,13 @@ of significant improvement over the GPT-5.1 upgrade for latency in some chapters
     - Features collapsible steps, syntax-highlighted JSON, and status badges.
     - Implemented in `Chapter08/Legal_assistant_Explorer.ipynb` and `Chapter09/Marketing_Assistant.ipynb`.
 <img src="./Chapter08/dashboard_concept.svg" alt="New Interactive Dashboard" width="80%">
+
+### Upgrade
+`Data_Ingestion_Marketing.ipynb` has been updated to clear or append data.
+In section *2.Initialize Clients*, we can clear the index of its content or append it:
+```python
+clear_index = True # If True, empties the index namespaces. If False, appends to the existing index.
+```
 
 ## [November 18, 2025]
 
