@@ -19,7 +19,7 @@ The `engine.py` core and the dashboard rendering logic have been upgraded to pro
   
 * **Cost-Efficiency Visibility:** Allows users to immediately gauge the verbosity and cost implications of the model's reasoning process during execution.
 
-  **IPython Interface**
+* **IPython Interface**
 
 Building upon the foundational logic established in the standard Universal Context Engine, this version introduces an evolved IPython-based Control Deck. While the original iteration relies on sequential cell execution and manual variable configuration to transition between Legal and Marketing domains, this notebook implements a dynamic user interface powered by ipywidgets. This evolution streamlines the orchestration process by centralizing goal selection, real-time input editing, and moderation guardrails into a single interactive dashboard, providing a more intuitive and efficient experience for managing complex multi-agent workflows.
 
