@@ -13,7 +13,7 @@ The repository now includes `Chapter10/Universal_Context_Engine.ipynb`, a demons
   
 * **Dual-Domain Support:** Instructions added for appending Marketing data to the Legal index (`clear_index=False`) to create a unified knowledge base.
   
-**Token Analytics Upgrade:**
+* **Token Analytics Upgrade:**
 The `engine.py` core and the dashboard rendering logic have been upgraded to provide rigorous transparency into token usage.
 * **Token Tracking:** The Render and Trace Dashboard now explicitly displays **Input Tokens**, **Output Tokens**, and the **Difference** for each step.
   
