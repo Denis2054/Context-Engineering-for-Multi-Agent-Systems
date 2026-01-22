@@ -86,7 +86,7 @@ def context_engine(goal, client, index, generation_model, embedding_model, names
     
     try:
         # Step 1: Planning
-        plan = run_planner(goal, client, generation_model)
+        plan = planner(goal, client, generation_model)
         trace.log_plan(plan)
         
         state = {}
