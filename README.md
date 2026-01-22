@@ -8,7 +8,7 @@
 <h1 align="center">
 Context Engineering  for Multi-Agent Systems, First Edition</h1>
 <p align="center">This is the code repository for <a href ="https://www.packtpub.com/en-us/product/context-engineering-for-multi-agent-systems-9781806690046"> Context Engineering  for Multi-Agent Systems, First Edition</a>, published by Packt.</p>
-<p align="center">Last updated: January 17, 2026</p>
+<p align="center">Last updated: January 22, 2026</p>
 
 <p align="center">See the <a href="./CHANGELOG.md">Changelog</a> for updates, fixes, and upgrades(past, present, coming).</p>
 
