@@ -6,7 +6,8 @@ This changelog contains notable updates (past, present, and upcoming) to the **C
 ## [January 25, 2026 release]
 ### 🐬New **Sovereign Universal Context Engine:**
 
-The repository now includes `Chapter10/Universal_Context_Engine_UI.ipynb`, a demonstration of the "Glass Box" architecture's domain-agnostic capabilities.
+The repository now includes `Chapter10/Universal_Context_Engine.ipynb`(batch processing) `Chapter10/Universal_Context_Engine_UI.ipynb`(interactive sessions) that demonstrate the Glass-Box architecture's domain-agnostic capabilities:
+
 * **Universal Architecture:** Runs both Legal and Marketing use cases using the exact same code base, proving that the engine contains zero business rules and relies entirely on retrieved Context and Control Deck instructions.
   
 * **Sovereign Solution:** Utilizes High-Fidelity RAG for verifiable accuracy and fully controlled agents, eliminating black-box unpredictability.
@@ -19,13 +20,14 @@ The `engine.py` core and the dashboard rendering logic have been upgraded to pro
   
 * **Cost-Efficiency Visibility:** Allows users to immediately gauge the verbosity and cost implications of the model's reasoning process during execution.
 
-* **IPython Interface**
+* **IPython Interface** in the `Chapter10/Universal_Context_Engine_UI.ipynb`(interactive sessions) version
 
-Building upon the foundational logic established in the standard Universal Context Engine, this version introduces an evolved IPython-based Control Deck with a drop-down menu containing multi-domain pre-set goals. While the original iteration relies on sequential cell execution and manual variable configuration to transition between Legal and Marketing domains, this notebook implements a dynamic user interface powered by ipywidgets. This evolution streamlines the orchestration process by centralizing goal selection, real-time input editing, and moderation guardrails into a single interactive dashboard, providing a more intuitive and efficient experience for managing complex multi-agent workflows.
+Building upon the foundational logic established in the standard Universal Context Engine, this version introduces an evolved IPython-based Control Deck with a drop-down menu containing multi-domain preset goals. While the original iteration relies on sequential cell execution and manual variable configuration to transition between Legal and Marketing domains, this notebook implements a dynamic user interface powered by ipywidgets. This evolution streamlines the orchestration process by centralizing goal selection, real-time input editing, and moderation guardrails into a single interactive dashboard, providing a more intuitive and efficient experience for managing complex multi-agent workflows.
+
 
 * **Commons upgrade**
   
-The Python dependencies are now in `commons/engine/` in the `Universal_Context_Engine_UI.ipynb`:
+The Python dependencies are now in `commons/engine/` in the `Universal_Context_Engine_UI.ipynb` to facilitate a deployment to your environment:
 
 ```python
 !curl -Lf https://raw.githubusercontent.com/Denis2054/Context-Engineering/main/commons/engine/utils.py --output utils.py
