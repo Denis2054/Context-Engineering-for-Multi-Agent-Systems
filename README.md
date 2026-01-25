@@ -71,12 +71,13 @@ By the end of this book, you’ll be equipped with the skills needed to engineer
 <hr>
 
 <p align="center">
-  <img width="600" alt="Workshop Banner" src="https://github.com/user-attachments/assets/6a281137-8c87-4feb-ab30-5979fbba5738" />
+  <img width="600" alt="Workshop Banner" src="./media/workshop.png" />
 </p>
 <p align="center">
   <strong>✨ Workshop Completed — January 2026</strong><br>
   Thank you to everyone who participated in the Context Engineering workshop.
 </p>
+
 
 <hr>
 
