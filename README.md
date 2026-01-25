@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="./media/context_engineering_mas.png" alt="Context Engineering for Multi-Agent Systems Book Cover" width="300">
-</p>
-
 <h1 align="center">
 Context Engineering  for Multi-Agent Systems, First Edition</h1>
 <p align="center">This is the code repository for <a href ="https://www.packtpub.com/en-us/product/context-engineering-for-multi-agent-systems-9781806690046"> Context Engineering  for Multi-Agent Systems, First Edition</a>, published by Packt.</p>
