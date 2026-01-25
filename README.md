@@ -1,14 +1,7 @@
-<p align="center">
-  <a href="https://www.eventbrite.com/e/context-engineering-for-agentic-ai-workshop-tickets-1975400249322">
-    <img width="2160" height="1080" alt="Github Image" src="https://github.com/user-attachments/assets/6a281137-8c87-4feb-ab30-5979fbba5738" />
-   </a>
-</p>
-
-
 <h1 align="center">
 Context Engineering  for Multi-Agent Systems, First Edition</h1>
 <p align="center">This is the code repository for <a href ="https://www.packtpub.com/en-us/product/context-engineering-for-multi-agent-systems-9781806690046"> Context Engineering  for Multi-Agent Systems, First Edition</a>, published by Packt.</p>
-<p align="center">Last updated: January 24, 2026</p>
+<p align="center">Last updated: January 25, 2026</p>
 
 <p align="center">See the <a href="./CHANGELOG.md">Changelog</a> for updates, fixes, and upgrades(past, present, coming).</p>
 
@@ -75,9 +68,21 @@ By the end of this book, you’ll be equipped with the skills needed to engineer
 
   </details>
 
+<hr>
+
+<p align="center">
+  <img width="600" alt="Workshop Banner" src="https://github.com/user-attachments/assets/6a281137-8c87-4feb-ab30-5979fbba5738" />
+</p>
+<p align="center">
+  <strong>✨ Workshop Completed — January 2026</strong><br>
+  Thank you to everyone who participated in the Context Engineering workshop.
+</p>
+
+<hr>
+
+
 <details open> 
   <summary><h2>Chapters</summary>
-
 
 | Chapters | Colab | Kaggle |  Studio Lab |
 | :-------- | :-------- | :------- | :-------- |
