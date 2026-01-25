@@ -6,11 +6,11 @@ This changelog contains notable updates (past, present, and upcoming) to the **C
 
 ## [January 25, 2026]
 
-### Tenacity upgrade
+### Tenacity update
 
 Tenacity, a Python library that provides flexible retry logic for handling transient errors, is part of Google Colab's environment.
 Google Colab upgraded its runtime to Tenacity with >=9.0.0, which introduces breaking changes compared to the 8.x series.
-Updated notebooks and `utlils.py` to ensure compatibility with Tenacity.
+The `.ipynb` notebooks and `utlils.py` were updated to ensure compatibility with Tenacity.
 
 ## [January 24, 2026 release]
 ### 🐬New **Sovereign Universal Context Engine:**
