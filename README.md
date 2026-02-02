@@ -82,7 +82,7 @@ By the end of this book, you’ll be equipped with the skills needed to engineer
 <hr>
 
 <p align="center">
-  <strong>📣 Upcoming Live Event — February 2026</strong><br>
+  <strong>📣 Upcoming Free Live Event — February 2026</strong><br>
   Join the live LinkedIn session on Context Engineering and Multi‑Agent Systems.<br>
   <a href="https://www.linkedin.com/posts/denis-rothman_ai-agenticera-contextengineering-activity-7424026873652850688-eXw8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAkgWIQBjSA0tmThRb2WkI7foehq89Q4-nA">
     👉 Click here to view the event on LinkedIn
