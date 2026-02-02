@@ -79,8 +79,8 @@ By the end of this book, you’ll be equipped with the skills needed to engineer
   <strong>✨ Workshop Completed — January 2026</strong><br>
   Thank you to everyone who participated in the Context Engineering workshop.
 </p>
-<hr>
 
+<hr>
 <p align="center">
   <strong>📣 Upcoming Free Live Event — February 2026</strong><br>
   Join the live LinkedIn session on Context Engineering and Multi‑Agent Systems.<br>
@@ -88,7 +88,6 @@ By the end of this book, you’ll be equipped with the skills needed to engineer
     👉 Click here to view the event on LinkedIn
   </a>
 </p>
-
 <hr>
 
 
