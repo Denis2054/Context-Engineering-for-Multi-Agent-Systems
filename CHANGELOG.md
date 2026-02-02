@@ -3,6 +3,11 @@
 This changelog contains notable updates (past, present, and upcoming) to the **Context Engineering for Multi-Agent Systems** repository.   
 🐬 Indicates *new bonus notebooks* to explore. 
 
+## [February 2, 2026]
+
+Download path tweaked during Quality Control.        
+Software Evolution Timeline verified:
+[**🛰️ View Software Evolution Timeline**](https://denis2054.github.io/Context-Engineering-for-Multi-Agent-Systems/media/index.html)
 
 ## [January 25, 2026]
 
