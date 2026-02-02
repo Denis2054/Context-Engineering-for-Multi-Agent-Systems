@@ -207,7 +207,13 @@ Create a GitHub or local workspace containing at least:
   <summary><h2>About the Author</summary>
  
 ### ✅ Get to know Author
-_Denis Rothman_ graduated from Sorbonne University and Paris-Diderot University, designing one of the very first word2matrix patented embedding and patented AI conversational agents. He began his career authoring one of the first AI cognitive Natural Language Processing (NLP) chatbots applied as an automated language teacher for Moet et Chandon and other companies. He authored an AI resource optimizer for IBM and apparel producers. He then authored an Advanced Planning and Scheduling (APS) solution used worldwide.
+Denis Rothman is an AI systems architect and author known for bridging foundational AI research with modern generative and agentic architectures. A graduate of Sorbonne University and Paris‑Diderot University, he designed one of the earliest patented word2matrix numerical encoding systems and one of the first industrial conversational agents, deployed as an automated language teacher for Moët & Chandon and other global companies.
+
+Throughout his career, Denis has built large‑scale AI systems across industries from IBM resource optimizers to worldwide Advanced Planning and Scheduling (APS) solutions. He has always focused on transparent, explainable, and production‑ready architectures.
+
+In recent years, he has become a leading voice in the agentic era of AI, authoring influential books on transformers, RAG pipelines, business‑ready generative AI, and now Context Engineering for Multi‑Agent Systems. His work emphasizes model‑agnostic engineering, semantic design, and the construction of resilient, domain‑independent AI systems that go far beyond prompting.
+
+Denis continues to publish hands‑on frameworks, open-source architectures, and practical guides that help engineers, researchers, and organizations build the next generation of verifiable, context‑driven AI systems.
 
 <a href="https://www.linkedin.com/in/denis-rothman-0b034043/">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" width="30" height="30"/>
