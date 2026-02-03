@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Hybrid AI | Multi-Level Probabilistic-Symbolic Topology</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600&family=Fira+Code:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --stability: #10b981;
+            --chaos: #ef4444;
+            --projection: #3b82f6;
+            --meta: #a855f7;
+            --physical: #f59e0b;
+            --grid: #1e293b;
+        }
+        body { 
+            background-color: #020617; 
+            color: #f8fafc; 
+            font-family: 'Space Grotesk', sans-serif;
+            overflow-x: hidden;
+        }
+        .fira { font-family: 'Fira Code', monospace; }
+        
+        .ambient-bg {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle at 50% 50%, #1e1b4b 0%, #020617 70%);
+            z-index: -1;
+        }
+        
+        .glass {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(51, 65, 85, 0.5);
+        }
+
+        /* SVG Animations */
+        @keyframes orbit {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .meta-orbit { transform-origin: center; animation: orbit 20s linear infinite; }
+        .node-circle { fill: #1e293b; stroke: #334155; stroke-width: 1; transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+        .node-circle:hover { stroke: var(--projection); stroke-width: 2; r: 12; }
+        .path-line { fill: none; stroke: rgba(148, 163, 184, 0.2); stroke-width: 1.5; stroke-dasharray: 4 2; }
+        .active-path { fill: none; stroke: var(--projection); stroke-width: 2; stroke-linecap: round; filter: drop-shadow(0 0 8px #3b82f6); }
+        .backtrack-arc { fill: none; stroke: var(--chaos); stroke-width: 2; stroke-dasharray: 5 5; stroke-linecap: round; }
+        
+        @keyframes flow {
+            from { stroke-dashoffset: 30; }
+            to { stroke-dashoffset: 0; }
+        }
+        .flow-line {
+            fill: none;
+            stroke-width: 2;
+            stroke-dasharray: 10 5;
+            animation: flow 1s linear infinite;
+        }
+
+        .label-text { font-size: 10px; fill: #94a3b8; font-family: 'Fira Code'; text-transform: uppercase; letter-spacing: 0.05em; }
+        .title-text { font-size: 14px; font-weight: 600; fill: #f8fafc; }
+        .timeline-tag { background: var(--physical); color: #000; padding: 2px 8px; border-radius: 4px; font-size: 10px; font-weight: 900; }
+        
+        .stability-ring { fill: none; stroke: var(--stability); stroke-width: 0.5; opacity: 0.3; }
+
+        @keyframes radar {
+            0% { r: 5; opacity: 1; }
+            100% { r: 40; opacity: 0; }
+        }
+        .radar-pulse { fill: none; stroke: var(--physical); stroke-width: 1; animation: radar 2s infinite; }
+    </style>
+</head>
+<body class="p-6">
+    <div class="ambient-bg"></div>
+    
+    <div class="max-w-7xl mx-auto">
+        <!-- Main Header -->
+        <header class="mb-12 flex justify-between items-end">
+            <div>
+                <div class="flex items-center mb-1 gap-3">
+                    <span class="timeline-tag">1997 Began Design and deployment in production in C++</span>
+                    <span class="text-xs text-purple-400 fira">Metacognition // Universal Logic // Kinetic Agency</span>
+                </div>
+                <h1 class="text-4xl font-light tracking-tighter text-white">
+                    <span class="text-blue-500 font-semibold">Universal Hybrid AI | Multi-Level Probabilistic-Symbolic Topology</span> 
+                    <span class="text-slate-500">/</span> 
+                    Multi-Level Probabilistic-Symbolic Topolog
+                </h1>
+                <p class="text-slate-400 fira text-sm mt-2">Stability Topology // Recursive State Unwinding // Physical Trajectory</p>
+            </div>
+            <div class="text-right hidden md:block">
+                <div class="text-[10px] text-slate-500 fira uppercase tracking-[0.2em]">Full Journey Bibliography</div>
+                <div class="text-xs text-blue-400 fira">Self-Configuring :: Physics-Agnostic Agent</div>
+            </div>
+        </header>
+
+        <!-- LEVEL I: METACONTROL (SOLVER) -->
+        <div class="mb-4 text-[10px] text-purple-400 fira uppercase tracking-[0.3em] font-bold">Level I: Metacognitive Solver Architecture</div>
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-4">
+            <div class="lg:col-span-1 space-y-6">
+                <div class="glass p-6 rounded-2xl border-purple-500/20">
+                    <h3 class="text-purple-400 text-xs font-bold fira mb-4 tracking-widest uppercase">Systemic Audit</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <span class="block text-white text-sm font-semibold">Pre-Flight Integrity</span>
+                            <p class="text-xs text-slate-400 mt-1">Scans abstract tensors for logical inconsistencies before execution.</p>
+                        </div>
+                        <div>
+                            <span class="block text-white text-sm font-semibold">Auto-Hyper-Config</span>
+                            <p class="text-xs text-slate-400 mt-1">Analyzes grid complexity to auto-tune search depth and precision.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-3 glass rounded-3xl p-4 relative min-h-[400px] flex items-center justify-center overflow-hidden">
+                <svg viewBox="0 0 800 400" class="w-full h-full">
+                    <circle cx="400" cy="200" r="160" fill="none" stroke="#3b82f6" stroke-width="0.5" opacity="0.2" />
+                    <g class="meta-orbit">
+                        <circle cx="400" cy="200" r="180" fill="none" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="10 20" />
+                        <circle cx="400" cy="20" r="8" fill="#a855f7" />
+                        <text x="400" y="10" class="label-text fill-purple-300" text-anchor="middle">Auto-Tuning</text>
+                        <circle cx="580" cy="200" r="8" fill="#a855f7" />
+                        <text x="600" y="205" class="label-text fill-purple-300" text-anchor="start">Data Integrity Audit</text>
+                    </g>
+                    <g transform="translate(400, 200)">
+                        <circle r="45" class="fill-purple-500/10 stroke-purple-500" stroke-width="1" />
+                        <text y="5" class="text-label fill-purple-400" text-anchor="middle" style="font-size: 14px;">META-SOLVER</text>
+                    </g>
+                </svg>
+            </div>
+        </div>
+
+        <!-- CONNECTOR 1-2 -->
+        <div class="flex justify-center h-16">
+            <svg width="60" height="60" viewBox="0 0 100 100">
+                <path d="M50 0 V100" class="flow-line" stroke="var(--meta)" />
+            </svg>
+        </div>
+
+        <!-- LEVEL II: UNIVERSAL LOGIC (FINDER - DETAILED TOPOLOGY) -->
+        <div class="mb-4 text-[10px] text-blue-400 fira uppercase tracking-[0.3em] font-bold">Level II: Universal Finder Engine & Path Discovery</div>
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 mb-4">
+            <div class="lg:col-span-1 space-y-6">
+                <div class="glass p-6 rounded-2xl">
+                    <h3 class="text-blue-400 text-xs font-bold fira mb-4 tracking-widest uppercase">Abstract Tensors</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <span class="block text-white text-sm font-semibold">Perception Grids</span>
+                            <p class="text-xs text-slate-400 mt-1">Reality is filtered into multi-layered grids. Furniture, time, and music notes are equivalent index offsets.</p>
+                        </div>
+                        <div>
+                            <span class="block text-white text-sm font-semibold">The Tuple {E, L, C}</span>
+                            <p class="text-xs text-slate-400 mt-1">Event, Location, Constraint. The atom of the system, processed without domain semantic load.</p>
+                        </div>
+                        <div>
+                            <span class="block text-white text-sm font-semibold">Lyapunov Goal</span>
+                            <p class="text-xs text-slate-400 mt-1">The system's real-world constraint. Stability is reached when differential efficiency is maximized.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass p-6 rounded-2xl border-red-900/30">
+                    <h3 class="text-red-400 text-xs font-bold fira mb-4 tracking-widest uppercase">Self-regulated Unwind</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed italic">
+                        "The machine doesn't backtrack; it collapses the failed projection and scrubs the grid to restore entropy before the next recursive attempt."
+                    </p>
+                </div>
+            </div>
+
+            <div class="lg:col-span-3 glass rounded-3xl p-4 relative min-h-[700px] flex items-center justify-center overflow-hidden">
+                <svg viewBox="0 0 800 700" class="w-full h-full">
+                    <!-- Concentric Rings of Stability -->
+                    <circle cx="400" cy="350" r="100" class="stability-ring" />
+                    <circle cx="400" cy="350" r="200" class="stability-ring" style="opacity: 0.15;" />
+                    <circle cx="400" cy="350" r="300" class="stability-ring" style="opacity: 0.05;" />
+
+                    <!-- Lyapunov Center -->
+                    <g transform="translate(400, 350)">
+                        <circle r="40" class="fill-blue-500/10 stroke-blue-500" stroke-width="1" />
+                        <text y="5" class="text-label text-center fill-blue-400" text-anchor="middle" style="font-size: 14px;">LYAPUNOV CORE</text>
+                        <text y="20" class="sub-label fill-slate-500" text-anchor="middle" style="font-size: 8px;">STABILITY EQUILIBRIUM</text>
+                    </g>
+
+                    <!-- Recursive State Map (Abstracted Nodes) -->
+                    <g transform="translate(100, 150)">
+                        <circle r="10" class="node-circle" />
+                        <text y="-20" class="title-text" text-anchor="middle">Input Tensor</text>
+                        <text y="-5" class="label-text" text-anchor="middle">Perception Grid</text>
+                    </g>
+                    
+                    <path d="M110 160 Q 250 200 360 330" class="active-path" stroke-dasharray="200" stroke-dashoffset="0">
+                        <animate attributeName="stroke-dashoffset" from="200" to="0" dur="3s" repeatCount="indefinite" />
+                    </path>
+
+                    <g transform="translate(300, 100)">
+                        <circle r="8" class="node-circle" />
+                        <text y="-15" class="label-text" text-anchor="middle">Finder agent</text>
+                    </g>
+                    <g transform="translate(550, 180)">
+                        <circle r="8" class="node-circle" />
+                        <text y="-15" class="label-text" text-anchor="middle">Constraint Check</text>
+                    </g>
+                    <g transform="translate(650, 450)">
+                        <circle r="8" class="node-circle" />
+                        <text y="-15" class="label-text" text-anchor="middle">Reality Map</text>
+                    </g>
+
+                    <path d="M100 150 L 300 100 L 550 180 L 650 450 L 440 350" class="path-line" />
+                    
+                    <g>
+                        <path d="M650 450 Q 750 600 400 650 Q 50 600 100 150" class="backtrack-arc" />
+                        <text x="400" y="675" class="label-text fill-red-400" text-anchor="middle">Unwind agent</text>
+                        <g transform="translate(400, 650)">
+                            <rect x="-60" y="-15" width="120" height="30" rx="15" fill="#450a0a" stroke="#ef4444" />
+                            <text y="5" class="fira text-[9px] fill-red-100" text-anchor="middle">State restore agent</text>
+                        </g>
+                    </g>
+
+                    <g transform="translate(50, 600)">
+                        <rect width="180" height="80" rx="12" class="glass" />
+                        <circle cx="20" cy="20" r="4" fill="var(--stability)" />
+                        <text x="35" y="24" class="label-text" style="font-size: 8px;">Deterministic (1-P)</text>
+                        <circle cx="20" cy="40" r="4" fill="var(--projection)" />
+                        <text x="35" y="44" class="label-text" style="font-size: 8px;">Active Projection</text>
+                        <circle cx="20" cy="60" r="4" fill="var(--chaos)" />
+                        <text x="35" y="64" class="label-text" style="font-size: 8px;">State Restoration</text>
+                    </g>
+                    <text x="320" y="75" class="fira text-[8px] fill-blue-300">Relations :: Agnostic Links</text>
+                    <text x="560" y="155" class="fira text-[8px] fill-blue-300">Hyperpameters :: Reasoning Trigger</text>
+                </svg>
+            </div>
+        </div>
+
+        <!-- CONNECTOR 2-3 -->
+        <div class="flex justify-center h-16">
+            <svg width="60" height="60" viewBox="0 0 100 100">
+                <path d="M50 0 V100" class="flow-line" stroke="var(--physical)" />
+            </svg>
+        </div>
+
+        <!-- LEVEL III: PHYSICAL AGENT -->
+        <div class="mb-4 text-[10px] text-amber-400 fira uppercase tracking-[0.3em] font-bold">Level III: Physical Agent & Spatial Trajectory</div>
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+            <div class="lg:col-span-1 space-y-6">
+                <div class="glass p-6 rounded-2xl border-amber-500/20">
+                    <h3 class="text-amber-400 text-xs font-bold fira mb-4 tracking-widest uppercase">Spatial Mapping</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <span class="block text-white text-sm font-semibold">Coordinate Projection</span>
+                            <p class="text-xs text-slate-400 mt-1">Translation of the {L} location offset into precise coordinates (Buildings, Racks, Piers).</p>
+                        </div>
+                        <div>
+                            <span class="block text-white text-sm font-semibold">Lyapunov Trajectories</span>
+                            <p class="text-xs text-slate-400 mt-1">Movement as a particle in a vector field, gravitating toward stable task completion nodes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <h3 class="text-amber-400 text-xs font-bold fira mb-4 tracking-widest uppercase">Real-World Agency</h3>
+                    <p class="text-xs text-slate-400 leading-relaxed italic">"The path is not just calculated; it is felt by the agent as a differential pressure towards stability in physical space."</p>
+                </div>
+            </div>
+
+            <div class="lg:col-span-3 glass rounded-3xl p-4 relative min-h-[600px] flex items-center justify-center overflow-hidden">
+                <svg viewBox="0 0 800 600" class="w-full h-full">
+                    <defs>
+                        <pattern id="smallGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+                            <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(245, 158, 11, 0.1)" stroke-width="0.5"/>
+                        </pattern>
+                        <marker id="arrow" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+                            <path d="M0,0 L0,6 L9,3 z" fill="var(--stability)" />
+                        </marker>
+                    </defs>
+                    <rect width="100%" height="100%" fill="url(#smallGrid)" />
+                    
+                    <!-- Physical Entities -->
+                    <rect x="100" y="100" width="150" height="100" fill="none" stroke="var(--physical)" stroke-width="1" stroke-dasharray="2 2" />
+                    <text x="175" y="155" class="label-text fill-amber-500/50" text-anchor="middle">Location l</text>
+                    
+                    <rect x="500" y="300" width="100" height="200" fill="none" stroke="var(--physical)" stroke-width="1" stroke-dasharray="2 2" />
+                    <text x="550" y="405" class="label-text fill-amber-500/50" text-anchor="middle">x,y coordinates</text>
+
+                    <!-- Agent Trajectory -->
+                    <path d="M 50 500 Q 200 450 300 300 T 550 350" fill="none" stroke="var(--physical)" stroke-width="3" filter="drop-shadow(0 0 5px #f59e0b)">
+                        <animate attributeName="stroke-dasharray" from="0, 1000" to="1000, 0" dur="4s" repeatCount="indefinite" />
+                    </path>
+
+                    <g transform="translate(550, 350)">
+                        <circle r="8" fill="var(--physical)" />
+                        <circle r="5" class="radar-pulse" />
+                        <text x="15" y="5" class="label-text fill-amber-400">Physical Agent</text>
+                    </g>
+
+                    <line x1="300" y1="300" x2="340" y2="220" stroke="var(--stability)" stroke-width="1" marker-end="url(#arrow)" />
+                    <text x="350" y="215" class="label-text fill-green-400">Stability Vector</text>
+
+                    <g transform="translate(50, 480)">
+                        <rect width="180" height="80" rx="12" class="glass" />
+                        <circle cx="20" cy="20" r="4" fill="var(--physical)" />
+                        <text x="35" y="24" class="label-text" style="font-size: 8px;">Physical Trajectory</text>
+                        <circle cx="20" cy="40" r="4" fill="var(--stability)" />
+                        <text x="35" y="44" class="label-text" style="font-size: 8px;">Lyapunov Gradient</text>
+                        <circle cx="20" cy="60" r="4" fill="var(--chaos)" />
+                        <text x="35" y="64" class="label-text" style="font-size: 8px;">Collision Constraint</text>
+                    </g>
+                </svg>
+
+                <div class="absolute top-8 right-8 w-48 hidden xl:block">
+                    <div class="glass p-3 rounded-xl border-amber-500/30">
+                        <span class="text-[10px] text-amber-400 fira uppercase font-bold">Innovation C</span>
+                        <p class="text-[11px] text-slate-300 leading-tight mt-1">
+                            The <b>Physics-Logic Bridge</b>: Movement is a real-time adjustment where <code>sin/cos</code> transformations translate abstract tuples into spatial reality.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="mt-12 border-t border-slate-800 pt-8 grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div class="space-y-2">
+                <span class="text-xs text-slate-500 fira uppercase">Architecture</span>
+                <p class="text-sm text-slate-300">The core engine interprets a domain-blind instruction set defined by abstract relational weights.</p>
+            </div>
+            <div class="space-y-2">
+                <span class="text-xs text-slate-500 fira uppercase">Dynamic Cooperation</span>
+                <p class="text-sm text-slate-300">Complexity triggers <code>Backtrack agent</code>. restoration agent of the system state converges on stable sequences.</p>
+            </div>
+            <div class="space-y-2">
+                <span class="text-xs text-slate-500 fira uppercase">Stability Filtering</span>
+                <p class="text-sm text-slate-300">The environment is a grid. The engine projects logic into it, filtering reality until mathematical stability is locked via Lyapunov equations.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
