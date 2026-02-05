@@ -2,7 +2,7 @@
 
 First off, thank you for considering contributing to the **Context Engine**! It’s people like you who help make this a robust, sovereign framework for the Agentic Era.
 
-When contributing to this repository, please first discuss the change you wish to make via the **Discussions** tab or by opening an **issue**.
+When contributing to this repository, please first discuss the change you wish to make via the **Discussions** tab or by opening an issue in the **Issues** tab.
 
 ---
 
