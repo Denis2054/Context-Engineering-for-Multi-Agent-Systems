@@ -1,4 +1,4 @@
-# Context Engineering for Multi-Agent Systems, First Edition
+# Context Engineering for Multi-Agent Systems
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 <img src="./Chapter10/universal_context_engine.png" alt="Universal Context Engine Blueprint" width="40%" align="left" style="margin-right: 20px;">
