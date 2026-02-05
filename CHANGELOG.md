@@ -20,6 +20,11 @@ Structural Invariance Framework: Added a theoretical breakdown of *P* (Probabili
 
 LinkedIn Integration: Added a direct link to professional milestones and technical breakthroughs for evidence and enhanced credibility for deep-dive research.
 
+### Added
+- **AI Discovery Manifest (`llms.txt`):** Deployed a machine-readable `llms.txt` in the root directory. This manifest is optimized for AI agents and search engines to accurately index the Context Engine's capabilities, technical stack, and domain-agnostic architecture.
+- **Keyword Optimization:** Updated repository metadata with high-impact keywords: `mcp`, `agentic-rag`, `universal-context-engine`, and `deterministic-ai` to improve visibility within the agentic AI ecosystem.
+
+
 ## [February 2, 2026]
 
 1.Download path tweaked during Quality Control.        
