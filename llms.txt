@@ -1,0 +1,38 @@
+# Context Engineering for Multi-Agent Systems
+
+> In 21st century AI, LLMs are the agents, and the MAS is the environment they operate in.
+
+This repository provides a production-ready, glass-box framework for building domain-agnostic Multi-Agent Systems (MAS). It moves beyond prompting into Context Engineering, utilizing the Model Context Protocol (MCP) to orchestrate specialized agents within a verifiable "Context Engine" architecture.
+
+## Core Metadata
+- **Author:** Denis Rothman
+- **Key Concepts:** Context Engineering, Multi-Agent Systems (MAS), Semantic Blueprints, High-Fidelity RAG, Model Context Protocol (MCP)
+- **Primary Model Support:** Optimized for GPT-5.1 (adaptive reasoning) and backward compatible with GPT-4 series
+- **Status:** Updated February 2026
+
+## Key Features
+- **Universal Context Engine:** A domain-agnostic core that runs cross-domain use cases (e.g., Legal and Marketing) without changing code.
+- **High-Fidelity RAG:** Research agent with automated input sanitization and source-verifiable citations.
+- **Token Analytics:** Integrated tracking of Input/Output tokens and cost-efficiency dashboards.
+- **Sovereign Architecture:** A "Glass Box" approach providing full transparency into agent reasoning traces.
+
+## Technical Stack
+- **Languages:** Python 3.10+
+- **Protocols:** Model Context Protocol (MCP)
+- **Vector DB:** Pinecone
+- **LLM APIs:** OpenAI (latest standards)
+- **Dependencies:** Tenacity (>=9.0.0), Tiktoken, FastAPI, OpenAI
+
+## Project Structure
+- `/Chapter10/`: Universal Context Engine (Batch & UI versions)
+- `/commons/engine/`: Core logic including `engine.py`, `agents.py`, and `registry.py`
+- `/Chapter08-09/`: Specialized implementations for Legal and Strategic Marketing domains
+- `CHANGELOG.md`: Detailed history of GPT-5.1 upgrades and framework evolution
+
+## Getting Started
+1. Obtain OpenAI and Pinecone API keys.
+2. Use provided Google Colab or Kaggle badges in the README for instant deployment.
+3. Reference `engine.py` for the main execution logic and `agents.py` for specialist agent definitions.
+
+---
+*For a detailed narrative of the software evolution from 1980s Latent Semantic Structures to the 2026 Agentic Era, see the media/index.html timeline.*
