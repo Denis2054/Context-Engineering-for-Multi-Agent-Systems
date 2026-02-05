@@ -1,6 +1,6 @@
-<h1 align="center">
-Context Engineering  for Multi-Agent Systems, First Edition</h1>
-<p align="center">This is the code repository for <a href ="https://www.packtpub.com/en-us/product/context-engineering-for-multi-agent-systems-9781806690046"> Context Engineering  for Multi-Agent Systems, First Edition</a>, published by Packt.</p>
+# Context Engineering for Multi-Agent Systems, First Edition
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 <p align="center"><i>In 21st century AI, LLMs are the agents, and the MAS is the environment they operate in.</i></p>
 <p align="center">Copyright 2025-26, Denis Rothman. Last updated: February 2, 2026</p>
 <p align="center">See the <a href="./CHANGELOG.md">Changelog</a> for updates, fixes, and upgrades(past, present, coming).</p>
