@@ -56,26 +56,29 @@ Generative AI is powerful, yet often unpredictable. This guide shows you how to 
 Written by an AI guru and author of various cutting-edge AI books, this book takes you on a hands-on journey from the foundations of context design to building a fully operational Context Engine. Instead of relying on brittle prompts that give only simple instructions, you’ll begin with semantic blueprints that map goals and roles with precision, then orchestrate specialized agents using the Model Context Protocol (MCP). As the engine evolves, you’ll integrate memory and high-fidelity retrieval with citations, implement safeguards against data poisoning and prompt injection, and enforce moderation to keep outputs aligned with policy. You’ll also harden the system into a resilient architecture, then see it pivot seamlessly across domains, from legal compliance to strategic marketing, proving its domain independence.
 By the end of this book, you’ll be equipped with the skills needed to engineer an adaptable, verifiable architecture you can repurpose across domains and deploy with confidence.
 </details>
+
+<details open>
+<summary><h2>Key Architecture Highlights</h2></summary>
+<ul>
+<li><strong>Glass Box Architecture:</strong> Provides 100% observability into agent reasoning through interactive trace dashboards and detailed execution logs.</li>
+<li><strong>Universal Context Engine:</strong> A domain-agnostic core that runs cross-domain use cases (e.g., Legal and Marketing) without changing a single line of code.</li>
+<li><strong>High-Fidelity RAG:</strong> Implements research agents with automated input sanitization and source-verifiable citations to ensure accuracy and defense.</li>
+<li><strong>Protocol-Driven:</strong> Orchestrates specialized agents using the Model Context Protocol (MCP) for seamless, modular multi-agent workflows.</li>
+<li><strong>Token & Cost Analytics:</strong> Integrated tracking of input/output tokens to monitor cost-efficiency and model verbosity at every step.</li>
+</ul>
+</details>
+
 <details open> 
   <summary><h2>Key Learnings</summary>
 <ul>
-
 <li>Develop memory models to retain short-term and cross-session context</li>
-
 <li>Craft semantic blueprints and drive multi-agent orchestration with MCP</li>
-
 <li>Implement high-fidelity RAG pipelines with verifiable citations</li>
-
 <li>Apply safeguards against prompt injection and data poisoning</li>
-
 <li>Enforce moderation and policy-driven control in AI workflows</li>
-
 <li>Repurpose the Context Engine across legal, marketing, and beyond</li>
-
 <li>Deploy a scalable, observable Context Engine in production</li>
-
 </ul>
-
   </details>
 
 <hr>
