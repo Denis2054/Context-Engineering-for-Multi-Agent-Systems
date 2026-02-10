@@ -6,7 +6,7 @@ This changelog contains notable updates (past, present, and upcoming) to the **C
 ## [February 10, 2026]
 
 Upgraded the README with state-of-the art approaches to be educational bridge between the book, *Context Engineering for Multi-Agent Systems* that containts the architecture and code 
-and the hands-on repository.
+and the hands-on repository. Also, the README now contains links to the media folder of the repository.
 
 ## [February 5, 2026]
 
