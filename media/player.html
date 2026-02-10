@@ -2,39 +2,62 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agentic AI Framework Player</title>
     <style>
         body { 
             background-color: #0d1117; 
             margin: 0; 
-            padding: 40px 20px;
+            padding: 20px;
             color: #c9d1d9; 
-            font-family: sans-serif; 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
+            justify-content: center;
+            min-height: 100vh;
         }
+
+        .player-wrapper {
+            width: 100%;
+            max-width: 960px; /* Standard HD width */
+            aspect-ratio: 16 / 9; /* Forces the correct video shape */
+            background: #000;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+
         video { 
             width: 100%; 
-            max-width: 900px; 
-            border: 1px solid #30363d; 
-            border-radius: 8px; 
-            background: #000; /* Shows black box while loading */
+            height: 100%; 
+            object-fit: contain; /* Ensures the video fits without stretching */
+            display: block;
         }
+
         .text { 
             margin-top: 30px; 
-            font-weight: bold; 
+            font-weight: 600; 
             text-align: center; 
-            max-width: 700px; 
+            max-width: 800px; 
+            font-size: 1.1rem;
+            line-height: 1.6;
         }
+
+        /* The "Nuclear Option" to hide any residual transcript boxes */
+        ::cue { display: none !important; }
+        track { display: none !important; }
     </style>
 </head>
 <body>
 
-    <video controls autoplay>
-        <source src="Natural language as program_ the agentic AI framework.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <div class="player-wrapper">
+        <video controls autoplay playsinline>
+            <source src="Natural%20language%20as%20program_%20the%20agentic%20AI%20framework.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
 
     <div class="text">
         In 21st‑century Agentic AI, Natural‑Language‑Programmed LLMs are the agents, and the domain‑agnostic dual‑RAG MAS is the environment they operate in.
