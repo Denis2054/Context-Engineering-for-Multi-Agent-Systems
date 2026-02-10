@@ -105,10 +105,8 @@ The deep dive unpacks each term step‑by‑step:
 📺**Watch the full deep dive on LinkedIn:**  
 https://www.linkedin.com/posts/denis-rothman_ai-agenticera-contextengineering-activity-7424026873652850688-eXw8
 
-
-
 <details open> 
-  <summary><h2>Chapters</summary>
+  <summary><h2>Chapters: From Architecture to code</summary>
 
 | Chapters | Colab | Kaggle |  Studio Lab |
 | :-------- | :-------- | :------- | :-------- |
