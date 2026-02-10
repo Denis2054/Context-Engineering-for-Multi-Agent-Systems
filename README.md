@@ -102,8 +102,7 @@ The deep dive unpacks each term step‑by‑step:
 - **Environment design** — how telemetry, context layers, and MCP orchestrate agents  
 - **Full drill‑down to code** — notebooks, pipelines, and execution traces  
 - **Full climb back up** — how the code re‑forms the architecture end‑to‑end  
-📺**Watch the full deep dive on LinkedIn:**  
-https://www.linkedin.com/posts/denis-rothman_ai-agenticera-contextengineering-activity-7424026873652850688-eXw8
+[📺**Watch the full deep dive on LinkedIn**](https://www.linkedin.com/posts/denis-rothman_ai-agenticera-contextengineering-activity-7424026873652850688-eXw8)
 
 <details open> 
   <summary><h2>Chapters: From Architecture to code</summary>
