@@ -1,67 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agentic AI Framework Player</title>
-    <style>
-        body { 
-            background-color: #0d1117; 
-            margin: 0; 
-            padding: 20px;
-            color: #c9d1d9; 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 100vh;
-        }
+<style>
+    body { 
+        background-color: #0d1117; 
+        margin: 0; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+        min-height: 100vh;
+        font-family: sans-serif;
+    }
 
-        .player-wrapper {
-            width: 100%;
-            max-width: 960px; /* Standard HD width */
-            aspect-ratio: 16 / 9; /* Forces the correct video shape */
-            background: #000;
-            border: 1px solid #30363d;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
-        }
+    /* This acts as a 'window' to hide the top/bottom sections */
+    .video-crop-container {
+        width: 90%;
+        max-width: 800px;
+        height: 450px; /* Adjust this height to hide the transcript below */
+        overflow: hidden; /* This hides the messy parts */
+        border: 2px solid #30363d;
+        border-radius: 12px;
+        position: relative;
+        background: black;
+    }
 
-        video { 
-            width: 100%; 
-            height: 100%; 
-            object-fit: contain; /* Ensures the video fits without stretching */
-            display: block;
-        }
+    video {
+        width: 100%;
+        height: 300%; /* We make the video 'taller' than the box */
+        position: absolute;
+        top: -100%; /* Move the video UP to hide the StreamYard logo */
+        left: 0;
+        object-fit: contain;
+    }
 
-        .text { 
-            margin-top: 30px; 
-            font-weight: 600; 
-            text-align: center; 
-            max-width: 800px; 
-            font-size: 1.1rem;
-            line-height: 1.6;
-        }
+    .caption-text {
+        margin-top: 20px;
+        color: #c9d1d9;
+        font-weight: bold;
+        text-align: center;
+        max-width: 800px;
+        padding: 0 20px;
+    }
+</style>
 
-        /* The "Nuclear Option" to hide any residual transcript boxes */
-        ::cue { display: none !important; }
-        track { display: none !important; }
-    </style>
-</head>
-<body>
-
-<div class="player-wrapper">
+<div class="video-crop-container">
     <video controls autoplay playsinline>
         <source src="agentic_framework.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 </div>
 
-    <div class="text">
-        In 21st‑century Agentic AI, Natural‑Language‑Programmed LLMs are the agents, and the domain‑agnostic dual‑RAG MAS is the environment they operate in.
-    </div>
-
-</body>
-</html>
+<div class="caption-text">
+    In 21st‑century Agentic AI, Natural‑Language‑Programmed LLMs are the agents, and the domain‑agnostic dual‑RAG MAS is the environment they operate in.
+</div>
