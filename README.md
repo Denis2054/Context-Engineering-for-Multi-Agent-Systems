@@ -90,16 +90,21 @@ By the end of this book, you’ll be equipped with the skills needed to engineer
   Thank you to everyone who participated in the Context Engineering workshop.
 </p>
 
-<hr>
-<p align="center">
-  <strong>📣 Upcoming Free Live Event — February 10, 2026</strong><br>
-  Join the live LinkedIn session on Context Engineering and Multi‑Agent Systems.<br>
-  <a href="https://www.linkedin.com/posts/denis-rothman_ai-agenticera-contextengineering-activity-7424026873652850688-eXw8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAAkgWIQBjSA0tmThRb2WkI7foehq89Q4-nA">
-    👉 Click here to view the event on LinkedIn
-  </a>
-</p>
-<hr>
-<!-- ===== Event Completed — Replay Available on LinkedIn ===== -->
+
+## 🎥 Deep Dive: Architecture → Context → Agents → Code
+This recorded session walks through the entire stack behind the sentence:
+**“In 21st‑century Agentic AI, Natural‑Language‑Programmed LLMs are the agents, and the domain‑agnostic dual‑RAG MAS is the environment they operate in.”**
+The deep dive unpacks each term step‑by‑step:
+- **21st‑century Agentic AI** — why agents are natural‑language‑programmed programs  
+- **LLMs as agents** — how reasoning, memory, and protocols turn models into actors  
+- **Domain‑agnostic Context Engine** — the universal core that runs any use case  
+- **Dual‑RAG MAS** — the two‑channel research architecture (instructions + facts)  
+- **Environment design** — how telemetry, context layers, and MCP orchestrate agents  
+- **Full drill‑down to code** — notebooks, pipelines, and execution traces  
+- **Full climb back up** — how the code re‑forms the architecture end‑to‑end  
+📺**Watch the full deep dive on LinkedIn:**  
+https://www.linkedin.com/posts/denis-rothman_ai-agenticera-contextengineering-activity-7424026873652850688-eXw8
+
 
 
 <details open> 
