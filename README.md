@@ -46,7 +46,7 @@ Denis Rothman</p>
   &#8287;&#8287;&#8287;&#8287;&#8287;
 </p>
 <details open> 
-  <summary><h2>About the book</summary>
+ <summary><h2>About the book</h2></summary>.
 <a href="https://www.packtpub.com/en-us/product/context-engineering-for-multi-agent-systems-9781806690046">
 <img src="https://m.media-amazon.com/images/I/419o1BGjp0L.jpg" alt="Context Engineering  for Multi-Agent Systems, First Edition" height="1000px" align="right">
 </a>
@@ -81,9 +81,6 @@ By the end of this book, you’ll be equipped with the skills needed to engineer
 </ul>
   </details>
 
-
-
-
 ## 🎥 Deep Dive: Architecture → Context → Agents → Code
 This recorded session walks through the entire stack behind the sentence:
 **“In 21st‑century Agentic AI, Natural‑Language‑Programmed LLMs are the agents, and the domain‑agnostic dual‑RAG MAS is the environment they operate in.”**
@@ -96,9 +93,14 @@ The deep dive unpacks each term step‑by‑step:
 - **Full drill‑down to code** — notebooks, pipelines, and execution traces  
 - **Full climb back up** — how the code re‑forms the architecture end‑to‑end  
 [📺**Watch the full deep dive on LinkedIn**](https://www.linkedin.com/posts/denis-rothman_ai-agenticera-contextengineering-activity-7424026873652850688-eXw8)
-
+If you are an architect or lead looking for:
+✅ ROI & Domain Agnosticism logic
+✅ Glass-Box Observability traces
+✅ Sovereign RAG blueprints
+Join the engineering discussion here: [**Link to GitHub Discussion**](https://github.com/Denis2054/Context-Engineering-for-Multi-Agent-Systems/discussions/2)
+  
 <details open> 
-  <summary><h2>Chapters: From Architecture to code</summary>
+<summary><h2>Chapters: From Architecture to code</h2></summary>
 
 | Chapters | Colab | Kaggle |  Studio Lab |
 | :-------- | :-------- | :------- | :-------- |
@@ -136,14 +138,7 @@ The `Universal_Context_Engine.ipynb` version runs a list of explicit scenarios f
 The `Universal_Context_Engine_UI.ipynb`provides an IPython interface for interactive sessions that highlights how the industry is converging toward domain‑agnostic, environment‑driven agentic systems built on transparent, context‑rich architectures. 
 | <ul><li>🐬Universal_Context_Engine_UI.ipynb - January 24,2026 release</li></ul> | <a href="https://colab.research.google.com/github/Denis2054/Context-Engineering-for-Multi-Agent-Systems/blob/main/Chapter10/Universal_Context_Engine_UI.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a><br> | <a href="https://www.kaggle.com/kernels/welcome?src=https://github.com/Denis2054/Context-Engineering-for-Multi-Agent-Systems/blob/main/Chapter10/Universal_Context_Engine_UI.ipynb"><img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Open In Kaggle"></a><br> | <a href="https://studiolab.sagemaker.aws/import/github/Denis2054/Context-Engineering-for-Multi-Agent-Systems/blob/main/Chapter10/Universal_Context_Engine_UI.ipynb"><img src="https://studiolab.sagemaker.aws/studiolab.svg" alt="Open In Studio Lab"></a><br> |
 ![Context Engineering Production Blueprint](https://github.com/Denis2054/Context-Engineering-for-Multi-Agent-Systems/raw/main/Chapter10/context_engineering_blueprint.svg)
-
-
-
-
-
-
 </details>
-
 
 <details open> 
   <summary><h2>Requirements for this book</summary>
