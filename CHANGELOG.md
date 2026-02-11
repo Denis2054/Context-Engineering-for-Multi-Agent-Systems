@@ -3,6 +3,19 @@
 This changelog contains notable updates (past, present, and upcoming) to the **Context Engineering for Multi-Agent Systems** repository.   
 🐬 Indicates *new bonus notebooks* to explore. 
 
+## [February 11,2026]  Introduction of a🛡️ Sovereign AI & Open-Source Engineering section and code
+
+For organizations requiring **100% data privacy** and **zero external API dependencies**, this repository provides a dedicated **Sovereign Path**.  
+By leveraging high‑reasoning open‑source models like **DeepSeek‑R1**, you can achieve **industrial‑grade performance** entirely on your own infrastructure. <br>      
+## 🔑 Key Highlights of the Sovereign Path<br>
+⚡**Performance**: Benchmarked at **~9.75 seconds** on **NVIDIA H100** hardware for complex multi‑step reasoning.<br>
+🔍**Transparency**: Provides **100% Glass‑Box observability** using local reasoning traces (`</think>` blocks).<br>
+🛠️**Independence**: Fully disconnected execution with **no vendor lock‑in** and **no unpredictable API costs**.   
+
+🚀 Launch the DeepSeek-R1 Sovereign AI Guide in Google Colab <a href="https://www.google.com/url?sa=E&source=gmail&q=https://colab.research.google.com/github/Denis2054/Context-Engineering-for-Multi-Agent-Systems/blob/main/sovereign_ai/DeepSeek-R1_Sovereign_AI_Guide.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a> 
+
+👉 **Access the guide here:** **https://github.com/Denis2054/Context-Engineering-for-Multi-Agent-Systems/edit/main/README.md**
+
 ## [February 10, 2026]
 
 Upgraded the README with state-of-the art approaches to be educational bridge between the book, *Context Engineering for Multi-Agent Systems* that containts the architecture and code 
