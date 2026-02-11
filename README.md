@@ -1,5 +1,9 @@
 # Context Engineering for Multi-Agent Systems
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<h3 align="center">
+Move beyond prompting to build a Context Engine in a transparent architecture of context and reasoning
+</h3>
+
 
 <img src="./Chapter10/universal_context_engine.png" alt="Universal Context Engine Blueprint" width="40%" align="left" style="margin-right: 20px;">
 
@@ -17,12 +21,23 @@ Save thousands of lines of code by building universal, domain-agnostic Multi-Age
 **Sovereign Universal Context Engine**: A new **Glass Box Context Engine** implementation - `Chapter10/Universal_Context_Engine.ipynb` and `Chapter10/Universal_Context_Engine_UI.ipynb`- demonstrating **domain-agnostic architecture** by running *cross-domain* use cases on the same core.
 **Token Analytics**: engine.py and the Dashboard provide rigorous transparency into token usage (Input, Output, Difference) for cost and verbosity analysis.
 
-**LLM API update:** Specific notebooks have been upgraded to leverage **GPT-5.1** and the latest OpenAI library standards for *improved performance and reasoning latency* when necessary. This update also includes fixes for the Moderation API to handle structured agent outputs robustly. For specific details on the affected notebooks and a full list of changes, please consult the <a href="./CHANGELOG.md">Changelog</a>.
-</p>
+### 🔧 LLM API Update
 
-<h2 align="center">
-Move beyond prompting to build a Context Engine, a transparent architecture of context and reasoning
-</h2>
+For a detailed list of affected notebooks and all changes, see the  ➡️ [CHANGELOG.md](./CHANGELOG.md)
+
+**LLM API update:**  
+Several notebooks have been upgraded to use **GPT‑5.1** along with the latest OpenAI library standards.  
+These improvements provide *better performance, lower reasoning latency,* and more reliable handling of structured agent outputs.
+
+This update also includes fixes to the **Moderation API**, ensuring safer and more robust processing of multi‑agent interactions.
+
+**Alternative: Sovereign AI Without External LLM APIs:**
+
+If you prefer not to rely on an external LLM API, a full **DeepSeek‑R1 Sovereign AI Implementation Guide** (with code) is available:
+
+➡️ **[DeepSeek‑R1 Sovereign AI Guide](https://github.com/Denis2054/Context-Engineering-for-Multi-Agent-Systems/blob/main/sovereign_ai/README.md)**
+
+</p>
 
 <br>
 <p align="center">
