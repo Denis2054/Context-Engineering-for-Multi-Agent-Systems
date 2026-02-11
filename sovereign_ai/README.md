@@ -3,7 +3,13 @@
 This directory contains the **Sovereign Engineering Path** for the **Universal Context Engine**.  
 While proprietary APIs offer convenience, mission‑critical environments—national defense, healthcare, legal, and industrial sectors require something more for some projects: **Architectural Sovereignty**.
 
----
+  <li>
+   <strong>Launch the DeepSeek‑R1 Sovereign AI Guide in this repository</strong> in Google Colab
+    <a href="https://colab.research.google.com/github/Denis2054/Context-Engineering-for-Multi-Agent-Systems/blob/main/sovereign_ai/DeepSeek%E2%80%91R1_Sovereign_AI_Guide.ipynb">
+      <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab">
+    </a>
+  </li>
+
 
 ## 1. Understanding Sovereignty in the Agentic Era
 
