@@ -152,9 +152,14 @@ By leveraging high‑reasoning open‑source models like **DeepSeek‑R1**, you 
 🔍**Transparency**: Provides **100% Glass‑Box observability** using local reasoning traces (`</think>` blocks).<br>
 🛠️**Independence**: Fully disconnected execution with **no vendor lock‑in** and **no unpredictable API costs**.   
 
-<ul><li>🚀 **Launch the DeepSeek-R1 Sovereign AI Guide** in Google Colab <a href="https://colab.research.google.com/github/Denis2054/Context-Engineering-for-Multi-Agent-Systems/blob/main/sovereign_ai/DeepSeek%E2%80%91R1_Sovereign_AI_Guide.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a> 
+[Read the DeepSeek-R1 Sovereign AI Guide](https://github.com/Denis2054/Context-Engineering-for-Multi-Agent-Systems/blob/main/sovereign_ai/README.md)
 
-👉 **Access the guide here:** **https://github.com/Denis2054/Context-Engineering-for-Multi-Agent-Systems/edit/main/README.md**
+  <li>
+   <strong>Launch the DeepSeek‑R1 Sovereign AI Guide</strong> in Google Colab
+    <a href="https://colab.research.google.com/github/Denis2054/Context-Engineering-for-Multi-Agent-Systems/blob/main/sovereign_ai/DeepSeek%E2%80%91R1_Sovereign_AI_Guide.ipynb">
+      <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab">
+    </a>
+  </li>
 
 <details open>
 <summary><h2>Requirements for this book</h2></summary>
