@@ -81,24 +81,28 @@ By the end of this book, you’ll be equipped with the skills needed to engineer
 </ul>
   </details>
 
-## 🎥 Deep Dive: Architecture → Context → Agents → Code
+<details open> 
+<summary><h2>🎥 Deep Dive: Architecture → Context → Agents → Code</summary>
+
 This recorded session walks through the entire stack behind the sentence:
 **“In 21st‑century Agentic AI, Natural‑Language‑Programmed LLMs are the agents, and the domain‑agnostic dual‑RAG MAS is the environment they operate in.”**
-The deep dive unpacks each term step‑by‑step:
-- **21st‑century Agentic AI** — why agents are natural‑language‑programmed programs  
-- **LLMs as agents** — how reasoning, memory, and protocols turn models into actors  
-- **Domain‑agnostic Context Engine** — the universal core that runs any use case  
-- **Dual‑RAG MAS** — the two‑channel research architecture (instructions + facts)  
-- **Environment design** — how telemetry, context layers, and MCP orchestrate agents  
-- **Full drill‑down to code** — notebooks, pipelines, and execution traces  
-- **Full climb back up** — how the code re‑forms the architecture end‑to‑end  
-[📺**Watch the full deep dive on LinkedIn**](https://www.linkedin.com/posts/denis-rothman_ai-agenticera-contextengineering-activity-7424026873652850688-eXw8)
-If you are an architect or lead looking for:
-✅ ROI & Domain Agnosticism logic
-✅ Glass-Box Observability traces
-✅ Sovereign RAG blueprints
+The deep dive unpacks each term step‑by‑step:   
+- **21st‑century Agentic AI** — why agents are natural‑language‑programmed programs     
+- **LLMs as agents** — how reasoning, memory, and protocols turn models into actors     
+- **Domain‑agnostic Context Engine** — the universal core that runs any use case     
+- **Dual‑RAG MAS** — the two‑channel research architecture (instructions + facts)     
+- **Environment design** — how telemetry, context layers, and MCP orchestrate agents     
+- **Full drill‑down to code** — notebooks, pipelines, and execution traces     
+- **Full climb back up** — how the code re‑forms the architecture end‑to‑end     
+[📺**Watch the full deep dive on LinkedIn**](https://www.linkedin.com/posts/denis-rothman_ai-agenticera-contextengineering-activity-7424026873652850688-eXw8)   
+If you are an architect or lead looking for:   
+✅ ROI & Domain Agnosticism logic  
+✅ Glass-Box Observability traces  
+✅ Sovereign RAG blueprints   
 Join the engineering discussion here: [**Link to GitHub Discussion**](https://github.com/Denis2054/Context-Engineering-for-Multi-Agent-Systems/discussions/2)
-  
+
+</details> 
+ 
 <details open> 
 <summary><h2>Chapters: From Architecture to code</h2></summary>
 
