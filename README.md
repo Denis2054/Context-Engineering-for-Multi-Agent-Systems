@@ -146,16 +146,18 @@ The `Universal_Context_Engine_UI.ipynb`provides an IPython interface for interac
 # 🛡️ Sovereign AI & Open-Source Engineering
 
 For organizations requiring **100% data privacy** and **zero external API dependencies**, this repository provides a dedicated **Sovereign Path**.  
-By leveraging high‑reasoning open‑source models like **DeepSeek‑R1**, you can achieve **industrial‑grade performance** entirely on your own infrastructure.
+By leveraging high‑reasoning open‑source models like **DeepSeek‑R1**, you can achieve **industrial‑grade performance** entirely on your own infrastructure.       
 ## 🔑 Key Highlights of the Sovereign Path
-⚡**Performance**      
+⚡**Performance**              
 Benchmarked at **~9.75 seconds** on **NVIDIA H100** hardware for complex multi‑step reasoning.
-🔍**Transparency**      
+🔍**Transparency**              
 Provides **100% Glass‑Box observability** using local reasoning traces (`</think>` blocks).
-🛠️**Independence**     
-Fully disconnected execution with **no vendor lock‑in** and **no unpredictable API costs**.
+🛠️**Independence**                
+Fully disconnected execution with **no vendor lock‑in** and **no unpredictable API costs**.   
 
-<ul><li>🚀 Launch the DeepSeek-R1 Sovereign AI Guide in Google Colab <a href="https://www.google.com/search?q=https://colab.research.google.com/github/Denis2054/Context-Engineering-for-Multi-Agent-Systems/blob/main/sovereign_ai/DeepSeek-R1_Sovereign_AI_Guide.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a></li></ul>
+🚀 Launch the DeepSeek-R1 Sovereign AI Guide in Google Colab <a href="https://www.google.com/url?sa=E&source=gmail&q=https://colab.research.google.com/github/Denis2054/Context-Engineering-for-Multi-Agent-Systems/blob/main/sovereign_ai/DeepSeek-R1_Sovereign_AI_Guide.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a> 
+
+👉 **Access the guide here:** **https://github.com/Denis2054/Context-Engineering-for-Multi-Agent-Systems/edit/main/README.md**
 
 <details open>
 <summary><h2>Requirements for this book</h2></summary>
