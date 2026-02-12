@@ -104,6 +104,11 @@ To provide a comprehensive introduction for your **Sovereign AI** repository tha
 
 **The Goal:** The primary objective of this benchmark was to validate the feasibility of **domain-specific pretraining** within a fully independent, sovereign environment. By moving beyond standard API-based inference, this experiment proves that an organization can ingest, tokenize, and train a specialized model on sensitive brand data (such as X/Twitter customer support logs) without external dependencies, ensuring 100% data privacy and architectural sovereignty.
 
+**The Experiment:** Pretraining a RoBERTa model for Customer Support on X (Twitter) data.   
+The Result: 🚀 Throughput: 1,740.55 samples/sec (NVIDIA H100).    
+⚡ Speedup: A 4.35x increase over A100 baselines.   
+⏱️ Efficiency: 2 full epochs in just 3 minutes and 56 seconds.    
+
 **Achievements** 
 
 **Domain-Specific Success:** Successfully benchmarked pretraining for a Customer Support agent on X (Twitter) data using the **NVIDIA H100 80GB HBM3**.
