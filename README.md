@@ -33,7 +33,7 @@ This update also includes fixes to the **Moderation API**, ensuring safer and mo
 
 **Alternative: Sovereign AI Without External LLM APIs:**
 
-If you prefer not to rely on an external LLM API, a full **DeepSeek‑R1 Sovereign AI Implementation Guide** (with code) is available:
+If you prefer not to rely on an external LLM API, a full **DeepSeek‑R1 Sovereign AI Implementation Guide and the Hardware benchmark notebook** (with code) is available:
 
 ➡️ **[DeepSeek‑R1 Sovereign AI Guide](https://github.com/Denis2054/Context-Engineering-for-Multi-Agent-Systems/blob/main/sovereign_ai/README.md)**
 
@@ -167,7 +167,7 @@ By leveraging high‑reasoning open‑source models like **DeepSeek‑R1**, you 
 🔍**Transparency**: Provides **100% Glass‑Box observability** using local reasoning traces (`</think>` blocks).<br>
 🛠️**Independence**: Fully disconnected execution with **no vendor lock‑in** and **no unpredictable API costs**.   
 
-[Read the DeepSeek-R1 Sovereign AI Guide](https://github.com/Denis2054/Context-Engineering-for-Multi-Agent-Systems/blob/main/sovereign_ai/README.md)
+[Read the DeepSeek-R1 Sovereign AI Guide and the Hardware benchmark notebook](https://github.com/Denis2054/Context-Engineering-for-Multi-Agent-Systems/blob/main/sovereign_ai/README.md)
 
   <li>
    <strong>Launch the DeepSeek‑R1 Sovereign AI Guide</strong> in Google Colab
