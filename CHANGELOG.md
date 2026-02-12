@@ -27,7 +27,7 @@ The execution times across both notebooks are nearly identical, with most steps 
 
 The primary takeaway is that the architecture is **infrastructure-agnostic**; the quality and speed are governed by the **Context Engineering** (blueprints and retrieved data) and the **API performance** rather than the local compute instance.
 
-*Note: The 86s Mark (Complex Tasks): This is where the Glass Box Context Engine value shines. For a human to perform a multi-document legal analysis and then rewrite it into a specific corporate style, it would take 15–30 m*
+*Note: The 86s Mark (Complex Tasks): This is where the Glass Box Context Engine value shines. For a human to perform a multi-document legal analysis and then rewrite it into a specific corporate style, it would take 15–30 m.*
 
 ## [February 11,2026]  Introduction of a🛡️ Sovereign AI & Open-Source Engineering section and code
 
