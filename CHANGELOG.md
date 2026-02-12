@@ -27,11 +27,24 @@ The execution times across both notebooks are nearly identical, with most steps 
 
 The primary takeaway is that the architecture is **infrastructure-agnostic**; the quality and speed are governed by the **Context Engineering** (blueprints and retrieved data) and the **API performance** rather than the local compute instance.
 
-### Note on the performance of the Context Engine: Efficiency vs. Complexity
-The 29s Mark for **simple Tasks**: This suggests the engine is running 3–4 agents with very low reasoning effort. It indicates that the orchestration (the engine.py logic) is highly efficient, **adding almost zero overhead** beyond the API calls themselves.
+## ⚡ **Note on Performance: Efficiency vs. Complexity**
 
-The 86s Mark for **complex Tasks**: This is where the Glass Box Context Engine value shines. *For a human to perform a multi-document legal analysis and then rewrite it into a specific corporate style, it would take 15–30 minutes.* Doing it in 86 seconds with verified citations is a **massive productivity gain.**
+### **The 29s Mark (Optimized Flow)**
+For simple tasks, the engine orchestrates **3–4 agents** with minimal reasoning effort. 
+This demonstrates that the `engine.py` orchestration layer adds **near‑zero overhead**, with latency driven almost entirely by underlying API response times.
 
+### **The 86s Mark (High‑Reasoning Depth)**
+This is where the **Glass Box** value becomes most visible.  
+In this window, the engine performs:
+
+- **Multi‑document cross‑referencing**  
+- **Semantic alignment** with blueprints  
+- **Rigorous fact‑checking**
+
+### **The Productivity Delta**
+While **86 seconds** may seem high compared to a single‑prompt chat, a human expert would require **15–30 minutes** to achieve the same level of **citation‑backed, brand‑aligned output**.  
+
+The Context Engine delivers an **industrial‑grade result ~20× faster** than manual professional analysis.
 
 ## [February 11,2026]  Introduction of a🛡️ Sovereign AI & Open-Source Engineering section and code
 
