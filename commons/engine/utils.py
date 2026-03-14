@@ -12,7 +12,10 @@ def install_dependencies():
     try:
         # Using subprocess to run pip commands
         subprocess.run([sys.executable, "-m", "pip", "install", "tqdm==4.67.1", "--upgrade", "--quiet"], check=True)
-        subprocess.run([sys.executable, "-m", "pip", "install", "openai==2.8.1", "pinecone==7.0.0", "tenacity==9.0.0", "--quiet"], check=True)
+        # January, 2026 subprocess.run([sys.executable, "-m", "pip", "install", "openai==2.8.1", "pinecone==7.0.0", "tenacity==9.0.0", "--quiet"], check=True)
+        # March, 2026
+        subprocess.run([sys.executable, "-m", "pip", "install", "openai==2.28.0", "pinecone==7.0.0", "tenacity==9.0.0", "--quiet"], check=True)
+       
         print("✅ All packages installed successfully.")
     except subprocess.CalledProcessError as e:
         print(f"🛑 Error during installation: {e}")
