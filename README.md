@@ -102,7 +102,7 @@ Stop tinkering with prompts. Start engineering context. Most AI implementations 
 
 **April 25, 2026 · 09:00 AM EST · Live & Virtual**
 
-✅ The 5 Levels of Context · ✅ Dual RAG · ✅ Agent Orchestration with MCP
+✅ The Levels of Efficient Context · ✅ Dual RAG · ✅ Agent Orchestration
 
 👉 [Register on Eventbrite](http://bit.ly/4my96D1)
 <br clear="left"/>
