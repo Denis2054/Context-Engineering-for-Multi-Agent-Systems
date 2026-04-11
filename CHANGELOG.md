@@ -3,6 +3,14 @@
 This changelog contains notable updates (past, present, and upcoming) to the **Context Engineering for Multi-Agent Systems** repository.   
 🐬 Indicates *new bonus notebooks* to explore. 
 
+## [April 11, 2026] Resource preparation for April 25, 2026 workshop
+
+📣 Upcoming Live Workshop Session — Cohort 2</h3></summary>
+
+<img src="media/april2026_workshop.png" alt="April 2026 Workshop" width="340" style="float: left; margin: 0 18px 12px 0;"/>
+
+Stop tinkering with prompts. Start engineering context.
+
 ## [March 14, 2026] OpenAI gpt-5.4 implementation
 
 Update of the January 24, 2026 Release: **OpenAI gpt-5.4** implemented in the Universal Context Engine Sovereign Universal Context Engine: A new Glass Box Context Engine implementation - ``` Chapter10/Universal_Context_Engine.ipynb ```  and  ``` Chapter10/Universal_Context_Engine_UI.ipynb```- demonstrating domain-agnostic architecture by running cross-domain use cases on the same core. Token Analytics: engine.py and the Dashboard provide rigorous transparency into token usage (Input, Output, Difference) for cost and verbosity analysis.
