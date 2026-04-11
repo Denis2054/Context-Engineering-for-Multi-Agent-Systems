@@ -94,7 +94,21 @@ By the end of this book, you’ll be equipped with the skills needed to engineer
 <li>Deploy a scalable, observable Context Engine in production</li>
 </ul>
   </details>
+<details open>
+<summary><h3>📣 Upcoming Live Workshop Session — Cohort 2</h3></summary>
 
+<img src="media/april2026_workshop.png" alt="April 2026 Workshop" width="340" style="float: left; margin: 0 18px 12px 0;"/>
+
+Stop tinkering with prompts. Start engineering context. Most AI implementations fail at scale because they rely on black-box prompting — sending a request into the void and hoping for a coherent reply. Following the success of our January session, **Cohort 2** of this hands-on workshop is now open. We move beyond simple instructions to build a Context Engine: a transparent, glass-box architecture where agents don't just guess — they execute a precise, structured plan.
+
+**April 25, 2026 · 09:00 AM EST · Live & Virtual**
+
+✅ The 5 Levels of Context · ✅ Dual RAG · ✅ Agent Orchestration with MCP
+
+👉 [Register on Eventbrite](https://www.eventbrite.co.uk/e/context-engineering-for-multi-agent-systems-cohort-2-tickets-1986187248527)
+
+<br clear="left"/>
+</details>
 <details open> 
 <summary><h2>🎥 Deep Dive: Architecture → Context → Agents → Code</summary>
 
