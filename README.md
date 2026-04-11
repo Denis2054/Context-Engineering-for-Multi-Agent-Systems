@@ -104,8 +104,7 @@ Stop tinkering with prompts. Start engineering context. Most AI implementations 
 
 ✅ The 5 Levels of Context · ✅ Dual RAG · ✅ Agent Orchestration with MCP
 
-👉 [Register on Eventbrite](https://www.eventbrite.co.uk/e/context-engineering-for-multi-agent-systems-cohort-2-tickets-1986187248527)
-
+👉 [Register on Eventbrite](http://bit.ly/4my96D1)
 <br clear="left"/>
 </details>
 <details open> 
