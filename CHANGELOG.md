@@ -3,6 +3,13 @@
 This changelog contains notable updates (past, present, and upcoming) to the **Context Engineering for Multi-Agent Systems** repository.   
 🐬 Indicates *new bonus notebooks* to explore. 
 
+## [April 25, 2026] README Updated for April 25, 2026 workshop with takeaways and two new html files.
+<img src="media/april2026_workshop.png" alt="April 2026 Workshop" width="340" style="float: left; margin: 0 18px 12px 0;"/>
+
+[**🧭 The Tiers of Context Engines — Tier 3 → Tier 2 → Tier 1.5 → Tier 1**](https://denis2054.github.io/Context-Engineering-for-Multi-Agent-Systems/media/three_tier_context_engines.html)
+
+[**⚖️ Compliance & Risk Management — GDPR · HIPAA · SOC 2 · ISO · FedRAMP**](https://denis2054.github.io/Context-Engineering-for-Multi-Agent-Systems/media/compliance_risk_management.html)
+
 ## [April 11, 2026] Resource preparation for April 25, 2026 workshop
 
 📣 Upcoming Live Workshop Session — Cohort 2</h3></summary>
