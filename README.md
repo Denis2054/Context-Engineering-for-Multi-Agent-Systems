@@ -283,7 +283,7 @@ Denis continues to publish hands‑on frameworks, open‑source architectures, a
   <li><a href="https://www.packtpub.com/en-us/product/rag-driven-generative-ai-9781836200901">RAG-Drive Generative AI, First Edition</a></li>
 
   <li><a href="https://www.packtpub.com/en-us/product/transformers-for-natural-language-processing-and-computer-vision-9781805123743">Transformers for Natural Language Processing and Computer Vision, Third Edition</a></li>
-
+</ul>
 ## Contributing
 
 We welcome contributions! High interaction through Issues, PRs, and Comments helps the Context Engine grow and improves the trending visibility for the community.
@@ -293,7 +293,7 @@ We welcome contributions! High interaction through Issues, PRs, and Comments hel
 2.  **Discussions:** Join our [**Discussions tab**](https://github.com/Denis2054/Context-Engineering-for-Multi-Agent-Systems/discussions) to propose new features or "Context Chaining" techniques.
 3.  **Pull Requests:** Submit improvements to the core `engine.py` or new specialized agents in `agents.py`.
  
-</ul>
+
 
 </details>
 
