@@ -59,7 +59,7 @@ Denis Rothman</p>
   &#8287;&#8287;&#8287;&#8287;&#8287;
 </p>
 <details open> 
- <summary><h2>About the book</h2></summary>.
+ <summary><h2>About the book</h2></summary>
 <a href="https://www.packtpub.com/en-us/product/context-engineering-for-multi-agent-systems-9781806690046">
 <img src="https://m.media-amazon.com/images/I/419o1BGjp0L.jpg" alt="Context Engineering  for Multi-Agent Systems, First Edition" height="1000px" align="right">
 </a>
@@ -82,7 +82,7 @@ By the end of this book, you’ll be equipped with the skills needed to engineer
 </details>
 
 <details open> 
-  <summary><h2>Key Learnings</summary>
+  <summary><h2>Key Learnings</h2></summary>
 <ul>
 <li>Develop memory models to retain short-term and cross-session context</li>
 <li>Craft semantic blueprints and drive multi-agent orchestration with MCP</li>
@@ -112,7 +112,7 @@ Save thousands of lines of code by building universal, domain-agnostic Multi-Age
 </details>
 
 <details open> 
-<summary><h2>🎥 Deep Dive: Architecture → Context → Agents → Code</summary>
+<summary><h2>🎥 Deep Dive: Architecture → Context → Agents → Code</h2></summary>
 
 This recorded session walks through the entire stack behind the sentence:
 **“In 21st‑century Agentic AI, Natural‑Language‑Programmed LLMs are the agents, and the domain‑agnostic dual‑RAG MAS is the environment they operate in.”**
@@ -185,27 +185,16 @@ By leveraging high‑reasoning open‑source models like **DeepSeek‑R1**, you 
 
 [Read the DeepSeek-R1 Sovereign AI Guide and the Hardware benchmark notebook](https://github.com/Denis2054/Context-Engineering-for-Multi-Agent-Systems/blob/main/sovereign_ai/README.md)
 
+<ul>
   <li>
    <strong>Launch the DeepSeek‑R1 Sovereign AI Guide</strong> in Google Colab
     <a href="https://colab.research.google.com/github/Denis2054/Context-Engineering-for-Multi-Agent-Systems/blob/main/sovereign_ai/DeepSeek%E2%80%91R1_Sovereign_AI_Guide.ipynb">
       <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab">
     </a>
   </li>
-
-<details open>
-<summary><h2>Requirements for this book</h2></summary>
-
-Before running the code, ensure your development environment is properly configured.
-
-### ✅ Prerequisites
-- **Python:** Version 3.10+  
-- **Environment Options:** Google Colab, Kaggle, or Local
-
-</details>
-
-
+</ul>
 <details open> 
-  <summary><h2>Requirements for this book</summary>
+  <summary><h2>Requirements for this book</h2></summary>
 
 Before running the code, ensure your development environment is properly set up. All hands-on chapters use reproducible Python-based environments, tested in **Google Colab** and **VS Code**.
 
@@ -271,7 +260,7 @@ Create a GitHub or local workspace containing at least:
   </details>
 
 <details open> 
-  <summary><h2>About the Author</summary>
+  <summary><h2>About the Author</h2></summary>
  
 ### ✅ Get to know the Author
 Denis Rothman is an AI systems architect and author whose work bridges foundational AI research with today’s generative and agentic architectures. A graduate of Sorbonne University and Paris‑Diderot University, he designed one of the earliest patented *word2matrix* numerical encoding systems which was a precursor to modern embedding techniques. He designed one of the first industrial conversational agents, deployed as an automated language teacher for Moët & Chandon and other global companies.
@@ -308,4 +297,3 @@ We welcome contributions! High interaction through Issues, PRs, and Comments hel
 
 </details>
 
-</details>
