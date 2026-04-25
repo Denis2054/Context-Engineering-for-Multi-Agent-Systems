@@ -94,19 +94,23 @@ By the end of this book, you’ll be equipped with the skills needed to engineer
 </ul>
   </details>
 <details open>
-<summary><h3>📣 Upcoming Live Workshop Session — Cohort 2</h3></summary>
-
+<summary><h3>📣 Live Workshop Session — Cohort 2 Takeaways</h3></summary>
 <img src="media/april2026_workshop.png" alt="April 2026 Workshop" width="340" style="float: left; margin: 0 18px 12px 0;"/>
 
-Stop tinkering with prompts. Start engineering context. Most AI implementations fail at scale because they rely on black-box prompting — sending a request into the void and hoping for a coherent reply. Following the success of our January session, **Cohort 2** of this hands-on workshop is now open. We move beyond simple instructions to build a Context Engine: a transparent, glass-box architecture where agents don't just guess — they execute a precise, structured plan.
+✅ The Levels of Efficient Context · ✅ Dual RAG · ✅ Agent Orchestration · ✅ Compliance & Risk
 
-**April 25, 2026 · 09:00 AM EST · Live & Virtual**
+**Stop tinkering with prompts. Start engineering context.** Most AI implementations fail at scale because they rely on black-box prompting — sending a request into the void and hoping for a coherent reply. Following the success of our January session, **Cohort 2** of this hands-on workshop is now open. We move beyond simple instructions to build a Context Engine: a transparent, glass-box architecture where agents don't just guess — they execute a precise, structured plan.
 
-✅ The Levels of Efficient Context · ✅ Dual RAG · ✅ Agent Orchestration
+The workshop frames the new software stack as a **delegation gradient** across four runtimes — from the human running a context engine in their head, through embedded copilots, configured platforms, and engineered systems. Mastery of the underlying tiers is what makes any of them deployable. We close with the question that sits underneath every enterprise AI decision in 2026: which tier does this problem belong in, and what does compliance actually require?
 
-👉 [Register on Eventbrite](http://bit.ly/4my96D1)
-<br clear="left"/>
+Save thousands of lines of code by building universal, domain-agnostic Multi-Agent Systems (MAS) using the ultimate new programming language: **natural language, engineered as context.**
+
+[**🧭 The Tiers of Context Engines — Tier 3 → Tier 2 → Tier 1.5 → Tier 1**](https://denis2054.github.io/Context-Engineering-for-Multi-Agent-Systems/media/three_tier_context_engines.html)
+
+[**⚖️ Compliance & Risk Management — GDPR · HIPAA · SOC 2 · ISO · FedRAMP**](https://denis2054.github.io/Context-Engineering-for-Multi-Agent-Systems/media/compliance_risk_management.html)
+
 </details>
+
 <details open> 
 <summary><h2>🎥 Deep Dive: Architecture → Context → Agents → Code</summary>
 
