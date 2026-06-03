@@ -3,6 +3,12 @@
 This changelog contains notable updates (past, present, and upcoming) to the **Context Engineering for Multi-Agent Systems** repository.   
 🐬 Indicates *new bonus notebooks* to explore. 
 
+
+## [June 3, 2026] — New Gradio Standalone UI
+
+🐬`Chapter10/Universal_Context_Engine_Gradio_UI.ipynb` now contains a deployable **Gradio web app** — live public URL in Colab, one-command deploy to Hugging Face Spaces.
+
+
 ## [May 11, 2026] Repository updated for ROI
 Code review from a Return On Investment(ROI) perspective for real-world projects. 
 
