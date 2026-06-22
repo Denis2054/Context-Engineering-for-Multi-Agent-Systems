@@ -21,7 +21,10 @@ Save thousands of lines of code by building universal, domain-agnostic Multi-Age
 
 🐬 March 14, 2026 update of the January 24, 2026 Release: **OpenAI gpt-5.4 implemented** in the Universal Context Engine
 **Sovereign Universal Context Engine**: A new **Glass Box Context Engine** implementation - `Chapter10/Universal_Context_Engine.ipynb` and `Chapter10/Universal_Context_Engine_UI.ipynb`- demonstrating **domain-agnostic architecture** by running *cross-domain* use cases on the same core.
+
 **Token Analytics**: engine.py and the Dashboard provide rigorous transparency into token usage (Input, Output, Difference) for cost and verbosity analysis.
+
+The Token & Cost Analytics built into engine.py and the Dashboard implement what is now termed **tokenomics** in agentic AI systems (Salim et al., MSR 2026; Bergemann et al., ACM EC 2025) — rigorous per-step tracking of token consumption, cost, and verbosity across the full multi-agent pipeline.
 
 ### 🔧 LLM API Update
 
