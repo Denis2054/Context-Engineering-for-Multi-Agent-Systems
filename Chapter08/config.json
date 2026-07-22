@@ -1,0 +1,13 @@
+{
+  "registry_path": "registry.json",
+  "benign_suite_path": "agent_tasks_v1.jsonl",
+  "injection_suite_path": "injection_suite_v1.jsonl",
+  "runs_dir": "/content/drive/MyDrive/ai_harness_runs",
+  "tools": ["search_notes", "send_message"],
+  "step_budget": 6,
+  "token_budget": 8000,
+  "autonomy": "preflight_moderated",
+  "agent_backend": "stub",
+  "install_rung23_stack": false,
+  "seed": 7
+}

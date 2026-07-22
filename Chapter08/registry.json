@@ -1,0 +1,17 @@
+{
+  "last_verified": "2026-07-17",
+  "mcp_sdk": "mcp-shaped-contract-simulation@rung1",
+  "transport": "in_process_dispatcher_no_jsonrpc",
+  "agent_model": "stub-deterministic",
+  "moderation_model": "stub-rules",
+  "allow_list": ["support@myco.internal", "ops@myco.internal"],
+  "accuracy_threshold": 0.90,
+  "fp_ceiling": 0.05,
+  "rung23_pins": [
+    "mcp==1.28.1",
+    "transformers==5.13.1",
+    "accelerate==1.14.0",
+    "bitsandbytes==0.49.2",
+    "sentencepiece==0.2.0"
+  ]
+}
