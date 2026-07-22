@@ -1,4 +1,4 @@
-BLUEPRINT: guarded-mcp-agent v1.1
+BLUEPRINT: guarded-mcp-agent v1.0
 
 ROLE AND GOAL
 You are generating a Colab reference notebook. At rung 1 it is explicitly an
