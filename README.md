@@ -204,14 +204,28 @@ By leveraging high‑reasoning open‑source models like **DeepSeek‑R1**, you 
     </a>
   </li>
 </ul>
+
+## 🛡️ The LangChain Edition of the Universal Context Engine
+
+The Universal Context Engine, ported onto LangChain 1.x and LangGraph 1.x, reading the same Pinecone index, the same namespaces, and using the same OpenAI models as the original.
+This folder is the repository's framework pole. sovereign_ai/ is the other: zero framework, zero external API, maximum control. Between them they make one point, which is the point of the book:
+
+*The architecture is the product. The framework is a deployment choice.*
+
+[Read the LangChain guide](https://github.com/Denis2054/Context-Engineering-for-Multi-Agent-Systems/blob/main/langchain/README.md)
+
+<ul>
+  <li>
+   <strong>🐬Launch the LangChain Edition of the Universal Context Engine</strong> in Google Colab
+    <a href="https://colab.research.google.com/github/Denis2054/Context-Engineering-for-Multi-Agent-Systems/blob/main/langchain/Universal_Context_Engine_LangChain.ipynb">
+      <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab">
+    </a>
+  </li>
+</ul>
 <details open> 
   <summary><h2>Requirements for this book</h2></summary>
-
-Before running the code, ensure your development environment is properly set up. All hands-on chapters use reproducible Python-based environments, tested in **Google Colab** and **VS Code**.
-
-> **A Note on Latency:** The Context Engine built in this book and repository performs complex, multi-step reasoning, not simple, single-shot answers. The delay you observe in Colab is the "thinking" time, as the engine dynamically plans and executes a sequence of API calls (e.g., planning, then RAG, then generation). This is the same reason advanced platforms like Gemini or ChatGPT require a moment to "think" for complex requests, even though they benefit from significantly more powerful environments.
-
-
+Before running the code, make sure your development environment is set up and you have the necessary API keys (LangChain, OpenAI, Pinecone). 
+ 
 
 ### ✅ Prerequisites
 - **Python**: Version **3.10+**
