@@ -4,7 +4,7 @@ This changelog contains notable updates (past, present, and upcoming) to the **C
 🐬 Indicates *new bonus notebooks* to explore. 
 
 ## [August 14, 2026] — LangChain Edition
-
+ 
 🐬`Chapter10/Universal_Context_Engine_Gradio_UI.ipynb` now contains a deployable **Gradio web app** — live public URL in Colab, one-command deploy to Hugging Face Spaces.
 
 *A Context Engine layer on a LangChain substrate.*         
