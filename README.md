@@ -12,8 +12,7 @@ This repository provides a production-ready blueprint for the Agentic Era, allow
 <br clear="left"/>
 <p align="center">Copyright 2025-2026, Denis Rothman. <strong>Last updated: August 14, 2026</strong></p>
 
-**August 14, 2026 — LangChain Edition of the Context Engine:** The LangChain Edition of the Context Engine adds a * Context Engine layer on a LangChain substrate:*         
-🐬`langchain/Universal_Context_Engine_LangChain.ipynb`       
+**August 14, 2026 — LangChain Edition of the Context Engine:** The LangChain Edition of the Context Engine adds a **Context Engine layer on a LangChain substrate:**🐬`langchain/Universal_Context_Engine_LangChain.ipynb`       
 
 **June 3, 2026 — New Gradio Standalone UI:** `Chapter10/Universal_Context_Engine_Gradio_UI.ipynb` now contains a deployable **Gradio web app** — live public URL in Colab, one-command deploy to Hugging Face Spaces.
 
