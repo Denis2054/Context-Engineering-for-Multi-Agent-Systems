@@ -21,7 +21,7 @@ substrates. Between them they make one point, which is the point of the book:
 
 The plan artifact, the dual-RAG split, the four specialists, the per-chunk
 defense and the glass-box trace all survive a complete change of substrate. That
-is what domain-agnostic *and* framework-agnostic looks like in practice.
+is what domain-agnostic *and* framework-agnostic looks like in practice. Each issue encountered is documented.
 
 ---
 
