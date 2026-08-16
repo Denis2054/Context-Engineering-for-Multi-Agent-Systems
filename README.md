@@ -275,11 +275,6 @@ Before running the notebooks, you will need valid API keys for the underlying se
 ### 2. Run the Notebooks
 Click the badges below to launch the notebooks directly in a pre-configured Google Colab VM. You will be asked to add your API keys to the Colab Secrets Manager upon launch.
 
-| Chapter | Notebook | Launch |
-| :--- | :--- | :--- |
-| **Chapter 4** | **Context Engine** | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/YOUR_REPO/blob/main/Context_Engine.ipynb) |
-| **Chapter X** | *Another Notebook* | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/YOUR_REPO/blob/main/FILENAME.ipynb) |
-
 ### ✅ Project Structure
 Create a GitHub or local workspace containing at least:
 - `helpers.py`
