@@ -183,9 +183,40 @@ The `Universal_Context_Engine_UI.ipynb`provides an IPython interface for interac
 | <ul><li>🐬Universal_Context_Engine_Gradio_UI.ipynb - **June 3, 2026 Release**</li></ul> | <a href="https://colab.research.google.com/github/Denis2054/Context-Engineering-for-Multi-Agent-Systems/blob/main/Chapter10/Universal_Context_Engine_Gradio_UI.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"></a><br> | <a href="https://www.kaggle.com/kernels/welcome?src=https://github.com/Denis2054/Context-Engineering-for-Multi-Agent-Systems/blob/main/Chapter10/Universal_Context_Engine_Gradio_UI.ipynb"><img src="https://kaggle.com/static/images/open-in-kaggle.svg" alt="Open In Kaggle"></a><br> | <a href="https://studiolab.sagemaker.aws/import/github/Denis2054/Context-Engineering-for-Multi-Agent-Systems/blob/main/Chapter10/Universal_Context_Engine_Gradio_UI.ipynb"><img src="https://studiolab.sagemaker.aws/studiolab.svg" alt="Open In Studio Lab"></a><br> |
 The `Universal_Context_Engine_Gradio_UI.ipynb` can serve as an alternative to the IPython widget interface, providing a full **Gradio web application** that generates a live public URL directly from Colab. The same Glass Box engine runs unchanged underneath — only the presentation layer is new. The app can also be exported as `app.py` and deployed permanently to **Hugging Face Spaces** or any container host, making it the recommended interface for demos, workshops, and stakeholder presentations.
 
-
 ![Context Engineering Production Blueprint](https://github.com/Denis2054/Context-Engineering-for-Multi-Agent-Systems/raw/main/Chapter10/context_engineering_blueprint.svg)
 </details>
+
+## 🗺️ One Architecture, Three Editions
+
+Everything below — LangChain, Sovereign, NIM Nemotron — is the same engine: the same planner, the same two governance gates, the same dual-RAG namespaces, the same domain-agnostic registry. What changes across the three sections is only which model answers the calls and which framework carries the plumbing.
+
+![Universal Context Engine Architecture](https://github.com/Denis2054/Context-Engineering-for-Multi-Agent-Systems/raw/main/media/universal_context_engine_architecture.png)
+
+| | swap the **model** | swap the **substrate** |
+|---|---|---|
+| **LangChain** *(below)* | OpenAI | LangChain / LangGraph |
+| **Sovereign** *(below)* | DeepSeek‑R1 | zero framework, zero external API |
+| **NIM Nemotron** *(below)* | NVIDIA Nemotron | native — plus a real-time DAG planner |
+
+*The architecture is the product. The model and the framework are both deployment choices.*
+
+## 🛡️ The LangChain Edition of the Universal Context Engine
+
+The Universal Context Engine, ported onto LangChain 1.x and LangGraph 1.x, reading the same Pinecone index, the same namespaces, and using the same OpenAI models as the original.
+This folder is the repository's framework pole. sovereign_ai/ is the other: zero framework, zero external API, maximum control. Between them they make one point, which is the point of the book:
+
+*The architecture is the product. The framework is a deployment choice.*
+
+[Read the LangChain guide](https://github.com/Denis2054/Context-Engineering-for-Multi-Agent-Systems/blob/main/langchain/README.md)
+
+<ul>
+  <li>
+   <strong>🐬Launch the LangChain Edition of the Universal Context Engine</strong> in Google Colab
+    <a href="https://colab.research.google.com/github/Denis2054/Context-Engineering-for-Multi-Agent-Systems/blob/main/langchain/Universal_Context_Engine_LangChain.ipynb">
+      <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab">
+    </a>
+  </li>
+</ul>
 
 ## 🛡️ Sovereign AI & Open-Source Engineering
 
@@ -207,23 +238,6 @@ By leveraging high‑reasoning open‑source models like **DeepSeek‑R1**, you 
   </li>
 </ul>
 
-## 🛡️ The LangChain Edition of the Universal Context Engine
-
-The Universal Context Engine, ported onto LangChain 1.x and LangGraph 1.x, reading the same Pinecone index, the same namespaces, and using the same OpenAI models as the original.
-This folder is the repository's framework pole. sovereign_ai/ is the other: zero framework, zero external API, maximum control. Between them they make one point, which is the point of the book:
-
-*The architecture is the product. The framework is a deployment choice.*
-
-[Read the LangChain guide](https://github.com/Denis2054/Context-Engineering-for-Multi-Agent-Systems/blob/main/langchain/README.md)
-
-<ul>
-  <li>
-   <strong>🐬Launch the LangChain Edition of the Universal Context Engine</strong> in Google Colab
-    <a href="https://colab.research.google.com/github/Denis2054/Context-Engineering-for-Multi-Agent-Systems/blob/main/langchain/Universal_Context_Engine_LangChain.ipynb">
-      <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab">
-    </a>
-  </li>
-</ul>
 
 ## 🛡️ The NVIDIA NIM NEMOTRON Edition of the Universal Context Engine
 
@@ -243,8 +257,6 @@ The DAG mirrors that optimization one level up: where Mamba drops the quadratic 
     </a>
   </li>
 </ul>
-
-
 
 <details open> 
   <summary><h2>Requirements for this book</h2></summary>
