@@ -52,7 +52,7 @@ If you prefer not to rely on an external LLM API, a full **DeepSeek‑R1 Soverei
 <p align="center">
   <strong>🚀 NEW: Interactive Trace Dashboard</strong><br>
   <em>Available in the Context Engine Room of Chapters 8 & 9: Visualize agent reasoning with our new HTML-based trace renderer.</em><br>
-  <img src="./Chapter08/dashboard_concept.svg" alt="New Interactive Dashboard" width="80%">
+  <a href="./Chapter08/dashboard_concept.svg">Dashboard Concept</a>
 </p>
 
 <p align="center">
