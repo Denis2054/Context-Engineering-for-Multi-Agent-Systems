@@ -6,7 +6,8 @@ This changelog contains notable updates (past, present, and upcoming) to the **C
 
 ## [August 16, 2026] — NVIDIA NIM NEMOTRON Edition
 
-The NVIDIA NIM NEMOTRON DAG Edition of the Context Engine:** The NVIDIA NIM NEMOTRON Edition of the Context Engine adds a real-time DAG planner to the context engine:🐬`nim/Universal_DAG_Engine_NIM.ipynb` 
+The NVIDIA NIM NEMOTRON DAG Edition of the Context Engine:** The NVIDIA NIM NEMOTRON Edition of the Context Engine adds a real-time DAG planner to the context engine:🐬`nim/Universal_DAG_Engine_NIM.ipynb`                   
+🐳☁️ **Docker + Railway Deployment:** The NIM Nemotron engine is also packaged as a deployable FastAPI service — build it with Docker, ship it to Railway, and verify it live via Swagger. 
 
 ## [August 14, 2026] — LangChain Edition
 
