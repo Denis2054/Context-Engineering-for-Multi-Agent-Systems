@@ -3,6 +3,11 @@
 This changelog contains notable updates (past, present, and upcoming) to the **Context Engineering for Multi-Agent Systems** repository.   
 🐬 Indicates *new bonus notebooks* to explore. 
 
+
+## [August 16, 2026] — NVIDIA NIM NEMOTRON Edition
+
+The NVIDIA NIM NEMOTRON DAG Edition of the Context Engine:** The NVIDIA NIM NEMOTRON Edition of the Context Engine adds a real-time DAG planner to the context engine:🐬`nim/Universal_DAG_Engine_NIM.ipynb` 
+
 ## [August 14, 2026] — LangChain Edition
 
  LangChain Edition of the Context Engine        
