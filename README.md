@@ -10,7 +10,7 @@ Move beyond prompting to build a Context Engine in a transparent architecture of
 This repository provides a production-ready blueprint for the Agentic Era, allowing you to replace rigid, hard-coded workflows with a dynamic, **transparent**, **observable**, and **sovereign** **Context Engine**. By building universal, domain-agnostic Multi-Agent Systems through high-level semantic orchestration, you can save thousands of lines of code while maintaining 100% observability.
 
 <br clear="left"/>
-<p align="center">Copyright 2025-2026, Denis Rothman. <strong>Last updated: August 14, 2026</strong></p>
+<p align="center">Copyright 2025-2026, Denis Rothman. <strong>Last updated: August 16, 2026</strong></p>
 
 **August 16, 2026 — The NVIDIA NIM NEMOTRON DAG Edition of the Context Engine:** The NVIDIA NIM NEMOTRON Edition of the Context Engine adds a real-time DAG planner to the context engine:🐬`nim/Universal_DAG_Engine_NIM.ipynb` 
 
