@@ -1,0 +1,19 @@
+# Use a slim Python 3.10 image for a small, secure footprint
+FROM python:3.10-slim
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy requirements first to leverage Docker layer caching
+# This makes rebuilds much faster if you change code but not dependencies
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy the rest of your engine source code
+COPY . .
+
+# Expose port 80 so the API can be accessed
+EXPOSE 80
+
+# The command that starts the API when the container launches
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]

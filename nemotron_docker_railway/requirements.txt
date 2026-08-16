@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+openai
+pinecone==7.0.0
+tenacity
+requests
+tiktoken
+nest-asyncio
+pydantic
+tqdm
