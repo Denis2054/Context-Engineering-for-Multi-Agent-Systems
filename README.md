@@ -258,6 +258,12 @@ The DAG mirrors that optimization one level up: where Mamba drops the quadratic 
   </li>
 </ul>
 
+🐳☁️ **Docker + Railway Deployment:** The NIM Nemotron engine is also packaged as a deployable FastAPI service — build it with Docker, ship it to Railway, and verify it live via Swagger. <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" width="18"/> <img src="https://railway.app/brand/logo-light.svg" width="18"/>
+
+[See the full Docker & Railway deployment guide](https://github.com/Denis2054/Context-Engineering-for-Multi-Agent-Systems/blob/main/nemotron_docker_railway/README.md)
+
+☸️ *Also deployed and verified on Kubernetes with the same Docker container image that runs with concurrent requests* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-original.svg" width="18"/>
+
 <details open> 
   <summary><h2>Requirements for this book</h2></summary>
 Before running the code, make sure your development environment is set up and you have the necessary API keys (LangChain, OpenAI, Pinecone, and — for the NIM edition — NVIDIA).
