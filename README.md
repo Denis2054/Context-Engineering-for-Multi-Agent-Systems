@@ -222,6 +222,24 @@ This folder is the repository's framework pole. sovereign_ai/ is the other: zero
     </a>
   </li>
 </ul>
+
+## 🛡️ The NVIDIA NIM NEMOTRON Edition of the Universal Context Engine
+
+A governed, concurrent, multi-domain agent engine that plans before it acts, validates the plan before it executes, and records everything it did. All inference runs on NVIDIA NIM: a large model plans DAG in real-time, a small fast model executes.
+
+[How this works](https://github.com/Denis2054/Context-Engineering-for-Multi-Agent-Systems/blob/main/nim/README.md)
+
+<ul>
+  <li>
+   <strong>🐬Launch the NIM NEMOTRON version of the Universal Context Engine</strong> in Google Colab
+    <a href="https://colab.research.google.com/github/Denis2054/Context-Engineering-for-Multi-Agent-Systems/blob/main/nim/Universal_DAG_Engine_NIM.ipynb">
+      <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab">
+    </a>
+  </li>
+</ul>
+
+
+
 <details open> 
   <summary><h2>Requirements for this book</h2></summary>
 Before running the code, make sure your development environment is set up and you have the necessary API keys (LangChain, OpenAI, Pinecone). 
