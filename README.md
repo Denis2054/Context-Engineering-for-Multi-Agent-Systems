@@ -339,10 +339,11 @@ Denis continues to publish hands‑on frameworks, open‑source architectures, a
 
   <li><a href="https://www.packtpub.com/en-us/product/building-business-ready-generative-ai-systems-9781837020683">Building Business-Ready Generative AI Systems, First Edition</a></li>
 
-  <li><a href="[https://www.packtpub.com/en-us/product/rag-driven-generative-ai-9781836200901](https://www.packtpub.com/en-fr/product/rag-driven-generative-ai-9781807424947)">RAG-Drive Generative AI, Second Edition</a></li>
+<li><a href="https://www.packtpub.com/en-us/product/rag-driven-generative-ai-9781836200901">RAG-Driven Generative AI, Second Edition</a></li>
 
-  <li><a href="https://www.packtpub.com/en-us/product/transformers-for-natural-language-processing-and-computer-vision-9781805123743">Transformers for Natural Language Processing and Computer Vision, Third Edition</a></li>
+<li><a href="https://www.packtpub.com/en-us/product/transformers-for-natural-language-processing-and-computer-vision-9781805123743">Transformers for Natural Language Processing and Computer Vision, Third Edition</a></li>
 </ul>
+
 ## Contributing
 
 We welcome contributions! High interaction through Issues, PRs, and Comments helps the Context Engine grow and improves the trending visibility for the community.
