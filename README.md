@@ -35,7 +35,7 @@ The Token & Cost Analytics built into engine.py and the Dashboard implement what
 For a detailed list of affected notebooks and all changes, see the  ➡️ [CHANGELOG.md](./CHANGELOG.md)
 
 **LLM API update:**  
-Several notebooks have been upgraded to use **GPT‑5.1** along with the latest OpenAI library standards.  
+Several notebooks have been upgraded to use **GPT‑5.1** along with the latest OpenAI library standards
 These improvements provide *better performance, lower reasoning latency,* and more reliable handling of structured agent outputs.
 
 This update also includes fixes to the **Moderation API**, ensuring safer and more robust processing of multi‑agent interactions.
@@ -248,7 +248,7 @@ The DAG mirrors that optimization one level up: where Mamba drops the quadratic 
 
 <details open> 
   <summary><h2>Requirements for this book</h2></summary>
-Before running the code, make sure your development environment is set up and you have the necessary API keys (LangChain, OpenAI, Pinecone). 
+Before running the code, make sure your development environment is set up and you have the necessary API keys (LangChain, OpenAI, Pinecone, and — for the NIM edition — NVIDIA).
  
 
 ### ✅ Prerequisites
@@ -256,11 +256,12 @@ Before running the code, make sure your development environment is set up and yo
 - **Environment Options:**
   - Google Colab **or**
   - Local Python environment with:
-    - `openai`
-    - `pinecone-client`
+     - `openai`
+    - `pinecone`          # (formerly `pinecone-client` — the package was renamed)
     - `tiktoken`
     - `tenacity`
-    - `fastapi`
+    - `nest_asyncio`      # required by the NIM edition's notebook (Colab kernel + asyncio)
+    - `fastapi`           # only if you run the Gradio/deployment notebooks in Chapter 10
 
 ### 🚀 Quick Start
 
@@ -268,9 +269,9 @@ Get up and running using cloud-based virtual machines using the Google Colab lin
 No local installation is required.
 
 #### 1. Get Your API Keys
-Before running the notebooks, you will need valid API keys for the underlying services:
 * **OpenAI**: Sign up and generate a key at [platform.openai.com](https://platform.openai.com/).
 * **Pinecone**: Sign up and generate a free API key at [pinecone.io](https://www.pinecone.io/).
+* **NVIDIA NIM** *(only for the NIM edition)*: free key at [build.nvidia.com](https://build.nvidia.com).
 
 ### 2. Run the Notebooks
 Click the badges below to launch the notebooks directly in a pre-configured Google Colab VM. You will be asked to add your API keys to the Colab Secrets Manager upon launch.
@@ -286,6 +287,7 @@ Create a GitHub or local workspace containing at least:
 ### ✅ Required API Keys
 - **OpenAI** – model access and moderation
 - **Pinecone** – vector database storage and retrieval
+- **NVIDIA NIM** *(NIM edition only)* – planning and agent inference
 - **(Optional)** Google Cloud or AWS – for deployment sections in Chapter 10
 
 ### ✅ System Requirements
