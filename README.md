@@ -227,7 +227,11 @@ This folder is the repository's framework pole. sovereign_ai/ is the other: zero
 
 ## 🛡️ The NVIDIA NIM NEMOTRON Edition of the Universal Context Engine
 
-A governed, concurrent, multi-domain agent engine that plans before it acts, validates the plan before it executes, and records everything it did. All inference runs on NVIDIA NIM: a large model plans DAG in real-time, a small fast model executes.
+What the NVIDIA NIM Nemotron version adds to the universal content engine:     
+
+Nemotron is a hybrid: most of its self-attention layers are replaced by Mamba-2 state-space layers, with only a thin residual of attention retained — so context is carried in a fixed-size recurrent state rather than a KV cache that grows with every token, and throughput stays roughly linear in sequence length instead of quadratic.
+
+The DAG mirrors that optimization one level up: where Mamba drops the quadratic all-to-all of attention and mixture-of-experts activates only the parameters a token needs, the planner drops the unnecessary edges of a linear chain and the Foreman runs only the nodes whose dependencies are actually met — sparsity and parallelism in the orchestration, matching sparsity and parallelism in the silicon.
 
 [How this works](https://github.com/Denis2054/Context-Engineering-for-Multi-Agent-Systems/blob/main/nim/README.md)
 
