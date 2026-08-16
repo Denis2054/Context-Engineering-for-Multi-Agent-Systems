@@ -12,7 +12,7 @@ This repository provides a production-ready blueprint for the Agentic Era, allow
 <br clear="left"/>
 <p align="center">Copyright 2025-2026, Denis Rothman. <strong>Last updated: August 16, 2026</strong></p>
 
-**August 16, 2026 — The NVIDIA NIM NEMOTRON DAG Edition of the Context Engine:** The NVIDIA NIM NEMOTRON Edition of the Context Engine adds a real-time DAG planner to the context engine:🐬`nim/Universal_DAG_Engine_NIM.ipynb`         🐳☁️ **Docker + Railway Deployment added to the repo.
+**August 16, 2026 — The NVIDIA NIM NEMOTRON DAG Edition of the Context Engine:** The NVIDIA NIM NEMOTRON Edition of the Context Engine adds a real-time DAG planner to the context engine:🐬`nim/Universal_DAG_Engine_NIM.ipynb`      and   🐳☁️ **Docker + Railway deployment resources added to the repo.
 
 **August 14, 2026 — LangChain Edition of the Context Engine:** The LangChain Edition of the Context Engine adds a Context Engine layer on a LangChain substrate:🐬`langchain/Universal_Context_Engine_LangChain.ipynb`       
 
