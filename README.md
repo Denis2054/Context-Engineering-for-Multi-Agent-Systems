@@ -337,12 +337,18 @@ Denis continues to publish hands‑on frameworks, open‑source architectures, a
 </details>
 <details open> 
   <summary><h2>Other books to expand the scope of content </h2></summary>
-  
 <ul>
-  <li><a href="https://github.com/Denis2054/Building-Business-Ready-Generative-AI-Systems">Building Business-Ready Generative AI Systems</a></li>
-<li><a href="https://github.com/Denis2054/RAG-Driven-Generative-AI-2nd-Edition">RAG-Driven Generative AI, Second Edition</a></li>
-<li><a href="https://github.com/Denis2054/Transformers-for-NLP-and-Computer-Vision-3rd-Edition">Transformers for Natural Language Processing and Computer Vision, Third Edition</a></li>
+  <li><b>Bring AI to the data:</b> <a href="https://github.com/Denis2054/RAG-Driven-Generative-AI-2nd-Edition#bringing-ai-to-the-data">RAG-Driven Generative AI, Second Edition</a>
+    <br>In code: <a href="https://github.com/Denis2054/RAG-Driven-Generative-AI-2nd-Edition/blob/main/Chapter05/Universal_Context_Engine_Converged_Edition.ipynb">Universal Context Engine, Converged Edition</a> · <a href="https://github.com/Denis2054/RAG-Driven-Generative-AI-2nd-Edition/blob/main/Chapter01/RAG_Overview_db.ipynb">RAG Overview (data-in-place)</a>
+  </li>
+ <li><b>Bring humans to AI for supervision and quality:</b> <a href="https://github.com/Denis2054/Building-Business-Ready-Generative-AI-Systems">Building Business-Ready Generative AI Systems</a>
+<br>In Code: <a href="https://github.com/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter09/Pinecone_Security.ipynb">Guardrails and Security</a> · <a href="https://github.com/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter09/GenAISys_Customer_Service.ipynb">Human-Facing Customer Service</a> · <a href="https://github.com/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter01/Contextual_Awareness_and_Memory_Retention.ipynb">Short- and Long-Term Session Memory</a>  <a href="https://github.com/Denis2054/Building-Business-Ready-Generative-AI-Systems/blob/main/Chapter04/Event-driven_GenAISys_framework.ipynb">AI as a Live Meeting Participant</a>
+  </li>
+  <li><b>Explore where it all began and is evolving:</b> <a href="https://github.com/Denis2054/Transformers-for-NLP-and-Computer-Vision-3rd-Edition">Transformers for Natural Language Processing and Computer Vision, Third Edition</a>
+    <br>In Code: <a href="https://github.com/Denis2054/Transformers-for-NLP-and-Computer-Vision-3rd-Edition/blob/main/Chapter02/Multi_Head_Attention_Sub_Layer.ipynb">Multi-Head Attention from Scratch</a> · <a href="https://github.com/Denis2054/Transformers-for-NLP-and-Computer-Vision-3rd-Edition/blob/main/Chapter02/DeepSeek_R1_Zero_RL.ipynb">DeepSeek-R1's Training Innovations</a>
+  </li>
 </ul>
+
 </details>
 <details open> 
   <summary><h2>Contributing </h2></summary>
