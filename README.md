@@ -338,7 +338,7 @@ Denis continues to publish hands‑on frameworks, open‑source architectures, a
 </details>
 
 <details open> 
-  <summary><h2>Other books and resources to expand the scope of the Context Engineering Agentic Ecosystem </h2></summary>
+  <summary><h2>Other books and resources to expand Context Engineering Multi-Agent Systems</h2></summary>
 <ul>
   <li><b>Bring AI to the data:</b> <a href="https://github.com/Denis2054/RAG-Driven-Generative-AI-2nd-Edition#bringing-ai-to-the-data">RAG-Driven Generative AI, Second Edition</a>
     <br>Architecture & Code: <a href="https://github.com/Denis2054/RAG-Driven-Generative-AI-2nd-Edition/blob/main/Chapter05/Universal_Context_Engine_Converged_Edition.ipynb">Universal Context Engine, Converged Edition</a> · <a href="https://github.com/Denis2054/RAG-Driven-Generative-AI-2nd-Edition/blob/main/Chapter01/RAG_Overview_db.ipynb">RAG Overview (data-in-place)</a>
