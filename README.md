@@ -335,8 +335,8 @@ Denis Rothman is an AI systems architect and author whose work bridges foundatio
 Throughout his career, Denis has built large‑scale AI systems across industries, from IBM resource optimizers to worldwide Advanced Planning and Scheduling (APS) solutions, always focusing on transparent, explainable, and production‑ready architectures.
 Building on decades of applied AI engineering, he has become a leading voice in the agentic era of AI, authoring influential books on transformers, RAG pipelines, business‑ready generative AI, and now *Context Engineering for Multi‑Agent Systems*. His work emphasizes model‑agnostic engineering, semantic design, and the construction of resilient, domain‑independent AI systems that go far beyond prompting.
 Denis continues to publish hands‑on frameworks, open‑source architectures, and practical guides that help engineers, researchers, and organizations build the next generation of verifiable, context‑driven AI systems.        
-
 </details>
+
 <details open> 
   <summary><h2>Other books and resources to expand the scope of the Context Engineering Agentic Ecosystem </h2></summary>
 <ul>
