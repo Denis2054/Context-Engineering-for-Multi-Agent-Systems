@@ -327,11 +327,10 @@ Create a GitHub or local workspace containing at least:
 <details open> 
   <summary><h2>About the Author</h2></summary>
  
-## ✅ Get to know the Author
 Denis Rothman is an AI systems architect and author whose work bridges foundational AI research with today’s generative and agentic architectures. A graduate of Sorbonne University and Paris‑Diderot University, he designed one of the earliest patented *word2matrix* numerical encoding systems which was a precursor to modern embedding techniques. He designed one of the first industrial conversational agents, deployed as an automated language teacher for Moët & Chandon and other global companies.
 Throughout his career, Denis has built large‑scale AI systems across industries, from IBM resource optimizers to worldwide Advanced Planning and Scheduling (APS) solutions, always focusing on transparent, explainable, and production‑ready architectures.
 Building on decades of applied AI engineering, he has become a leading voice in the agentic era of AI, authoring influential books on transformers, RAG pipelines, business‑ready generative AI, and now *Context Engineering for Multi‑Agent Systems*. His work emphasizes model‑agnostic engineering, semantic design, and the construction of resilient, domain‑independent AI systems that go far beyond prompting.
-Denis continues to publish hands‑on frameworks, open‑source architectures, and practical guides that help engineers, researchers, and organizations build the next generation of verifiable, context‑driven AI systems.        
+Denis continues to publish hands‑on frameworks, open‑source architectures, and practical guides that help engineers, researchers, and organizations build the next generation of verifiable, context‑driven AI systems.
 <a href="https://www.linkedin.com/in/denis-rothman-0b034043/">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" width="30" height="30"/>
 </a>
@@ -339,7 +338,6 @@ Denis continues to publish hands‑on frameworks, open‑source architectures, a
 <details open> 
   <summary><h2>Other books to expand the scope of content </h2></summary>
   
-## ✅ Other Related Books
 <ul>
   <li><a href="https://github.com/Denis2054/Building-Business-Ready-Generative-AI-Systems">Building Business-Ready Generative AI Systems</a></li>
 <li><a href="https://github.com/Denis2054/RAG-Driven-Generative-AI-2nd-Edition">RAG-Driven Generative AI, Second Edition</a></li>
@@ -349,7 +347,6 @@ Denis continues to publish hands‑on frameworks, open‑source architectures, a
 <details open> 
   <summary><h2>Contributing </h2></summary>
   
-## Contributing
 We welcome contributions! High interaction through Issues, PRs, and Comments helps the Context Engine grow and improves the trending visibility for the community.
 ### How to get started:
 1.  **Check Issues:** Look for the [**good first issue**](https://github.com/Denis2054/Context-Engineering-for-Multi-Agent-Systems/issues?q=is%3Aopen+is%3Aissue+label%3A%22good+first+issue%22) label for approachable tasks.
@@ -361,4 +358,3 @@ We welcome contributions! High interaction through Issues, PRs, and Comments hel
  Last but not least: cool code is great but without a solid Return on Investment(ROI) it will never last in production!
 <img src="./media/agentic_roi_framework.gif" alt="Universal Context Engine Blueprint" width="40%" align="left" style="margin-right: 20px;">
 </details>
-  
