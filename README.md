@@ -12,6 +12,8 @@ This repository provides a production-ready blueprint for the Agentic Era, allow
 <br clear="left"/>
 <p align="center">Copyright 2025-2026, Denis Rothman. <strong>Last updated: September 7, 2026</strong></p>
 
+**September 7, 2026 — The Claude Projects Edition of the Context Engine:** The Context Engine with **no code at all** — nine markdown protocol files running the full Gate 1 → Plan → Gate 2 → Execute → Trace pipeline inside a Claude Project. No Python, no API keys, no vector database, nothing installed: 📋`claude_projects/README.md`
+
 **August 16, 2026 — The NVIDIA NIM NEMOTRON DAG Edition of the Context Engine:** The NVIDIA NIM NEMOTRON Edition of the Context Engine adds a real-time DAG planner to the context engine:🐬`nim/Universal_DAG_Engine_NIM.ipynb`      and   🐳☁️ Docker + Railway deployment resources added to the repo.
 
 **August 14, 2026 — LangChain Edition of the Context Engine:** The LangChain Edition of the Context Engine adds a Context Engine layer on a LangChain substrate:🐬`langchain/Universal_Context_Engine_LangChain.ipynb`       
@@ -88,6 +90,7 @@ By the end of this book, you’ll be equipped with the skills needed to engineer
 <li><strong> Telemetry‑driven context layers:</strong> Continuous ingestion and structuring of environmental signals that form the dynamic operational context for multi‑agent reasoning.</li>
 <li><strong>Protocol-Driven:</strong> Orchestrates specialized agents using the Model Context Protocol (MCP) for seamless, modular multi-agent workflows.</li>
 <li><strong>Token & Cost Analytics:</strong> Integrated tracking of input/output tokens to monitor cost-efficiency and model verbosity at every step.</li>
+<li><strong>Substrate Independence:</strong> The same architecture runs on OpenAI + Pinecone, on LangChain/LangGraph, on a local DeepSeek-R1, on NVIDIA Nemotron with a real-time DAG planner, and — in <code>claude_projects/</code> — with no code at all, as natural-language protocol files. The contracts are the engine; every implementation is a carrier.</li>
 </ul>
 </details>
 
@@ -197,8 +200,9 @@ Everything below — LangChain, Sovereign, NIM Nemotron — is the same engine: 
 | **LangChain** *(below)* | OpenAI | LangChain / LangGraph |
 | **Sovereign** *(below)* | DeepSeek‑R1 | zero framework, zero external API |
 | **NIM Nemotron** *(below)* | NVIDIA Nemotron | native — plus a real-time DAG planner |
+| **Claude Projects** *(below)* | Claude | **no code at all — the engine *is* the context** |
 
-*The architecture is the product. The model and the framework are both deployment choices.*
+*The architecture is the product. The model, the framework, and the code are all deployment choices.*
 
 ## 🛡️ The LangChain Edition of the Universal Context Engine
 
@@ -263,6 +267,51 @@ The DAG mirrors that optimization one level up: where Mamba drops the quadratic 
 [See the full Docker & Railway deployment guide](https://github.com/Denis2054/Context-Engineering-for-Multi-Agent-Systems/blob/main/nemotron_docker_railway/README.md)
 
 ☸️ *Also deployed and verified on Kubernetes with the same Docker container image that runs with concurrent requests* <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-original.svg" width="18"/>
+
+## 🛡️ The Claude Projects Edition of the Universal Context Engine
+
+**The Context Engine with no code at all.**
+
+Every other edition in this repository swaps the model or the framework. This one removes the program.
+
+The Universal Context Engine runs entirely as natural-language protocol files inside a Claude Project: nine markdown files uploaded to the Project's knowledge, and one block of text pasted into its instructions. No Python. No API keys. No Pinecone. No embedding model. Nothing installed. The full pipeline is intact — **Gate 1 → Plan → Gate 2 → Execute → Trace** — with a dynamic DAG planner, cross-domain governance, dual RAG, per-document injection screening, and a glass-box trace.
+
+`sovereign_ai/` proves the architecture survives without an external API. `langchain/` proves it survives on someone else's framework. **`claude_projects/` proves it survives without code**, which is the strongest available evidence for the claim the book makes: the Context Engine was never a program, it is a set of contracts, and the Python was a carrier.
+
+Three layers, and only the middle one changes when the use case does:
+
+| Layer | Files | Changes when... |
+|---|---|---|
+| **Kernel** | `01_PROJECT_INSTRUCTIONS` — pasted, always in context | never |
+| **Engine** | `10`–`14`: constitution, roster, planner, governance, executor | never — **not one of the five mentions any subject matter** |
+| **Domain pack** | `20`–`23`: manifest, Context Library, knowledge packs | **every new use case** |
+
+A new use case is therefore a new set of data files, not a new engine. Point `50_Pack_Builder.ipynb` at a folder of documents and it writes the packs for you: the same job `Data_Ingestion_Marketing.ipynb` does, with markdown files as the destination instead of a vector index, and with an ingestion-time injection screen the original could not have. **No API keys.**
+
+What this edition adds to the Chapter 6-8 lineage: a **DAG** in place of `$$STEP_N_OUTPUT$$` linear chaining, **Gate 2** — which Chapter 6-8 could not have, because a list of steps has no edges to govern — seven governance domains with the `Domain:Agent` A2A seam, injection rejections **reported in the trace** rather than silently logged, and orphan-node detection at planning time.
+
+The README carries a **full captured transcript** of a `PLAN:` run — Gate 1, the emitted DAG, all six Gate 2 checks with their verdicts, and the trace — plus the input, expected output, and *what failure looks like* for all nine control decks. The trade-offs are documented honestly, including the one that matters: with no code, Gate 2 is a protocol a model follows rather than a function that must run.
+
+[Read the Claude Projects guide](https://github.com/Denis2054/Context-Engineering-for-Multi-Agent-Systems/blob/main/claude_projects/README.md)
+
+<ul>
+  <li>
+   <strong>🐬Launch the Pack Builder</strong> — turn any folder of documents into an uploadable knowledge pack, in Google Colab
+    <a href="https://colab.research.google.com/github/Denis2054/Context-Engineering-for-Multi-Agent-Systems/blob/main/claude_projects/50_Pack_Builder.ipynb">
+      <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab">
+    </a>
+  </li>
+  <li>
+   <strong>📋 Build it in 15 minutes</strong> — no terminal, no install, no keys:
+    <a href="https://github.com/Denis2054/Context-Engineering-for-Multi-Agent-Systems/blob/main/claude_projects/00_BUILD_GUIDE.md">00_BUILD_GUIDE.md</a>
+  </li>
+  <li>
+   <strong>🎛️ Nine ready-to-run control decks</strong> — including the anti-hallucination test and the Chapter 7 injection fixture:
+    <a href="https://github.com/Denis2054/Context-Engineering-for-Multi-Agent-Systems/blob/main/claude_projects/40_CONTROL_DECK.md">40_CONTROL_DECK.md</a>
+  </li>
+</ul>
+
+💡 *Because there is nothing to install, this is the fastest way to read the whole architecture: the entire engine is five markdown files, and there is nothing in them but the design.*
 
 <details open> 
   <summary><h2>Requirements for this book</h2></summary>
