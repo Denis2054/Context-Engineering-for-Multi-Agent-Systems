@@ -3,6 +3,17 @@
 This changelog contains notable updates (past, present, and upcoming) to the **Context Engineering for Multi-Agent Systems** repository.   
 🐬 Indicates *new bonus notebooks* to explore. 
 
+## [September 7, 2026] — Claude Projects Edition
+**The Claude Projects Edition of the Context Engine: the Context Engine with no code at all.** Every other edition swaps the model or the framework; this one removes the program. The full pipeline — **Gate 1 → Plan → Gate 2 → Execute → Trace** — runs as natural-language protocol files inside a Claude Project: nine markdown files uploaded to the Project knowledge, one block of text pasted into its instructions. No Python, no API keys, no Pinecone, no embedding model, nothing installed: 📋`claude_projects/README.md`
+
+📐 **Three layers, and only the middle one changes:** the kernel (`01`, always in context), the engine (`10`–`14`: constitution, roster, planner, governance, executor — **not one of the five mentions any subject matter**), and the domain pack (`20`–`23`: manifest, Context Library, knowledge packs). A new use case is a new set of data files, not a new engine.
+
+⬆️ **Upgrades to the Chapter 6-8 lineage:** a dynamic **DAG** replaces `$$STEP_N_OUTPUT$$` linear chaining; **Gate 2** arrives, which Chapter 6-8 could not have because a list of steps has no edges to govern; seven governance domains with the `Domain:Agent` A2A seam; injection rejections **reported in the trace** instead of silently logged; orphan-node detection at planning time.
+
+🐬 **`claude_projects/50_Pack_Builder.ipynb`** — the ingestion notebook, retargeted. Same job as `Data_Ingestion_Marketing.ipynb` with markdown packs as the destination instead of a vector index, plus an ingestion-time injection screen the original could not have. Point it at a folder of documents and it writes the uploadable packs. **No API keys.**
+
+🔬 **Evidence in the README:** a full captured `PLAN:` transcript — Gate 1, the emitted DAG, all six Gate 2 checks with verdicts, the trace — plus input, expected output, and *what failure looks like* for all nine control decks. Trade-offs documented honestly, including the one that matters: with no code, Gate 2 is a protocol a model follows rather than a function that must run.
+
 
 ## [August 16, 2026] — NVIDIA NIM NEMOTRON Edition
 
