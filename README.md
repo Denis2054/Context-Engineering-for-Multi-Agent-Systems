@@ -420,6 +420,7 @@ Denis continues to publish hands‑on frameworks, open‑source architectures, a
   </li>
 </ul>
 </details>
+
 <details open> 
   <summary><h2>Contributing </h2></summary>
   
@@ -429,8 +430,98 @@ We welcome contributions! High interaction through Issues, PRs, and Comments hel
 2.  **Discussions:** Join our [**Discussions tab**](https://github.com/Denis2054/Context-Engineering-for-Multi-Agent-Systems/discussions) to propose new features or "Context Chaining" techniques.
 3.  **Pull Requests:** Submit improvements to the core `engine.py` or new specialized agents in `agents.py`.
 </details>
+
 <details open> 
   <summary><h2>Insight</h2></summary>
- Last but not least: cool code is great but without a solid Return on Investment(ROI) it will never last in production!
+
+Cool code is great.
+
+But without a compelling **Return on Investment (ROI)**, it will never survive in production.
+
+Agentic AI should therefore be evaluated on more than model capability or technical sophistication:
+
+**Capability → Context → Governance → Execution → Measurable Business Value**
+
+The objective is not to build the most impressive demo.
+
+The objective is to build systems that are **useful, governable, measurable, and economically sustainable.**
+
 <img src="./media/agentic_roi_framework.gif" alt="Universal Context Engine Blueprint" width="40%" align="left" style="margin-right: 20px;">
+
+</details>
+<div style="clear: both;"></div>
+<details open> 
+  <summary><h2>Personal Thoughts</h2></summary>
+
+### What happens when an AI architecture can act?
+
+This is where my thinking about the architecture is evolving.
+
+I think we are crossing an important architectural boundary in agentic AI.
+
+OpenAI describes **GPT-6 Astra as state-of-the-art in computer use**, with the ability to carry out multi-step workflows across browsers, software and professional environments.
+
+I have now added a **computer-use capability** to my *Context Engineering for Multi-Agent Systems* repository.
+
+But the interesting part isn't the model.
+
+It is the architecture around the model.
+
+The repository now demonstrates a progression:
+
+**Context → Reasoning → Perception → Action → Environment → Observation → Context**
+
+And that capability sits alongside:
+
+- Dual high-fidelity RAG
+- Multi-agent orchestration
+- MCP
+- Telemetry
+- Governance gates
+- Glass-box traces
+- Prompt-injection defenses
+- Token/cost analytics
+- Sovereign/local execution
+- Human oversight
+
+The same architectural contracts are demonstrated across different substrates: OpenAI, LangChain/LangGraph, DeepSeek-R1, NVIDIA Nemotron, Claude Projects — and now computer use with GPT-6 Astra.
+
+That leads to a distinction I think will become increasingly important:
+
+**The model is not the agentic system.**
+
+The model provides intelligence.
+
+The protocol provides the contract.
+
+The harness provides controlled execution.
+
+The environment provides the world in which actions have consequences.
+
+And governance determines what the system is allowed to do.
+
+This is also why I am deliberately treating computer use as a **capability of the Context Engine**, rather than creating another "model edition."
+
+It extends the architecture rather than replacing it.
+
+The repository is educational — not an operational deployment — and is being developed alongside my book, training sessions and corporate workshops.
+
+The goal is to make the architecture **visible, testable and teachable**, including the uncomfortable parts: sovereignty, security, governance and human control.
+
+I also think this changes the scope of what we mean by **context engineering**.
+
+When an AI system only generates text, context largely determines what the system knows, remembers and reasons about.
+
+When the system can perceive and act, context becomes part of a much larger control loop.
+
+It determines what the agent can understand, what environment it can observe, what actions it can consider, what tools it can access, what permissions it has, and what evidence is captured after it acts.
+
+That is a very different engineering problem.
+
+And it is one reason I believe the architecture around increasingly capable models matters as much as the models themselves.
+
+Because once an AI system can perceive and act, **context engineering is no longer only about what an agent knows.**
+
+It is also about **what it can see, what it can do, and what we allow it to do.**
+
 </details>
