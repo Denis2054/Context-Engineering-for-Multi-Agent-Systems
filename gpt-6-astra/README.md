@@ -13,6 +13,9 @@
 **Artwork:** *Simultaneous Visions* by Umberto Boccioni. The workshop image above is a crop from the supplied desktop screenshot; for the artwork reference, see [WikiArt — Simultaneous Visions, 1912](https://www.wikiart.org/en/umberto-boccioni/simultaneous-visions-1912). WikiArt lists the work as public domain.
 
 ---
+## Introduction
+
+GPT-6 Astra represents a profound shift in AI: not simply intelligence that describes or influences the external world, but intelligence that can **perceive an environment, reason about it, and take actions within it.** This convergence of software, perception, tools, hardware, and environment moves AI toward a new class of **physically embedded intelligence**—with potentially transformative benefits for highly skilled domains such as medicine, engineering, and scientific research, where expertise can require years of training and remain inaccessible to many. At the same time, the same capability creates serious risks: a system able to perceive and act can amplify the capabilities of cybercriminals and other malicious actors. As AI becomes increasingly merged with the environments in which it operates, **governance, human oversight, security, and sovereign implementation become fundamental requirements—not optional safeguards.**
 
 ## 1. What this workshop teaches
 
