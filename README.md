@@ -10,11 +10,13 @@ Move beyond prompting to build a Context Engine in a transparent architecture of
 This repository provides a production-ready blueprint for the Agentic Era, allowing you to replace rigid, hard-coded workflows with a dynamic, **transparent**, **observable**, and **sovereign** **Context Engine**. By building universal, domain-agnostic Multi-Agent Systems through high-level semantic orchestration, you can save thousands of lines of code while maintaining 100% observability.
 
 <br clear="left"/>
-<p align="center">Copyright 2025-2026, Denis Rothman. <strong>Last updated: September 7, 2026</strong></p>
+<p align="center">Copyright 2025-2026, Denis Rothman. <strong>Last updated: September 8, 2026</strong></p>
 
 <p align="center">See the <a href="./CHANGELOG.md">Changelog</a> for updates, fixes, and upgrades(past, present, coming).</p>
 
 ## Highlights
+
+**September 8, 2026 — The GPT-6 Astra Computer Use Capability:** The Context Engine now extends from reasoning over context to **perceiving and acting within interactive environments** through GPT-6 Astra computer use: 🖥️ `gpt-6-astra/README.md`
 
 **September 7, 2026 — The Claude Projects Edition of the Context Engine:** The Context Engine with **no code at all** — nine markdown protocol files running the full Gate 1 → Plan → Gate 2 → Execute → Trace pipeline inside a Claude Project. No Python, no API keys, no vector database, nothing installed: 📋`claude_projects/README.md`
 
