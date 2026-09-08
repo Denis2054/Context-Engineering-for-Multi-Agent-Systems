@@ -2,6 +2,8 @@
 
 > **Educational workshop:** Build a local computer-use agent with GPT-6 Astra, the OpenAI Responses API, screenshots, and PyAutoGUI.
 >
+[![GPT-6 Astra](openai_gpt-6-astra.png)](https://openai.com/index/gpt-6-astra/)
+
 > The goal of this project is not merely to make a model "click buttons." It is to teach the complete architecture behind a computer-use system: **model → computer-use protocol → local harness → computer**.
 
 <img src="simultaneous-visions.png" alt="Simultaneous Visions" width="300" />
