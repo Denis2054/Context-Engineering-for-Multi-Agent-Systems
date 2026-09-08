@@ -2,10 +2,6 @@
 
 > **Educational workshop:** Build a local computer-use agent with GPT-6 Astra, the OpenAI Responses API, screenshots, and PyAutoGUI.
 >
-<a href="https://openai.com/index/gpt-6-astra/" target="_blank">
-  <img src="openai_gpt-6-astra.png" alt="OpenAI GPT-6 Astra" width="200" />
-</a>
-
 > The goal of this project is not merely to make a model "click buttons." It is to teach the complete architecture behind a computer-use system: **model → computer-use protocol → local harness → computer**.
 
 <img src="simultaneous-visions.png" alt="Simultaneous Visions" width="300" />
@@ -16,10 +12,12 @@
 ## Introduction
 
 <a href="https://openai.com/index/gpt-6-astra/" target="_blank">
-  <img src="openai_gpt-6-astra.png" alt="OpenAI GPT-6 Astra" width="200" />
+  <img align="left" src="openai_gpt-6-astra.png" alt="OpenAI GPT-6 Astra" width="200" style="margin-right: 15px; margin-bottom: 10px;" />
 </a>
 
 GPT-6 Astra represents a profound shift in AI: not simply intelligence that describes or influences the external world, but intelligence that can **perceive an environment, reason about it, and take actions within it.** This convergence of software, perception, tools, hardware, and environment moves AI toward a new class of **physically embedded intelligence**—with potentially transformative benefits for highly skilled domains such as medicine, engineering, and scientific research, where expertise can require years of training and remain inaccessible to many. At the same time, the same capability creates serious risks: a system able to perceive and act can amplify the capabilities of cybercriminals and other malicious actors. As AI becomes increasingly merged with the environments in which it operates, **governance, human oversight, security, and sovereign implementation become fundamental requirements—not optional safeguards.**
+
+<br clear="left" />
 
 ## 1. What this workshop teaches
 
