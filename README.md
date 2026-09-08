@@ -93,7 +93,20 @@ By the end of this book, you’ll be equipped with the skills needed to engineer
 <li><strong>Substrate Independence:</strong> The same architecture runs on OpenAI + Pinecone, on LangChain/LangGraph, on a local DeepSeek-R1, on NVIDIA Nemotron with a real-time DAG planner, and — in <code>claude_projects/</code> — with no code at all, as natural-language protocol files. The contracts are the engine; every implementation is a carrier.</li>
 </ul>
 </details>
+<details open>
+<summary><h2>🖥️ New Capability: Computer Use with GPT-6 Astra</h2></summary>
 
+**Computer use can be added to the Context Engine as a new agentic capability — extending the architecture from reasoning about an environment to directly perceiving and acting within it.** With **GPT-6 Astra**, an agent can receive visual state, reason over the environment, select computer actions, and interact with a controlled execution layer. The local harness becomes the bridge between the model and the environment, providing screenshots, action execution, permissions, human oversight, and safety controls.
+
+This creates a new capability layer for the Context Engine:
+
+**Context → Reasoning → Perception → Action → Environment → Observation → Context**
+
+The capability is deliberately modular. Computer use can sit alongside the Context Engine's existing RAG, memory, MCP, telemetry, governance, and multi-agent components, providing an additional **perception-and-action interface** for digital environments. The same architectural principle can eventually extend from software environments toward increasingly complex physical environments — making **governance, security, human oversight, and sovereign deployment** essential parts of the architecture.
+
+👉 **[How to organize your GPT-6 Astra Computer-Use Workshop-documentation and code in Python for your team](./gpt-6-astra/README.md)**
+
+</details>
 <details open> 
   <summary><h2>Key Learnings</h2></summary>
 <ul>
