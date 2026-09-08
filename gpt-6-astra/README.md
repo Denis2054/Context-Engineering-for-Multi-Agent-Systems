@@ -1,4 +1,4 @@
-# GPT-6 Astra Local Computer-Use Workshop
+# GPT-6 Astra Local Computer-Use Workshop for Company Training and Implementation
 
 > **Educational workshop:** Build a local computer-use agent with GPT-6 Astra, the OpenAI Responses API, screenshots, and PyAutoGUI.
 >
