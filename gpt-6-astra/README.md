@@ -9,7 +9,7 @@
 **Artwork:** *Simultaneous Visions* by Umberto Boccioni. The workshop image above is a crop from the supplied desktop screenshot; for the artwork reference, see [WikiArt — Simultaneous Visions, 1912](https://www.wikiart.org/en/umberto-boccioni/simultaneous-visions-1912). WikiArt lists the work as public domain.
 
 ---
-## Introduction
+## Introduction: AI Meets the Physical World
 
 <a href="https://openai.com/index/gpt-6-astra/" target="_blank">
   <img align="left" src="openai_gpt-6-astra.png" alt="OpenAI GPT-6 Astra" width="200" style="margin-right: 15px; margin-bottom: 10px;" />
