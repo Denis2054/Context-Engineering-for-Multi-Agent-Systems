@@ -446,8 +446,8 @@ The objective is not to build the most impressive demo.
 
 The objective is to build systems that are **useful, governable, measurable, and economically sustainable.**
 
-<img src="./media/agentic_roi_framework.gif" alt="Universal Context Engine Blueprint" width="40%" align="left" style="margin-right: 20px;">
 
+<img src="./media/agentic_roi_framework.gif" alt="ROI" width="400" />
 </details>
 <div style="clear: both;"></div>
 <details open> 
