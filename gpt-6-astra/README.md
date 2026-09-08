@@ -4,7 +4,7 @@
 >
 > The goal of this project is not merely to make a model "click buttons." It is to teach the complete architecture behind a computer-use system: **model → computer-use protocol → local harness → computer**.
 
-<img src="simultaneous-visions.png" alt="Simultaneous Visions" width="300" />
+<img src="screenshot_003.png" alt="Simultaneous Visions" width="400" />
 
 **Artwork:** *Simultaneous Visions* by Umberto Boccioni. The workshop image above is a crop from the supplied desktop screenshot; for the artwork reference, see [WikiArt — Simultaneous Visions, 1912](https://www.wikiart.org/en/umberto-boccioni/simultaneous-visions-1912). WikiArt lists the work as public domain.
 
