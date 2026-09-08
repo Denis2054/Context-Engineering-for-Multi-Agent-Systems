@@ -12,6 +12,10 @@ This repository provides a production-ready blueprint for the Agentic Era, allow
 <br clear="left"/>
 <p align="center">Copyright 2025-2026, Denis Rothman. <strong>Last updated: September 7, 2026</strong></p>
 
+<p align="center">See the <a href="./CHANGELOG.md">Changelog</a> for updates, fixes, and upgrades(past, present, coming).</p>
+
+## Highlights
+
 **September 7, 2026 — The Claude Projects Edition of the Context Engine:** The Context Engine with **no code at all** — nine markdown protocol files running the full Gate 1 → Plan → Gate 2 → Execute → Trace pipeline inside a Claude Project. No Python, no API keys, no vector database, nothing installed: 📋`claude_projects/README.md`
 
 **August 16, 2026 — The NVIDIA NIM NEMOTRON DAG Edition of the Context Engine:** The NVIDIA NIM NEMOTRON Edition of the Context Engine adds a real-time DAG planner to the context engine:🐬`nim/Universal_DAG_Engine_NIM.ipynb`      and   🐳☁️ Docker + Railway deployment resources added to the repo.
@@ -20,8 +24,8 @@ This repository provides a production-ready blueprint for the Agentic Era, allow
 
 **June 3, 2026 — New Gradio Standalone UI:** `Chapter10/Universal_Context_Engine_Gradio_UI.ipynb` now contains a deployable **Gradio web app** — live public URL in Colab, one-command deploy to Hugging Face Spaces.
 
-<p align="center">See the <a href="./CHANGELOG.md">Changelog</a> for updates, fixes, and upgrades(past, present, coming).</p>
 
+## Save thousands of lines of code
 Save thousands of lines of code by building universal, domain-agnostic Multi-Agent Systems (MAS) using the ultimate new programming language:
 [**🛰️ View Software Evolution Timeline**](https://denis2054.github.io/Context-Engineering-for-Multi-Agent-Systems/media/index.html)
 
@@ -32,12 +36,12 @@ Save thousands of lines of code by building universal, domain-agnostic Multi-Age
 
 The Token & Cost Analytics built into engine.py and the Dashboard implement what is now termed **tokenomics** in agentic AI systems (Salim et al., MSR 2026; Bergemann et al., ACM EC 2025) — rigorous per-step tracking of token consumption, cost, and verbosity across the full multi-agent pipeline.
 
-### 🔧 LLM API Update
+## 🔧 LLM API Updates and Opportunities
 
 For a detailed list of affected notebooks and all changes, see the  ➡️ [CHANGELOG.md](./CHANGELOG.md)
 
 **LLM API update:**  
-Several notebooks have been upgraded to use **GPT‑5.1** along with the latest OpenAI library standards
+Several notebooks have been upgraded to use **GPT‑5.1** and also a GPT-6-Astra tutorial(documentation and code) has been added along with the latest OpenAI library standards
 These improvements provide *better performance, lower reasoning latency,* and more reliable handling of structured agent outputs.
 
 This update also includes fixes to the **Moderation API**, ensuring safer and more robust processing of multi‑agent interactions.
