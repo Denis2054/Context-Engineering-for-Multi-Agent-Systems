@@ -3,6 +3,10 @@
 This changelog contains notable updates (past, present, and upcoming) to the **Context Engineering for Multi-Agent Systems** repository.   
 🐬 Indicates *new bonus notebooks* to explore. 
 
+## [September 8, 2026] — New Capability: Computer Use with GPT-6 Astra
+Computer use can be added to the Context Engine as a new agentic capability — extending the architecture from reasoning about an environment to directly perceiving and acting within it. With GPT-6 Astra, an agent can receive visual state, reason over the environment, select computer actions, and interact with a controlled execution layer. The local harness becomes the bridge between the model and the environment, providing screenshots, action execution, permissions, human oversight, and safety controls.        
+🐬 **[How to organize your GPT-6 Astra Computer-Use Workshop-documentation and code in Python for your team](./gpt-6-astra/README.md)**
+
 ## [September 7, 2026] — Claude Projects Edition
 **The Claude Projects Edition of the Context Engine: the Context Engine with no code at all.** Every other edition swaps the model or the framework; this one removes the program. The full pipeline — **Gate 1 → Plan → Gate 2 → Execute → Trace** — runs as natural-language protocol files inside a Claude Project: nine markdown files uploaded to the Project knowledge, one block of text pasted into its instructions. No Python, no API keys, no Pinecone, no embedding model, nothing installed: 📋`claude_projects/README.md`
 
