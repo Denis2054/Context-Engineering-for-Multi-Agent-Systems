@@ -17,6 +17,8 @@
 
 GPT-6 Astra represents a profound shift in AI: not simply intelligence that describes or influences the external world, but intelligence that can **perceive an environment, reason about it, and take actions within it.** This convergence of software, perception, tools, hardware, and environment moves AI toward a new class of **physically embedded intelligence**—with potentially transformative benefits for highly skilled domains such as medicine, engineering, and scientific research, where expertise can require years of training and remain inaccessible to many. At the same time, the same capability creates serious risks: a system able to perceive and act can amplify the capabilities of cybercriminals and other malicious actors. As AI becomes increasingly merged with the environments in which it operates, **governance, human oversight, security, and sovereign implementation become fundamental requirements—not optional safeguards.**
 
+[![Video Thumbnail](https://img.youtube.com/vi/1QNsdr-Qx_I/0.jpg)](https://youtu.be/1QNsdr-Qx_I?is=jP9Az7217_RoJS46)
+
 <br clear="left" />
 
 ## 1. What this workshop teaches
