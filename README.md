@@ -14,7 +14,7 @@ This repository provides a production-ready blueprint for the Agentic Era, allow
 
 <p align="center">See the <a href="./CHANGELOG.md">Changelog</a> for updates, fixes, and upgrades(past, present, coming).</p>
 
-## The Highlights of updates in 2026
+## 2026 Upgrade Highlights
 
 **The GPT-6 Astra Computer Use Capability:** The Context Engine now extends from reasoning over context to **perceiving and acting within interactive environments** through GPT-6 Astra computer use: 🖥️ `gpt-6-astra/README.md`
 
