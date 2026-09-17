@@ -21,6 +21,14 @@ GPT-6 Astra represents a profound shift in AI: not simply intelligence that desc
 
 <br clear="left" />
 
+---
+
+### [GPT-6-Astra_Governance.pptx](./GPT-6-Astra_Governance.pptx) : an interactive animated deck to download and run
+
+An interactive teaching deck built around `astra.py`, the computer-use harness sample that screenshots the desktop, sends the image to a model, and executes the returned mouse and keyboard actions. Its argument: the capability lives in the free-text objective, not in the code — the same loop is a helpful assistant or an autonomous operator depending on one sentence, and the **jailbreak** surface is ordinary drift (objective redirection, autonomy compounding, prompt injection, consent fatigue) rather than any exploit.
+**It ends on the governance gap**: two controls present (per-action y/N gate, corner-mouse failsafe), both dependent on a vigilant human; no allow-list, no scoped objective, no audit log, no reversibility, no independent kill-switch. **Just make sure you build a sold harness while implementing `gpt-6-astra` and before deploying it!**
+
+
 ## 1. What this workshop teaches
 
 By the end of the workshop, participants will understand and be able to demonstrate:
