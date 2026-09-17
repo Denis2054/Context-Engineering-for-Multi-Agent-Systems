@@ -14,18 +14,17 @@ This repository provides a production-ready blueprint for the Agentic Era, allow
 
 <p align="center">See the <a href="./CHANGELOG.md">Changelog</a> for updates, fixes, and upgrades(past, present, coming).</p>
 
-## Highlights
+## The Highlights of updates in 2026
 
-**September 8, 2026 — The GPT-6 Astra Computer Use Capability:** The Context Engine now extends from reasoning over context to **perceiving and acting within interactive environments** through GPT-6 Astra computer use: 🖥️ `gpt-6-astra/README.md`
+**The GPT-6 Astra Computer Use Capability:** The Context Engine now extends from reasoning over context to **perceiving and acting within interactive environments** through GPT-6 Astra computer use: 🖥️ `gpt-6-astra/README.md`
 
-**September 7, 2026 — The Claude Projects Edition of the Context Engine:** The Context Engine with **no code at all** — nine markdown protocol files running the full Gate 1 → Plan → Gate 2 → Execute → Trace pipeline inside a Claude Project. No Python, no API keys, no vector database, nothing installed: 📋`claude_projects/README.md`
+**The Claude Projects Edition of the Context Engine:** The Context Engine with **no code at all** — nine markdown protocol files running the full Gate 1 → Plan → Gate 2 → Execute → Trace pipeline inside a Claude Project. No Python, no API keys, no vector database, nothing installed: 📋`claude_projects/README.md`
 
-**August 16, 2026 — The NVIDIA NIM NEMOTRON DAG Edition of the Context Engine:** The NVIDIA NIM NEMOTRON Edition of the Context Engine adds a real-time DAG planner to the context engine:🐬`nim/Universal_DAG_Engine_NIM.ipynb`      and   🐳☁️ Docker + Railway deployment resources added to the repo.
+**The NVIDIA NIM NEMOTRON DAG Edition of the Context Engine:** The NVIDIA NIM NEMOTRON Edition of the Context Engine adds a real-time DAG planner to the context engine:🐬`nim/Universal_DAG_Engine_NIM.ipynb`      and   🐳☁️ Docker + Railway deployment resources added to the repo.
 
-**August 14, 2026 — LangChain Edition of the Context Engine:** The LangChain Edition of the Context Engine adds a Context Engine layer on a LangChain substrate:🐬`langchain/Universal_Context_Engine_LangChain.ipynb`       
+**LangChain Edition of the Context Engine:** The LangChain Edition of the Context Engine adds a Context Engine layer on a LangChain substrate:🐬`langchain/Universal_Context_Engine_LangChain.ipynb`       
 
-**June 3, 2026 — New Gradio Standalone UI:** `Chapter10/Universal_Context_Engine_Gradio_UI.ipynb` now contains a deployable **Gradio web app** — live public URL in Colab, one-command deploy to Hugging Face Spaces.
-
+**New Gradio Standalone UI:** `Chapter10/Universal_Context_Engine_Gradio_UI.ipynb` now contains a deployable **Gradio web app** — live public URL in Colab, one-command deploy to Hugging Face Spaces.
 
 ## Save thousands of lines of code
 Save thousands of lines of code by building universal, domain-agnostic Multi-Agent Systems (MAS) using the ultimate new programming language:
