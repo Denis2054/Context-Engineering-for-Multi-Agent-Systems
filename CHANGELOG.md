@@ -5,7 +5,8 @@ This changelog contains notable updates (past, present, and upcoming) to the **C
 
 ## [September 17, 2026] — `gpt-6-astra governance`. An interactive animated deck to download and run
 
-An interactive teaching deck built around `astra.py`, the computer-use harness sample that screenshots the desktop, sends the image to a model, and executes the returned mouse and keyboard actions. Its argument: the capability lives in the free-text objective, not in the code — the same loop is a helpful assistant or an autonomous operator depending on one sentence, and the **jailbreak** surface is ordinary drift (objective redirection, autonomy compounding, prompt injection, consent fatigue) rather than any exploit...[More: GPT-6-Astra_Governance.pptx](./GPT-6-Astra_Governance.pptx) :
+An interactive teaching deck built around `astra.py`, the computer-use harness sample that screenshots the desktop, sends the image to a model, and executes the returned mouse and keyboard actions. Its argument: the capability lives in the free-text objective, not in the code — the same loop is a helpful assistant or an autonomous operator depending on one sentence, and the **jailbreak** surface is ordinary drift (objective redirection, autonomy compounding, prompt injection, consent fatigue) rather than any exploit...   
+ [GPT-6-Astra_Governance.pptx](./gpt-6-astra/GPT-6-Astra_Governance.pptx)
 
 ## [September 8, 2026] — New Capability: Computer Use with GPT-6 Astra
 Computer use can be added to the Context Engine as a new agentic capability — extending the architecture from reasoning about an environment to directly perceiving and acting within it. With GPT-6 Astra, an agent can receive visual state, reason over the environment, select computer actions, and interact with a controlled execution layer. The local harness becomes the bridge between the model and the environment, providing screenshots, action execution, permissions, human oversight, and safety controls.        
